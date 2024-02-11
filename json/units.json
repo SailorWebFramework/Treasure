@@ -1,0 +1,332 @@
+{
+    "Direction": {
+        "cases": {
+            "ltr": { 
+                "description": "The default value. Defines left to right text rendering."
+            },
+            "rtl": { 
+                "description": "Defines right to left text rendering."
+            },
+            "auto": { 
+                "description": "Browser decides the text direction."
+            }
+        },
+        "description": "The direction of the text in the Browser"
+    },
+    "AutoBool": {
+        "cases": {
+            "true": { 
+                "description": "true value for auto-bool."
+            },
+            "false": { 
+                "description": "false value for auto-bool."
+            },
+            "auto": { 
+                "description": "default behavior of this element on this browser."
+            }
+        },
+        "description": "Boolean with a third *auto* option"
+    },
+    "EnterKeyHint": {
+        "cases": {
+            "done": { 
+                "description": "The user is done with this text field."
+            },
+            "enter": { 
+                "description": "The user is done with this text field."
+            },
+            "go": { 
+                "description": "The user is done with this text field."
+            },
+            "next": { 
+                "description": "The user is done with this text field."
+            },
+            "previous": { 
+                "description": "The user is done with this text field."
+            },
+            "search": { 
+                "description": "The user is done with this text field."
+            },
+            "send": { 
+                "description": "The user is done with this text field."
+            }
+        },
+        "description": "The user's intention for the text field."
+    },
+    "InputMode": {
+        "cases": {
+            "decimal": { 
+                "description": "A numeric value with a decimal point."
+            },
+            "email": { 
+                "description": "An email address."
+            },
+            "none": { 
+                "description": "No input mode."
+            },
+            "numeric": { 
+                "description": "A numeric value."
+            },
+            "search": { 
+                "description": "A search field."
+            },
+            "tel": { 
+                "description": "A telephone number."
+            },
+            "text": { 
+                "description": "A free-form text field."
+            },
+            "url": { 
+                "description": "A URL."
+            }
+        },
+        "description": "The type of input expected by the user."
+    },
+    "Question": {
+        "cases": {
+            "yes": { 
+                "description": "The answer is yes."
+            },
+            "no": { 
+                "description": "The answer is no."
+            }
+        },
+        "description": "The answer to a yes/no question."
+    },
+    "Color": {
+        "todo": "Add more color types",
+        "cases": {
+            "rgb": { 
+                "values": ["Int", "Int", "Int"],
+                "names": ["r", "g", "b"],
+                "description": "Defines an RGB color."
+            },
+            "rgba": { 
+                "values": ["Int", "Int", "Int", "Int"],
+                "names": ["r", "g", "b", "a"],
+                "description": "Defines an RGBA color."
+            }
+        },
+        "description": "Defines a color in HTML/CSS."
+    },
+    "ReferrerPolicy": {
+        "cases": {
+            "no-referrer": { 
+                "description": "The browser will not send a referrer."
+            },
+            "no-referrer-when-downgrade": { 
+                "description": "The browser will not send a referrer when navigating from HTTPS to HTTP."
+            },
+            "origin": { 
+                "description": "The browser will send the origin of the referrer."
+            },
+            "origin-when-cross-origin": { 
+                "description": "The browser will send the origin of the referrer when navigating from the same origin."
+            },
+            "same-origin": { 
+                "description": "The browser will send the full referrer when navigating from the same origin."
+            },
+            "strict-origin": { 
+                "description": "The browser will send the origin of the referrer."
+            },
+            "strict-origin-when-cross-origin": { 
+                "description": "The browser will send the origin of the referrer when navigating from the same origin."
+            },
+            "unsafe-url": { 
+                "description": "The browser will send the full referrer."
+            }
+        },
+        "description": "The referrer policy for the browser."
+    },
+    "Target": {
+        "cases": {
+            "_blank": { 
+                "description": "Opens the link in a new window or tab."
+            },
+            "_self": { 
+                "description": "Opens the link in the same frame as it was clicked."
+            },
+            "_parent": { 
+                "description": "Opens the link in the parent frame."
+            },
+            "_top": { 
+                "description": "Opens the link in the full body of the window."
+            }
+        },
+        "description": "The target for the link."
+    },
+    "FormMethod": {
+        "cases": {
+            "get": { 
+                "description": "The form data is appended to the URL."
+            },
+            "post": { 
+                "description": "The form data is sent to the server."
+            }
+        },
+        "description": "The method for the form."
+    },
+    "ButtonType": {
+        "cases": {
+            "button": { 
+                "description": "A clickable button."
+            },
+            "reset": { 
+                "description": "A reset button."
+            },
+            "submit": { 
+                "description": "A submit button."
+            }
+        },
+        "description": "The type of button."
+    },
+    "FormEncType": {
+        "description": "The encoding type for the form.",
+        "cases": {
+            "application/x-www-form-urlencoded": { 
+                "description": "The form data is URL encoded."
+            },
+            "multipart/form-data": { 
+                "description": "The form data is sent as a multipart form."
+            },
+            "text/plain": { 
+                "description": "The form data is sent as plain text."
+            }
+        
+        }
+    },
+    "Loading": {
+        "cases": {
+            "eager": { 
+                "description": "The browser will load the image immediately."
+            },
+            "lazy": { 
+                "description": "The browser will load the image when it is in the viewport."
+            }
+        },
+        "description": "The loading behavior of the image."
+    },
+    "CrossOrigin": {
+        "cases": {
+            "anonymous": { 
+                "description": "The request does not include credentials."
+            },
+            "use-credentials": { 
+                "description": "The request includes credentials."
+            }
+        },
+        "description": "The cross-origin behavior of the request."
+    },
+    "Toggle": {
+        "cases": {
+            "on": { 
+                "description": "The toggle is on."
+            },
+            "off": { 
+                "description": "The toggle is off."
+            }
+        },
+        "description": "The state of a toggle."
+    },
+    "InputType": {
+        "cases": {
+            "button": { 
+                "description": "A clickable button."
+            },
+            "checkbox": { 
+                "description": "A checkbox."
+            },
+            "color": { 
+                "description": "A color picker."
+            },
+            "date": { 
+                "description": "A date picker."
+            },
+            "datetime-local": { 
+                "description": "A date and time picker."
+            },
+            "email": { 
+                "description": "An email input."
+            },
+            "file": { 
+                "description": "A file input."
+            },
+            "hidden": { 
+                "description": "A hidden input."
+            },
+            "image": { 
+                "description": "An image input."
+            },
+            "month": { 
+                "description": "A month picker."
+            },
+            "number": { 
+                "description": "A number input."
+            },
+            "password": { 
+                "description": "A password input."
+            },
+            "radio": { 
+                "description": "A radio button."
+            },
+            "range": { 
+                "description": "A range input."
+            },
+            "reset": { 
+                "description": "A reset button."
+            },
+            "search": { 
+                "description": "A search input."
+            },
+            "submit": { 
+                "description": "A submit button."
+            },
+            "tel": { 
+                "description": "A telephone input."
+            },
+            "text": { 
+                "description": "A text input."
+            },
+            "time": { 
+                "description": "A time picker."
+            },
+            "url": { 
+                "description": "A URL input."
+            },
+            "week": { 
+                "description": "A week picker."
+            }
+        },
+        "description": "The type of input."
+    },
+
+    "PopoverTargetAction": {
+        "cases": {
+            "hide": {
+                "description": "Hides the popover."
+            },
+            "show": {
+                "description": "Shows the popover."
+            },
+            "toggle": {
+                "description": "Toggles the visibility of the popover."
+            }
+        },
+        "description": "The action that triggers the popover."
+    },
+    "InputQuantity": {
+        "description": "The minimum value for a number.",
+        "cases": {
+            "number": {
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "The minimum value for a number."
+            },
+            "date": {
+                "values": ["String"],
+                "names": ["value"],
+                "description": "The minimum date for a date input."
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "rgb": {
+        "parameters": [
+        {
+            "r": "Int",
+            "g": "Int",
+            "b": "Int"
+        },
+        {
+            "r": "Percent",
+            "g": "Percent",
+            "b": "Percent"
+        }
+    ]
+    }
+}

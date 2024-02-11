@@ -1,0 +1,8 @@
+{
+    "p-0": {
+        "description": ".p-0 { padding: 0; }"
+    },
+    "m-0": {
+        "description": ".m-0 { margin: 0; }"
+    }
+}

@@ -2,6 +2,8 @@
     "a": {
         "description": "Together with its href attribute, creates a hyperlink to web pages, files, email addresses, locations within the current page, or anything else a URL can address.",
         "inits": [
+            {"type": "text"},
+            {"type": "body"},
             {
                 "type": "required",
                 "args": {

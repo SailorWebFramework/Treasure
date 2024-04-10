@@ -1,0 +1,21 @@
+{
+    "background": {
+        "description": "Shorthand for other background things .",
+        "types": ["Unit.Attachment", "Unit.Color", "Unit.VisualBox", "Unit.VisualBox"],
+        "names": ["attachement", "color", "clip", "origin"],
+        "format": "{{attachement}} {{color}} {{clip}} {{origin}}"
+    }
+
+    "border-image"
+
+    skipped box
+
+    skipped clip-path
+    skipped contain
+    skipped counter
+    skipped "cursor"
+    skip "content"
+    skip "display"
+    skip filter
+
+}

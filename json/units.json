@@ -1,4 +1,155 @@
 {
+    "Length": {
+        "cases": {
+            "px": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of pixels.",
+                "format": "{{value}}px"
+            },
+            "em": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of ems.",
+                "format": "{{value}}em"
+            },
+            "vh": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of viewport heights.",
+                "format": "{{value}}vh"
+            },
+            "vw": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of viewport widths.",
+                "format": "{{value}}vw"
+            },
+            "rem": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of rems.",
+                "format": "{{value}}rem"
+            },
+            "ch": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of characters.",
+                "format": "{{value}}ch"
+            },
+            "ex": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of exs.",
+                "format": "{{value}}ex"
+            },
+            "mm": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of millimeters.",
+                "format": "{{value}}mm"
+            },
+            "cm": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of centimeters.",
+                "format": "{{value}}cm"
+            },
+            "in": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of inches.",
+                "format": "{{value}}in"
+            },
+            "pt": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of points.",
+                "format": "{{value}}pt"
+            },
+            "pc": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of picas.",
+                "format": "{{value}}pc"
+            },
+            "vmin": {
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of viewport minimums.",
+                "format": "{{value}}vmin"
+            },
+            "vmax": {
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a number of viewport maximums.",
+                "format": "{{value}}vmax"
+            }
+        },
+        "description": "A number."
+    },
+    "Percentage": {
+        "cases": {
+            "percent": {
+                "values": ["Percent"],
+                "names": ["percent"],
+                "description": "The image is a specific percentage of the element.",
+                "format": "{{percent}}%"
+            }
+        },
+        "description": "A percentage."
+    },
+    "Number": {
+        "cases": {
+            "number": {
+                "values": ["Double"],
+                "names": ["number"],
+                "description": "A raw number.",
+                "format": "{{number}}%"
+            }
+        },
+        "description": "A number."
+    },
+    "Integer": {
+        "cases": {
+            "int": {
+                "values": ["Int"],
+                "names": ["int"],
+                "description": "A raw integer.",
+                "format": "{{number}}%"
+            }
+        },
+        "description": "A number."
+    },
+    "Angle": {
+        "cases": {
+            "deg": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines an angle in degrees.",
+                "format": "{{value}}deg"
+            },
+            "grad": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines an angle in gradians.",
+                "format": "{{value}}grad"
+            },
+            "rad": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines an angle in radians.",
+                "format": "{{value}}rad"
+            },
+            "turn": { 
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines an angle in turns.",
+                "format": "{{value}}turn"
+            }
+        },
+        "description": "An angle."
+    },
     "Direction": {
         "cases": {
             "ltr": { 
@@ -6,9 +157,6 @@
             },
             "rtl": { 
                 "description": "Defines right to left text rendering."
-            },
-            "auto": { 
-                "description": "Browser decides the text direction."
             }
         },
         "description": "The direction of the text in the Browser"
@@ -96,15 +244,39 @@
     "Color": {
         "todo": "Add more color types",
         "cases": {
+            "hex": { 
+                "values": ["String"],
+                "names": ["hex"],
+                "description": "Defines a color in hexadecimal format.",
+                "format": "{{hex}}"
+            },
             "rgb": { 
                 "values": ["Int", "Int", "Int"],
                 "names": ["r", "g", "b"],
                 "description": "Defines an RGB color."
             },
             "rgba": { 
-                "values": ["Int", "Int", "Int", "Int"],
+                "values": ["Int", "Int", "Int", "Double"],
                 "names": ["r", "g", "b", "a"],
                 "description": "Defines an RGBA color."
+            },
+            "hsl": { 
+                "values": ["Int", "Percent", "Percent"],
+                "names": ["h", "s", "l"],
+                "description": "Defines an HSL color.",
+                "format": "hsl({{h}} {{s}}% {{l}}%)"
+            },
+            "hsla": { 
+                "values": ["Int", "Percent", "Percent", "Double"],
+                "names": ["h", "s", "l", "a"],
+                "description": "Defines an HSLA color.",
+                "format": "hsla({{h}} {{s}}% {{l}}% {{a}})"
+            },
+            "transparent": { 
+                "description": "Defines a transparent color."
+            },
+            "red": { 
+                "description": "Defines the color red."
             }
         },
         "description": "Defines a color in HTML/CSS."
@@ -328,5 +500,992 @@
                 "description": "The minimum date for a date input."
             }
         }
+    },
+    "AlignContent": {
+        "cases": {
+            "center": {
+                "description": "Aligns the content in the center."
+            },
+            "flex-end": {
+                "description": "Aligns the content at the end."
+            },
+            "flex-start": {
+                "description": "Aligns the content at the start."
+            },
+            "space-around": {
+                "description": "Distributes the content evenly with space around."
+            },
+            "space-between": {
+                "description": "Distributes the content evenly with space between."
+            },
+            "stretch": {
+                "description": "Stretches the content to fill the container."
+            }
+        },
+        "description": "The alignment of the content."
+    },
+    "AlignItems": {
+        "cases": {
+            "baseline": {
+                "description": "Aligns the items to the baseline."
+            },
+            "center": {
+                "description": "Aligns the items in the center."
+            },
+            "flex-end": {
+                "description": "Aligns the items at the end."
+            },
+            "flex-start": {
+                "description": "Aligns the items at the start."
+            },
+            "stretch": {
+                "description": "Stretches the items to fill the container."
+            }
+        },
+        "description": "The alignment of the items."
+    },
+    "AlignSelf": {
+        "cases": {
+            "auto": {
+                "description": "The default value."
+            },
+            "baseline": {
+                "description": "Aligns the item to the baseline."
+            },
+            "center": {
+                "description": "Aligns the item in the center."
+            },
+            "flex-end": {
+                "description": "Aligns the item at the end."
+            },
+            "flex-start": {
+                "description": "Aligns the item at the start."
+            },
+            "stretch": {
+                "description": "Stretches the item to fill the container."
+            }
+        },
+        "description": "The alignment of the item."
+    },
+    "AspectRatio": {
+        "cases": {
+            "ratio": { 
+                "values": ["Int", "Int"],
+                "names": ["width", "height"],
+                "description": "Defines the aspect ratio.",
+                "format": "{{width}} / {{height}}"
+            },
+            "auto": { 
+                "description": "The default value."
+            },
+            "float": { 
+                "values": ["Double"],
+                "names": ["value"],
+                "description": "Defines the aspect ratio using a float.",
+                "format": "{{value}}"
+            }
+        },
+        "description": "The aspect ratio of the element."
+    },
+    "Filter": {
+        "cases": {
+            "none": {
+                "description": "No applied filter."
+            },
+            "blur": {
+                "values": ["Unit.Length"],
+                "names": ["value"],
+                "description": "Applies a blur to the backdrop."
+            },
+            "brightness:0": {
+                "values": ["Double"],
+                "names": ["amount"],
+                "description": "Applies a brightness filter to the backdrop."
+            },
+            "brightness:1": {
+                "values": ["Percent"],
+                "names": ["percent"],
+                "description": "Applies a brightness filter to the backdrop.",
+                "format": "brightness({{percent}}%)"
+            },
+            "contrast": {
+                "values": ["Percent"],
+                "names": ["percent"],
+                "description": "Applies a contrast filter to the backdrop.",
+                "format": "contrast({{percent}}%)"
+            },
+            "drop-shadow": {
+                "values": ["Unit.Length", "Unit.Length", "Unit.Length", "Color"],
+                "names": ["x", "y", "blur", "color"],
+                "description": "Applies a drop shadow to the backdrop.",
+                "format": "drop-shadow({{x}} {{y}} {{blur}} {{color}})"
+            },
+            "grayscale": {
+                "values": ["Percent"],
+                "names": ["percent"],
+                "description": "Applies a gray scale filter to the backdrop.",
+                "format": "grayscale({{percent}}%)"
+            },
+            "hue-rotate": {
+                "values": ["Unit.Angle"],
+                "names": ["degrees"],
+                "description": "Applies a hue rotation filter to the backdrop.",
+                "format": "hue-rotate({{degrees}})"
+            },
+            "invert": {
+                "values": ["Percent"],
+                "names": ["percent"],
+                "description": "Applies an invert filter to the backdrop.",
+                "format": "invert({{percent}}%)"
+            },
+            "opacity": {
+                "values": ["Percent"],
+                "names": ["percent"],
+                "description": "Applies an opacity filter to the backdrop.",
+                "format": "opacity({{percent}}%)"
+            },
+            "saturate": {
+                "values": ["Percent"],
+                "names": ["percent"],
+                "description": "Applies a saturation filter to the backdrop.",
+                "format": "saturate({{percent}}%)"
+            },
+            "sepia": {
+                "values": ["Percent"],
+                "names": ["percent"],
+                "description": "Applies a sepia filter to the backdrop.",
+                "format": "sepia({{percent}}%)"
+            },
+            "url": {
+                "values": ["String"],
+                "names": ["url"],
+                "description": "Applies a filter to the backdrop.",
+                "format": "url({{url}})"
+            }
+        },
+        "description": "Used to select the backdrop filter property."
+    },
+    "Visibility": {
+        "cases": {
+            "hidden": {
+                "description": "The element is hidden."
+            },
+            "visible": {
+                "description": "The element is visible."
+            }
+        },
+        "description": "The visibility of the element."
+    },
+    "Attachment": {
+        "cases": {
+            "fixed": {
+                "description": "The background is fixed."
+            },
+            "local": {
+                "description": "The background is local."
+            },
+            "scroll": {
+                "description": "The background scrolls with the content."
+            }
+        },
+        "description": "The attachment of the background."
+    },
+    "BlendMode": {
+        "cases": {
+            "normal": {
+                "description": "The default value."
+            },
+            "multiply": {
+                "description": "Multiplies the colors."
+            },
+            "screen": {
+                "description": "The colors are screened."
+            },
+            "overlay": {
+                "description": "The colors are overlayed."
+            },
+            "darken": {
+                "description": "The colors are darkened."
+            },
+            "lighten": {
+                "description": "The colors are lightened."
+            },
+            "color-dodge": {
+                "description": "The colors are color-dodged."
+            },
+            "color-burn": {
+                "description": "The colors are color-burned."
+            },
+            "hard-light": {
+                "description": "The colors are hard-lighted."
+            },
+            "soft-light": {
+                "description": "The colors are soft-lighted."
+            },
+            "difference": {
+                "description": "The colors are different."
+            },
+            "exclusion": {
+                "description": "The colors are excluded."
+            },
+            "hue": {
+                "description": "The colors are hued."
+            },
+            "saturation": {
+                "description": "The colors are saturated."
+            },
+            "color": {
+                "description": "The colors are colored."
+            },
+            "luminosity": {
+                "description": "The colors are luminous."
+            }
+        },
+        "description": "The blend mode of the element."
+    },
+    "VisualBox": {
+        "cases": {
+            "border-box": {
+                "description": "The border is included in the box."
+            },
+            "content-box": {
+                "description": "The border is not included in the box."
+            },
+            "padding-box": {
+                "description": "The padding is included in the box."
+            }
+        },
+        "description": "The box model for the element."
+    }, 
+    "PositionX": {
+        "cases": {
+            "direction": {
+                "values": ["Unit.HorrizontalRelativeDirection"],
+                "names": ["value"],
+                "description": "The element is positioned at a specific length.",
+                "format": "{{value}}"
+            },
+            "length": {
+                "values": ["Unit.Length"],
+                "names": ["value"],
+                "description": "The element is positioned at a specific length.",
+                "format": "{{value}}"
+            },
+            "percent": {
+                "values": ["Percent"],
+                "names": ["value"],
+                "description": "The element is positioned at a specific percentage.",
+                "format": "{{value}}%"
+            }
+        },
+        "description": "The position of the element."
+    },
+    "PositionY": {
+        "cases": {
+            "direction": {
+                "values": ["Unit.VerticalRelativeDirection"],
+                "names": ["value"],
+                "description": "The element is positioned at a specific length.",
+                "format": "{{value}}"
+            },
+            "length": {
+                "values": ["Unit.Length"],
+                "names": ["value"],
+                "description": "The element is positioned at a specific length.",
+                "format": "{{value}}"
+            },
+            "percent": {
+                "values": ["Percent"],
+                "names": ["value"],
+                "description": "The element is positioned at a specific percentage.",
+                "format": "{{value}}%"
+            }
+        },
+        "description": "The position of the element."
+    },
+    "HorrizontalRelativeDirection": {
+        "cases": {
+            "left": {
+                "description": "The element is positioned to the left."
+            },
+            "center": {
+                "description": "The element is positioned to the right."
+            },
+            "right": {
+                "description": "The element is positioned to the right."
+            }
+        },
+        "description": "The horizontal relative direction of the element."
+    },
+    "VerticalRelativeDirection": {
+        "cases": {
+            "top": {
+                "description": "The element is positioned to the left."
+            },
+            "center": {
+                "description": "The element is positioned to the right."
+            },
+            "bottom": {
+                "description": "The element is positioned to the right."
+            }
+        },
+        "description": "The horizontal relative direction of the element."
+    },
+    "CompatAuto": {   
+        "cases": {
+            "searchfield": {
+                "description": "The element is a search field."
+            },
+            "textarea": {
+                "description": "The element is a text area."
+            },
+            "checkbox": {
+                "description": "The element is a checkbox."
+            },
+            "radio": {
+                "description": "The element is a radio button."
+            },
+            "menulist": {
+                "description": "The element is a menu list."
+            },
+            "listbox": {
+                "description": "The element is a list box."
+            },
+            "meter": {
+                "description": "The element is a meter."
+            },
+            "progress-bar": {
+                "description": "The element is a progress bar."
+            },
+            "button": {
+                "description": "The element is a button."
+            }
+        },
+        "description": "The compatibility of the feature."
+    },
+    "CompatSpecial": {
+        "cases": {
+            "textfield": {
+                "description": "The element is not special."
+            },
+            "menulist-button": {
+                "description": "The element is a button."
+            }
+        },
+        "description": "The compatibility of the feature."
+    },
+    "Appearance": {
+        "inherit": ["CompatAuto", "CompatSpecial"],
+        "cases": {
+            "auto": {
+                "description": "The browser decides the appearance."
+            },
+            "none": {
+                "description": "The element has no appearance."
+            }
+        },
+        "description": "The appearance of the feature."
+    },
+    "Repeat": {
+        "cases": {
+            "repeat": {
+                "description": "The image is repeated."
+            },
+            "repeat-x": {
+                "description": "The image is repeated horizontally."
+            },
+            "repeat-y": {
+                "description": "The image is repeated vertically."
+            },
+            "no-repeat": {
+                "description": "The image is not repeated."
+            },
+            "space": {
+                "description": "The image is repeated with space."
+            },
+            "round": {
+                "description": "The image is repeated with rounding."
+            }
+        },
+        "description": "The repeat behavior of the image."
+    },
+    "BgSize": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "auto": {
+                "description": "The browser decides the size."
+            },
+            "cover": {
+                "description": "The image covers the element."
+            },
+            "contain": {
+                "description": "The image is contained in the element."
+            }
+        },
+        "description": "The size of the background."
+    },
+    "BlockSize": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "max-content": {
+                "description": "The width is the maximum content width."
+            },
+            "min-content": {
+                "description": "The width is the minimum content width."
+            },
+            "fit-content": {
+                "description": "The width is the fit content width."
+            },
+            "auto": {
+                "description": "the auto value"
+            }
+        },
+        "description": "The size of the background."
+    },
+    "LineStyle": {
+        "cases": {
+            "none": {
+                "description": "No line."
+            },
+            "hidden": {
+                "description": "A hidden line."
+            },
+            "dotted": {
+                "description": "A dotted line."
+            },
+            "dashed": {
+                "description": "A dashed line."
+            },
+            "solid": {
+                "description": "A solid line."
+            },
+            "double": {
+                "description": "A double line."
+            },
+            "groove": {
+                "description": "A grooved line."
+            },
+            "ridge": {
+                "description": "A ridged line."
+            },
+            "inset": {
+                "description": "An inset line."
+            },
+            "outset": {
+                "description": "An outset line."
+            }
+        },
+        "description": "The style of the line."
+    },
+    "LineWidth": {
+        "inherit": ["Length"],
+        "cases": {
+            "thin": {
+                "description": "A thin line."
+            },
+            "medium": {
+                "description": "A medium line."
+            },
+            "thick": {
+                "description": "A thick line."
+            }
+        },
+        "description": "The width of the line."
+    },
+    "LengthPercentage": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {},
+        "description": "The radius of the border."
+    },
+    "LengthNumber": {
+        "inherit": ["Length"],
+        "cases": {},
+        "description": "The radius of the border."
+    },
+    "BorderCollapse": {
+        "cases": {
+            "collapse": {
+                "description": "The borders are collapsed."
+            },
+            "separate": {
+                "description": "The borders are separate."
+            }
+        },
+        "description": "The collapse behavior of the borders."
+    },
+    "RepeatImage": {
+        "cases": {
+            "stretch": {
+                "description": "The image is stretched."
+            },
+            "repeat": {
+                "description": "The image is repeated."
+            },
+            "round": {
+                "description": "The image is repeated with rounding."
+            },
+            "space": {
+                "description": "The image is repeated with space."
+            }
+        },
+        "description": "The repeat behavior of the image."
+    },
+    "SliceImage": {
+        "inherit": ["Number", "Percentage"],
+        "cases": {
+            "fill": {
+                "description": "The image is filled."
+            }
+        },
+        "description": "The slice behavior of the image."
+    },
+    "Gradient": {
+        "cases": {
+            "linear": {
+                "values": ["Unit.Angle"],
+                "names": ["angle"],
+                "description": "A linear gradient.",
+                "format": "linear-gradient({{angle}})"
+            },
+            "radial": {
+                "values": ["Unit.Length", "Unit.Length", "Unit.Length", "Unit.Length", "Unit.Length", "Unit.Length"],
+                "names": ["shape", "size", "position", "shape2", "size2", "position2"],
+                "description": "A radial gradient.",
+                "format": "radial-gradient({{shape}} {{size}} at {{position}}, {{shape2}} {{size2}} at {{position2}})"
+            }
+        },
+        "description": "A gradient."
+    },
+    "ImageSource": {
+        "inherit": ["Gradient"],
+        "cases": {
+            "url": {
+                "values": ["String"],
+                "names": ["url"],
+                "description": "A URL image source.",
+                "format": "url({{url}})"
+            },
+            "src": {
+                "values": ["String"],
+                "names": ["src"],
+                "description": "A source image.",
+                "format": "src({{src}})"
+            }
+        },
+        "description": "The source of the image."
+    },
+    "AutoLengthPercentage": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "auto": {
+                "description": "The browser decides the length."
+            }
+        },
+        "description": "The length of the element."
+    },
+    "Break": {
+        "cases": {
+            "auto": {
+                "description": "The browser decides the break behavior."
+            },
+            "avoid": {
+                "description": "The break is avoided."
+            },
+            "always": {
+                "description": "The break is always applied."
+            },
+            "all": {
+                "description": "The break is applied to all."
+            },
+            "avoid-page": {
+                "description": "The break is avoided on a page."
+            },
+            "page": {
+                "description": "The break is applied on a page."
+            },
+            "left": {
+                "description": "The break is applied on the left."
+            },
+            "right": {
+                "description": "The break is applied on the right."
+            },
+            "recto": {
+                "description": "The break is applied on the recto."
+            },
+            "verso": {
+                "description": "The break is applied on the verso."
+            },
+            "avoid-column": {
+                "description": "The break is avoided on a column."
+            },
+            "column": {
+                "description": "The break is applied on a column."
+            },
+            "avoid-region": {
+                "description": "The break is avoided on a region."
+            },
+            "region": {
+                "description": "The break is applied on a region."
+            }
+        },
+        "description": "The break behavior."
+    },
+    "BreakInside": {
+        "cases": {
+            "auto": {
+                "description": "The browser decides the break behavior."
+            },
+            "avoid": {
+                "description": "The break is avoided."
+            },
+            "avoid-page": {
+                "description": "The break is avoided on a page."
+            },
+            "avoid-column": {
+                "description": "The break is avoided on a column."
+            },
+            "avoid-region": {
+                "description": "The break is avoided on a region."
+            }
+        },
+        "description": "The break inside behavior."
+    },
+    "AutoColor": {
+        "cases": {
+            "auto": {
+                "description": "The browser decides the color."
+            },
+            "color": { 
+                "values": ["Unit.Color"],
+                "names": ["color"],
+                "description": "The color of the element."
+            }
+        },
+        "description": "The color of the element."
+    },
+    "Clear": {
+        "cases": {
+            "inline-start": {
+                "description": "The break is applied on the inline start."
+            },
+            "inline-end": {
+                "description": "The break is applied on the inline end."
+            },
+            "block-start": {
+                "description": "The break is applied on the block start."
+            },
+            "block-end": {
+                "description": "The break is applied on the block end."
+            },
+            "left": {
+                "description": "The break is applied on the left."
+            },
+            "right": {
+                "description": "The break is applied on the right."
+            },
+            "top": {
+                "description": "The break is applied on the top."
+            },
+            "bottom": {
+                "description": "The break is applied on the bottom."
+            },
+            "both-inline": {
+                "description": "The break is applied on both inline."
+            },
+            "both-block": {
+                "description": "The break is applied on both block."
+            },
+            "both": {
+                "description": "The break is applied on both."
+            },
+            "none": {
+                "description": "The break is not applied."
+            }
+        },
+        "description": "The clear behavior."
+    },
+    "ColorInterpolation": {
+        "cases": {
+            "auto": {
+                "description": "The browser decides the color interpolation."
+            },
+            "sRGB": {
+                "description": "The color interpolation is sRGB."
+            },
+            "linearRGB": {
+                "description": "The color interpolation is linear RGB."
+            }
+        },
+        "description": "The color interpolation."
+    },
+    "ColorScheme": {
+        "cases": {
+            "light": {
+                "description": "The color scheme is light."
+            },
+            "dark": {
+                "description": "The color scheme is dark."
+            },
+            "normal": {
+                "description": "The color scheme is normal."
+            },
+            "only": {
+                "description": "The color scheme is only."
+            }
+        },
+        "description": "The color scheme."
+    },
+    "Display": {
+        "cases": {
+            "block": {
+                "description": "The element is a block."
+            },
+            "inline": {
+                "description": "The element is inline."
+            },
+            "run-in": {
+                "description": "The element is a run-in."
+            },
+            "flow": {
+                "description": "The element is a flow."
+            },
+            "flow-root": {
+                "description": "The element is a flow root."
+            },
+            "table": {
+                "description": "The element is a table."
+            },
+            "flex": {
+                "description": "The element is a flex."
+            },
+            "grid": {
+                "description": "The element is a grid."
+            },
+            "ruby": {
+                "description": "The element is a ruby."
+            },
+            "subgrid": {
+                "description": "The element is a subgrid."
+            },
+            "block-flow": {
+                "description": "The element is a block flow."
+            },
+            "inline-table": {
+                "description": "The element is an inline table."
+            }
+        },
+        "description": "The display behavior."
+    },
+    "AutoInt": {
+        "inherit": ["Integer"],
+        "cases": {
+            "auto": {
+                "description": "The browser decides the integer."
+            }
+        },
+        "description": "The integer value."
+    },
+    "ColumnFill": {
+        "cases": {
+            "auto": {
+                "description": "The browser decides the column fill."
+            },
+            "balance": {
+                "description": "The column fill is balanced."
+            },
+            "balance-all": {
+                "description": "The column fill is balanced all."
+            }
+        },
+        "description": "The column fill."
+    },
+    "NormalLengthPercentage": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "normal": {
+                "description": "The normal length."
+            }
+        },
+        "description": "The length of the element."
+    },
+    "AllOrNone": {
+        "cases": {
+            "all": {
+                "description": "All elements are affected."
+            },
+            "none": {
+                "description": "No elements are affected."
+            }
+        },
+        "description": "The affected elements."
+    },
+    "Width": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "auto": {
+                "description": "The browser decides the column width."
+            },
+            "min-content": {
+                "description": "The column width is the minimum content width."
+            },
+            "max-content": {
+                "description": "The column width is the maximum content width."
+            },
+            "fit-content": {
+                "description": "The column width is the fit content width.",
+                "names": ["lengthPercentage"],
+                "values": ["Unit.LengthPercentage"],
+                "format": "fit-content({{lengthPercentage}})"
+            }
+        },
+        "description": "The width of the column."
+    },
+
+    "ContainerType": {
+        "cases": {
+            "normal": {
+                "description": "The container is normal."
+            },
+            "size": {
+                "description": "The container is sized."
+            },
+            "inline-size": {
+                "description": "The container is inline size."
+            }
+        },
+        "description": "The type of container."
+    },
+    "ContainerName": {
+        "cases": {
+            "auto": {
+                "description": "The container is name."
+            },
+            "custom": {
+                "description": "The container is custom name.",
+                "names": ["value"],
+                "values": ["String"],
+                "format": "{{value}}"
+            }
+        },
+        "description": "The name of the container."
+    },
+    "Shown": {
+        "cases": {
+            "shown": {
+                "description": "The element is shown."
+            },
+            "hide": {
+                "description": "The element is hidden."
+            }
+        },
+        "description": "The visibility of the element."
+    },
+    "FlexBasis": {
+        "inherit": ["Width"],
+        "cases": {
+            "content": {
+                "description": "The flex basis is the content width."
+            }
+        },
+        "description": "The flex basis."
+    },
+    "FlexDirection": {
+        "cases": {
+            "row": {
+                "description": "The flex direction is row."
+            },
+            "row-reverse": {
+                "description": "The flex direction is row reverse."
+            },
+            "column": {
+                "description": "The flex direction is column."
+            },
+            "column-reverse": {
+                "description": "The flex direction is column reverse."
+            }
+        },
+        "description": "The flex direction."
+    },
+    "FlexWrap": {
+        "cases": {
+            "nowrap": {
+                "description": "The flex wrap is no wrap."
+            },
+            "wrap": {
+                "description": "The flex wrap is wrap."
+            },
+            "wrap-reverse": {
+                "description": "The flex wrap is wrap reverse."
+            }
+        },
+        "description": "The flex wrap."
+    },
+    "Float": {
+        "cases": {
+            "left": {
+                "description": "The element is floated to the left."
+            },
+            "right": {
+                "description": "The element is floated to the right."
+            },
+            "none": {
+                "description": "The element is not floated."
+            },
+            "inline-start": {
+                "description": "The element is floated to the inline start."
+            },
+            "inline-end": {
+                "description": "The element is floated to the inline end."
+            },
+            "block-start": {
+                "description": "The element is floated to the block start."
+            },
+            "block-end": {
+                "description": "The element is floated to the block end."
+            },
+            "snap-block:0": {
+                "description": "The element is floated with a snap block."
+            },
+            "snap-block:1": {
+                "description": "The element is floated with a snap block.",
+                "names": ["length", "offset"],
+                "values": ["Unit.Length", "optional[Unit.Location]"],
+                "format": "snap-block({{length}}{{?, {{!offset}}?}})"
+            },
+            "snap-inline:0": {
+                "description": "The element is floated with a snap inline."
+            },
+            "snap-inline:1": {
+                "description": "The element is floated with a snap inline.",
+                "names": ["length", "offset"],
+                "values": ["Unit.Length", "optional[Unit.Location]"],
+                "format": "snap-inline({{length}}{{?, {{!offset}}?}})"
+            },
+            "top": {
+                "description": "The element is floated to the top."
+            },
+            "bottom": {
+                "description": "The element is floated to the bottom."
+            },
+            "footnote": {
+                "description": "The element is floated as a footnote."
+            }
+        },
+        "description": "The float behavior."
+    },
+    "Location": {
+        "cases": {
+            "start": {
+                "description": "The element is located at the start."
+            },
+            "end": {
+                "description": "The element is located at the end."
+            },
+            "near": {
+                "description": "The element is located near."
+            }
+        },
+        "description": "The location of the element."
     }
+
 }

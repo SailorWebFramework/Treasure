@@ -1,0 +1,590 @@
+{
+    "accent-color": {
+        "description": "Sets the accent color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "align-content": {
+        "description": "Sets the align-content property.",
+        "types": ["Unit.AlignContent"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "align-items": {
+        "description": "Sets the align-items property.",
+        "types": ["Unit.AlignItems"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "align-self": {
+        "description": "Sets the align-self property.",
+        "types": ["Unit.AlignSelf"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "aspect-ratio": {
+        "description": "Sets the aspect-ratio property.",
+        "types": ["Unit.AspectRatio"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "appearance": {
+        "description": "The appearance CSS property is used to display UI elements with platform-specific styling, based on the operating system's theme.",
+        "types": ["Unit.Appearance"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "backdrop-filter": {
+        "description": "Add a graphical effect to the area behind an element.",
+        "types": ["Unit.Filter"],
+        "names": ["filter"],
+        "format": "{{filter}}"
+    },
+    "backface-visibility": {
+        "description": "Sets the visibility of the back face of an element.",
+        "types": ["Unit.Visibility"],
+        "names": ["visibility"],
+        "format": "{{visibility}}"
+    },
+    "background-attachment": {
+        "description": "Sets whether a background image is fixed or scrolls with the rest of the page.",
+        "types": ["Unit.Attachment"],
+        "names": ["attachment"],
+        "format": "{{attachment}}"
+    },
+    "background-blend-mode": {
+        "description": "Sets the background blend mode property.",
+        "types": ["Unit.BlendMode"],
+        "names": ["blendMode"],
+        "format": "{{blendMode}}"
+    },
+    "background-clip": {
+        "description": "Sets the background clip property.",
+        "types": ["Unit.VisualBox"],
+        "names": ["visualBox"],
+        "format": "{{visualBox}}"
+    },
+    "background-color": {
+        "description": "Sets the background color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "background-origin": {
+        "description": "Sets the background origin property.",
+        "types": ["Unit.VisualBox"],
+        "names": ["visualBox"],
+        "format": "{{visualBox}}"
+    },
+    "background-position-x": {
+        "description": "Sets the background position property.",
+        "types": ["Unit.PositionX"],
+        "names": ["positionX"],
+        "format": "{{positionX}}"
+    },
+    "background-position-y": {
+        "description": "Sets the background position property.",
+        "types": ["Unit.PositionY"],
+        "names": ["positionY"],
+        "format": "{{positionY}}"
+    },
+    "background-repeat": {
+        "description": "Sets the background position property.",
+        "types": ["Unit.Repeat"],
+        "names": ["positionY"],
+        "format": "{{positionY}}"
+    },
+    "background-size": {
+        "description": "Sets the background position property.",
+        "types": ["Unit.BgSize"],
+        "names": ["positionY"],
+        "format": "{{positionY}}"
+    },
+    "block-size": {
+        "description": "The block-size CSS property defines the horizontal or vertical size of an element's block, depending on its writing mode.",
+        "types": ["Unit.BlockSize"],
+        "names": ["blockSize"],
+        "format": "{{blockSize}}"
+    },
+    "border-block-color": {
+        "description": "Sets the border block color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "border-block-end": {
+        "description": "Sets the border block end property.",
+        "types": ["Unit.Color", "Unit.LineStyle", "Unit.LineWidth"],
+        "names": ["color", "style", "width"],
+        "format": "{{color}} {{style}} {{width}}"
+    },
+    "border-block-end-color": {
+        "description": "Sets the border block end color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "border-block-end-style": {
+        "description": "Sets the border block end style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "border-block-end-width": {
+        "description": "Sets the border block end width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "border-block-start": {
+        "description": "Sets the border block start property.",
+        "types": ["Unit.Color", "Unit.LineStyle", "Unit.LineWidth"],
+        "names": ["color", "style", "width"],
+        "format": "{{color}} {{style}} {{width}}"
+    },
+    "border-block-start-color": {
+        "description": "Sets the border block start color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "border-block-start-style": {
+        "description": "Sets the border block start style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "border-block-start-width": {
+        "description": "Sets the border block start width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "border-block-style": {
+        "description": "Sets the border block style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "border-block-width": {
+        "description": "Sets the border block width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "border-bottom-color": {
+        "description": "Sets the border bottom color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "border-bottom-left-radius": {
+        "description": "Sets the border bottom left radius property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["radius"],
+        "format": "{{radius}}"
+    },
+    "border-bottom-right-radius": {
+        "description": "Sets the border bottom right radius property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["radius"],
+        "format": "{{radius}}"
+    },
+    "border-bottom-style": {
+        "description": "Sets the border bottom style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "border-bottom-width": {
+        "description": "Sets the border bottom width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "border-collapse": {
+        "description": "Sets the border collapse property.",
+        "types": ["Unit.BorderCollapse"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "border-color": {
+        "description": "Sets the border color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "border-end-end-radius": {
+        "description": "Sets the border end end radius property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["radius"],
+        "format": "{{radius}}"
+    },
+    "border-end-start-radius": {
+        "description": "Sets the border end start radius property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["radius"],
+        "format": "{{radius}}"
+    },
+    "border-image-outset": {
+        "description": "Sets the border image outset property.",
+        "types": ["Unit.LengthNumber"],
+        "names": ["outset"],
+        "format": "{{outset}}"
+    },
+    "border-image-repeat": {
+        "description": "Sets the border image repeat property.",
+        "types": ["Unit.RepeatImage"],
+        "names": ["imageRepeat"],
+        "format": "{{imageRepeat}}"
+    },
+    "border-image-slice": {
+        "description": "Sets the border image slice property.",
+        "types": ["Unit.SliceImage"],
+        "names": ["slice"],
+        "format": "{{slice}}"
+    },
+    "border-image-source": {
+        "description": "Sets the border image source property.",
+        "types": ["Unit.ImageSource"],
+        "names": ["image"],
+        "format": "{{image}}"
+    },
+    "border-image-width": {
+        "description": "Sets the border image width property.",
+        "types": ["Unit.LengthNumber"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "border-inline-color": {
+        "description": "Sets the border inline color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "border-inline-end": {
+        "description": "Sets the border inline end property.",
+        "types": ["Unit.Color", "Unit.LineStyle", "Unit.LineWidth"],
+        "names": ["color", "style", "width"],
+        "format": "{{color}} {{style}} {{width}}"
+    },
+    "border-inline-end-color": {
+        "description": "Sets the border inline end color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "border-inline-end-style": {
+        "description": "Sets the border inline end style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "border-inline-end-width": {
+        "description": "Sets the border inline end width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "border-inline-start": {
+        "description": "Sets the border inline start property.",
+        "types": ["Unit.Color", "Unit.LineStyle", "Unit.LineWidth"],
+        "names": ["color", "style", "width"],
+        "format": "{{color}} {{style}} {{width}}"
+    },
+    "border-inline-start-color": {
+        "description": "Sets the border inline start color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "border-inline-start-style": {
+        "description": "Sets the border inline start style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "border-inline-start-width": {
+        "description": "Sets the border inline start width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "border-inline-style": {
+        "description": "Sets the border inline style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "border-inline-width": {
+        "description": "Sets the border inline width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "border-left-color": {
+        "description": "Sets the border left color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "border-left-style": {
+        "description": "Sets the border left style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "border-left-width": {
+        "description": "Sets the border left width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "border-radius": {
+        "description": "Sets the border radius property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["radius"],
+        "format": "{{radius}}"
+    },
+    "border-right-color": {
+        "description": "Sets the border right color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "border-right-style": {
+        "description": "Sets the border right style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "border-right-width": {
+        "description": "Sets the border right width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "border-spacing": {
+        "description": "Sets the border spacing property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "border-start-end-radius": {
+        "description": "Sets the border start end radius property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["radius"],
+        "format": "{{radius}}"
+    },
+    "border-start-start-radius": {
+        "description": "Sets the border start start radius property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["radius"],
+        "format": "{{radius}}"
+    },
+    "border-style": {
+        "description": "Sets the border style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "border-top-color": {
+        "description": "Sets the border top color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "border-top-left-radius": {
+        "description": "Sets the border top left radius property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["radius"],
+        "format": "{{radius}}"
+    },
+    "border-top-right-radius": {
+        "description": "Sets the border top right radius property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["radius"],
+        "format": "{{radius}}"
+    },
+    "border-top-style": {
+        "description": "Sets the border top style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "border-top-width": {
+        "description": "Sets the border top width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "border-width": {
+        "description": "Sets the border width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "bottom": {
+        "description": "Sets the bottom property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "break-after": {
+        "description": "Sets the break after property.",
+        "types": ["Unit.Break"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "break-before": {
+        "description": "Sets the break before property.",
+        "types": ["Unit.Break"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "break-inside": {
+        "description": "Sets the break inside property.",
+        "types": ["Unit.BreakInside"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "caret-color": {
+        "description": "Sets the caret color property.",
+        "types": ["Unit.AutoColor"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "clear": {
+        "description": "Sets the clear property.",
+        "types": ["Unit.Clear"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "color": {
+        "description": "Sets the color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "color-interpolation": {
+        "description": "Sets the color interpolation property.",
+        "types": ["Unit.ColorInterpolation"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "color-scheme": {
+        "description": "Sets the color sceme property.",
+        "types": ["Unit.ColorScheme"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "column-count": {
+        "description": "Sets the column count property.",
+        "types": ["Unit.AutoInt"],
+        "names": ["count"],
+        "format": "{{count}}"
+    },
+    "column-fill": {
+        "description": "Sets the column fill property.",
+        "types": ["Unit.ColumnFill"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "column-gap": {
+        "description": "Sets the column gap property.",
+        "types": ["Unit.NormalLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "column-rule-color": {
+        "description": "Sets the column rule color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "column-rule-style": {
+        "description": "Sets the column rule style property.",
+        "types": ["Unit.LineStyle"],
+        "names": ["style"],
+        "format": "{{style}}"
+    },
+    "column-rule-width": {
+        "description": "Sets the column rule width property.",
+        "types": ["Unit.LineWidth"],
+        "names": ["width"],
+        "format": "{{width}}"
+    },
+    "column-span": {
+        "description": "Sets the column span property.",
+        "types": ["Unit.AllOrNone"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "column-width": {
+        "description": "Sets the column width property.",
+        "types": ["Unit.Width"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "container-type": {
+        "description": "Sets the container type property.",
+        "types": ["Unit.ContainerType"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "container-name": {
+        "description": "Sets the container name property.",
+        "types": ["Unit.ContainerName"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "direction": {
+        "description": "Sets the direction property.",
+        "types": ["Unit.Direction"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "empty-cells": {
+        "description": "Sets the empty cells property.",
+        "types": ["Unit.Shown"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "flex-basis": {
+        "description": "Sets the flex basis property.",
+        "types": ["Unit.FlexBasis"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "flex-direction": {
+        "description": "Sets the flex direction property.",
+        "types": ["Unit.FlexDirection"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "flex-grow": {
+        "description": "Sets the flex grow property.",
+        "types": ["Double"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "flex-shrink": {
+        "description": "Sets the flex shrink property.",
+        "types": ["Double"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "flex-wrap": {
+        "description": "Sets the flex wrap property.",
+        "types": ["Unit.FlexWrap"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "float": {
+        "description": "Sets the float property.",
+        "types": ["Unit.Float"],
+        "names": ["value"],
+        "format": "{{value}}"
+    }
+}

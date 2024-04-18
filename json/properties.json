@@ -1,4 +1,10 @@
 {
+    "all": {
+        "description": "Sets all properties.",
+        "types": [],
+        "names": [],
+        "format": ""
+    },
     "accent-color": {
         "description": "Sets the accent color property.",
         "types": ["Unit.Color"],
@@ -43,7 +49,7 @@
     },
     "backface-visibility": {
         "description": "Sets the visibility of the back face of an element.",
-        "types": ["Unit.Visibility"],
+        "types": ["Unit.BackfaceVisibility"],
         "names": ["visibility"],
         "format": "{{visibility}}"
     },
@@ -95,17 +101,29 @@
         "names": ["positionY"],
         "format": "{{positionY}}"
     },
-    "background-size": {
+    "background-size:0": {
         "description": "Sets the background position property.",
         "types": ["Unit.BgSize"],
-        "names": ["positionY"],
-        "format": "{{positionY}}"
+        "names": ["bgSize"],
+        "format": "{{bgSize}}"
     },
-    "block-size": {
+    "background-size:1": {
+        "description": "Sets the background position property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["lengthPercentage"],
+        "format": "{{lengthPercentage}}"
+    },
+    "block-size:0": {
         "description": "The block-size CSS property defines the horizontal or vertical size of an element's block, depending on its writing mode.",
-        "types": ["Unit.BlockSize"],
+        "types": ["Unit.Size"],
         "names": ["blockSize"],
         "format": "{{blockSize}}"
+    },
+    "block-size:1": {
+        "description": "The block-size CSS property defines the horizontal or vertical size of an element's block, depending on its writing mode.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["lengthPercentage"],
+        "format": "{{lengthPercentage}}"
     },
     "border-block-color": {
         "description": "Sets the border block color property.",
@@ -425,12 +443,6 @@
         "names": ["width"],
         "format": "{{width}}"
     },
-    "bottom": {
-        "description": "Sets the bottom property.",
-        "types": ["Unit.AutoLengthPercentage"],
-        "names": ["length"],
-        "format": "{{length}}"
-    },
     "break-after": {
         "description": "Sets the break after property.",
         "types": ["Unit.Break"],
@@ -539,6 +551,12 @@
         "names": ["value"],
         "format": "{{value}}"
     },
+    "contain": {
+        "description": "Sets the contain property.",
+        "types": ["Unit.Contain"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
     "direction": {
         "description": "Sets the direction property.",
         "types": ["Unit.Direction"],
@@ -584,6 +602,522 @@
     "float": {
         "description": "Sets the float property.",
         "types": ["Unit.Float"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "forced-color-adjust": {
+        "description": "Sets the forced color adjust property.",
+        "types": ["Unit.ForcedColorAdjust"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "gap:0": {
+        "description": "Sets the gap property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["rowGap"],
+        "format": "{{rowGap}}"
+    },
+    "gap:1": {
+        "description": "Sets the gap property.",
+        "types": ["Unit.LengthPercentage", "Unit.LengthPercentage"],
+        "names": ["rowGap", "columnGap"],
+        "format": "{{rowGap}} {{columnGap}}"
+    },
+    "grid-area:0": {
+        "description": "Sets the grid area property.",
+        "types": ["Unit.GridLine"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "grid-area:1": {
+        "description": "Sets the grid area property.",
+        "types": ["Unit.GridLine", "Unit.GridLine"],
+        "names": ["value", "value2"],
+        "format": "{{value}} / {{value2}}"
+    },
+    "grid-area:2": {
+        "description": "Sets the grid area property.",
+        "types": ["Unit.GridLine", "Unit.GridLine", "Unit.GridLine"],
+        "names": ["value", "value2", "value3"],
+        "format": "{{value}} / {{value2}} / {{value3}}"
+    },
+    "grid-area:3": {
+        "description": "Sets the grid area property.",
+        "types": ["Unit.GridLine", "Unit.GridLine", "Unit.GridLine", "Unit.GridLine"],
+        "names": ["value", "value2", "value3", "value4"],
+        "format": "{{value}} / {{value2}} / {{value3}} / {{value4}}"
+    },
+    "hanging-punctuation:0": {
+        "description": "Sets the hanging punctuation property.",
+        "types": ["Unit.HangingPunctuation"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "hanging-punctuation:1": {
+        "description": "Sets the hanging punctuation property.",
+        "types": ["Unit.None"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "hanging-punctuation:2": {
+        "description": "Sets the hanging punctuation property.",
+        "types": ["Unit.HangingPunctuation", "Unit.HangingPunctuation"],
+        "names": ["value", "value1"],
+        "format": "{{value}} {{value1}}"
+    },
+    "hanging-punctuation:3": {
+        "description": "Sets the hanging punctuation property.",
+        "types": ["Unit.HangingPunctuation", "Unit.HangingPunctuationForced"],
+        "names": ["value", "value1"],
+        "format": "{{value}} {{value1}}"
+    },
+    "hanging-punctuation:4": {
+        "description": "Sets the hanging punctuation property.",
+        "types": ["Unit.HangingPunctuation", "Unit.HangingPunctuation", "Unit.HangingPunctuationForced"],
+        "names": ["value", "value2", "value3"],
+        "format": "{{value}} {{value2}} {{value3}}"
+    },
+    "hanging-punctuation:5": {
+        "description": "Sets the hanging punctuation property.",
+        "types": ["Unit.HangingPunctuation", "Unit.HangingPunctuation", "Unit.HangingPunctuation", "Unit.HangingPunctuationForced"],
+        "names": ["value", "value2", "value3", "value4"],
+        "format": "{{value}} {{value2}} {{value3}} {{value4}}"
+    },
+    "height:0": {
+        "description": "Sets the height property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "height:1": {
+        "description": "Sets the height property.",
+        "types": ["Unit.Size"],
+        "names": ["heightValue"],
+        "format": "{{heightValue}}"
+    },
+    "width:0": {
+        "description": "Sets the width property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "width:1": {
+        "description": "Sets the width property.",
+        "types": ["Unit.Size"],
+        "names": ["widthValue"],
+        "format": "{{widthValue}}"
+    },
+    "z-index": {
+        "description": "Sets the z-index property.",
+        "types": ["Unit.AutoInt"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "windows": {
+        "description": "Sets the windows property.",
+        "types": ["Int"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "word-break": {
+        "description": "Sets the word break property.",
+        "types": ["Unit.WordBreak"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "word-spacing:0": {
+        "description": "Sets the word spacing property.",
+        "types": ["Unit.Normal"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "word-spacing:1": {
+        "description": "Sets the word spacing property.",
+        "types": ["Unit.Length"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "writing-mode": {
+        "description": "Sets the writing mode property.",
+        "types": ["Unit.WritingMode"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "white-space": {
+        "description": "Sets the white space property.",
+        "types": ["Unit.WhiteSpace"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "white-space-collapse": {
+        "description": "Sets the white space collapse property.",
+        "types": ["Unit.WhiteSpaceCollapse"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "visibility": {
+        "description": "Sets the visibility property.",
+        "types": ["Unit.Visibility"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "padding:0": {
+        "description": "Sets the padding block end property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["allFourSides"],
+        "format": "{{allFourSides}}"
+    },
+    "padding:1": {
+        "description": "Sets the padding block end property.",
+        "types": ["Unit.LengthPercentage", "Unit.LengthPercentage"],
+        "names": ["topPadding", "bottomPadding"],
+        "format": "{{topPadding}} {{bottomPadding}}"
+    },
+    "padding:2": {
+        "description": "Sets the padding block end property.",
+        "types": ["Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.LengthPercentage"],
+        "names": ["topPadding", "leftRightPadding", "bottomPadding"],
+        "format": "{{topPadding}} {{leftRightPadding}} {{bottomPadding}}"
+    },
+    "padding:3": {
+        "description": "Sets the padding block end property.",
+        "types": ["Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.LengthPercentage"],
+        "names": ["topPadding", "rightPadding", "bottomPadding", "leftPadding"],
+        "format": "{{topPadding}} {{rightPadding}} {{bottomPadding}} {{leftPadding}}"
+    },
+    "padding-block-end": {
+        "description": "Sets the padding block end property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "padding-block-start": {
+        "description": "Sets the padding block start property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "padding-block": {
+        "description": "Sets the padding block property.",
+        "types": ["Unit.LengthPercentage", "Unit.LengthPercentage"],
+        "names": ["blockStart", "blockEnd"],
+        "format": "{{blockStart}} {{blockEnd}}"
+    },
+    "padding-inline": {
+        "description": "Sets the padding inline property.",
+        "types": ["Unit.LengthPercentage", "Unit.LengthPercentage"],
+        "names": ["inlineStart", "inlineEnd"],
+        "format": "{{inlineStart}} {{inlineEnd}}"
+    },
+    "padding-inline-end": {
+        "description": "Sets the padding inline end property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "padding-inline-start": {
+        "description": "Sets the padding inline start property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "padding-top": {
+        "description": "Sets the padding top property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "padding-right": {
+        "description": "Sets the padding right property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "padding-bottom": {
+        "description": "Sets the padding bottom property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "padding-left": {
+        "description": "Sets the padding left property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "margin-block-end": {
+        "description": "Sets the margin block end property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "margin-block-start:0": {
+        "description": "Sets the margin block end property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "margin-block": {
+        "description": "Sets the margin block end property.",
+        "types": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+        "names": ["blockStart", "blockEnd"],
+        "format": "{{blockStart}} {{blockEnd}}"
+    },
+    "margin-inline": {
+        "description": "Sets the margin inline property.",
+        "types": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+        "names": ["inlineStart", "inlineEnd"],
+        "format": "{{inlineStart}} {{inlineEnd}}"
+    },
+    "margin-inline-end": {
+        "description": "Sets the margin inline end property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "margin-inline-start": {
+        "description": "Sets the margin inline start property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "margin-top": {
+        "description": "Sets the margin top property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "margin-right": {
+        "description": "Sets the margin right property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "margin-bottom": {
+        "description": "Sets the margin bottom property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "margin-left": {
+        "description": "Sets the margin left property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "margin:0": {
+        "description": "Sets the margin property.",
+        "types": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+        "names": ["topBottom", "leftRight"],
+        "format": "{{topBottom}} {{leftRight}}"
+    },
+    "margin:1": {
+        "description": "Sets the margin property.",
+        "types": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+        "names": ["top", "leftRight", "bottom"],
+        "format": "{{top}} {{leftRight}} {{bottom}}"
+    },
+    "margin:2": {
+        "description": "Sets the margin property.",
+        "types": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+        "names": ["top", "right", "bottom", "left"],
+        "format": "{{top}} {{right}} {{bottom}} {{left}}"
+    },
+    "margin:3": {
+        "description": "Sets the margin property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["allFourSides"],
+        "format": "{{allFourSides}}"
+    },
+    "min-block-size:0": {
+        "description": "Sets the min block size property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "min-block-size:1": {
+        "description": "Sets the min block size property.",
+        "types": ["Unit.Size"],
+        "names": ["size"],
+        "format": "{{size}}"
+    },
+    "min-height:0": {
+        "description": "Sets the min height property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "min-height:1": {
+        "description": "Sets the min height property.",
+        "types": ["Unit.Size"],
+        "names": ["size"],
+        "format": "{{size}}"
+    },
+    "min-inline-size:0": {
+        "description": "Sets the min inline size property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "min-inline-size:1": {
+        "description": "Sets the min inline size property.",
+        "types": ["Unit.Size"],
+        "names": ["size"],
+        "format": "{{size}}"
+    },
+    "min-width:0": {
+        "description": "Sets the min width property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "min-width:1": {
+        "description": "Sets the min width property.",
+        "types": ["Unit.Size"],
+        "names": ["size"],
+        "format": "{{size}}"
+    },
+    "max-block-size:0": {
+        "description": "Sets the max block size property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "max-block-size:1": {
+        "description": "Sets the max block size property.",
+        "types": ["Unit.Size"],
+        "names": ["size"],
+        "format": "{{size}}"
+    },
+    "max-height:0": {
+        "description": "Sets the max height property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "max-height:1": {
+        "description": "Sets the max height property.",
+        "types": ["Unit.Size"],
+        "names": ["size"],
+        "format": "{{size}}"
+    },
+    "max-inline-size:0": {
+        "description": "Sets the max inline size property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "max-inline-size:1": {
+        "description": "Sets the max inline size property.",
+        "types": ["Unit.Size"],
+        "names": ["size"],
+        "format": "{{size}}"
+    },
+    "max-width:0": {
+        "description": "Sets the max width property.",
+        "types": ["Unit.LengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "max-width:1": {
+        "description": "Sets the max width property.",
+        "types": ["Unit.Size"],
+        "names": ["size"],
+        "format": "{{size}}"
+    },
+    "text-align": {
+        "description": "Sets the text align property.",
+        "types": ["Unit.TextAlign"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "text-align-last": {
+        "description": "Sets the text align last property.",
+        "types": ["Unit.TextAlign"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "text-combine-upright": {
+        "description": "Sets the text combine upright property.",
+        "types": ["Unit.AllOrNone"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "text-decoration-color": {
+        "description": "Sets the text decoration color property.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "text-decoration-line:0": {
+        "description": "Sets the text decoration line property.",
+        "types": ["Unit.None"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "text-decoration-line:1": {
+        "description": "Sets the text decoration line property.",
+        "types": ["Unit.TextDecorationLine"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "text-decoration-line:2": {
+        "description": "Sets the text decoration line property.",
+        "types": ["Unit.TextDecorationLine", "Unit.TextDecorationLine"],
+        "names": ["value", "value1"],
+        "format": "{{value}} {{value1}}"
+    },
+    "text-decoration-line:3": {
+        "description": "Sets the text decoration line property.",
+        "types": ["Unit.TextDecorationLine", "Unit.TextDecorationLine", "Unit.TextDecorationLine"],
+        "names": ["value", "value1", "value2"],
+        "format": "{{value}} {{value1}} {{value2}}"
+    },
+    "text-justify": {
+        "description": "Sets the text justify property.",
+        "types": ["Unit.TextJustify"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "text-decoration-skip-ink:0": {
+        "description": "Sets the text decoration skip ink property.",
+        "types": ["Unit.AllOrNone"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "text-decoration-skip-ink:1": {
+        "description": "Sets the text decoration skip ink property.",
+        "types": ["Unit.Auto"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "left": {
+        "description": "Sets the left property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "right": {
+        "description": "Sets the right property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "top": {
+        "description": "Sets the top property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "bottom": {
+        "description": "Sets the bottom property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["length"],
+        "format": "{{length}}"
+    },
+    "position": {
+        "description": "Sets the position property.",
+        "types": ["Unit.PositionType"],
         "names": ["value"],
         "format": "{{value}}"
     }

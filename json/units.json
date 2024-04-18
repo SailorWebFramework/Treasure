@@ -91,7 +91,7 @@
     "Percentage": {
         "cases": {
             "percent": {
-                "values": ["Percent"],
+                "values": ["Int"],
                 "names": ["percent"],
                 "description": "The image is a specific percentage of the element.",
                 "format": "{{percent}}%"
@@ -275,8 +275,452 @@
             "transparent": { 
                 "description": "Defines a transparent color."
             },
+            "black": {
+                "description": "black color #000000"
+            },
+            "silver": {
+                "description": "silver color #c0c0c0"
+            },
+            "gray": {
+                "description": "gray color #808080"
+            },
+            "white": {
+                "description": "white color #ffffff"
+            },
+            "maroon": {
+                "description": "maroon color #800000"
+            },
             "red": { 
-                "description": "Defines the color red."
+                "description": "red color #ff0000"
+            },
+            "purple": { 
+                "description": "purple color #800080"
+            },
+            "fuchsia": { 
+                "description": "fuchsia color #ff00ff"
+            },
+            "green": { 
+                "description": "green color #008000"
+            },
+            "lime": { 
+                "description": "lime color #00ff00"
+            },
+            "olive": { 
+                "description": "olive color #808000"
+            },
+            "yellow": { 
+                "description": "yellow color #ffff00"
+            },
+            "navy": { 
+                "description": "navy color #000080"
+            },
+            "blue": { 
+                "description": "blue color #0000ff"
+            },
+            "teal": { 
+                "description": "teal color #008080"
+            },
+            "aqua": { 
+                "description": "aqua color #00ffff"
+            },
+            "aliceblue": { 
+                "description": "aliceblue color #f0f8ff"
+            },
+            "antiquewhite": { 
+                "description": "antiquewhite color #faebd7"
+            },
+            "aquamarine": { 
+                "description": "aquamarine color #7fffd4"
+            },
+            "azure": { 
+                "description": "azure color #f0ffff"
+            },
+            "beige": { 
+                "description": "beige color #f5f5dc"
+            },
+            "bisque": { 
+                "description": "bisque color #ffe4c4"
+            },
+            "blanchedalmond": { 
+                "description": "blanchedalmond color #ffebcd"
+            },
+            "blueviolet": { 
+                "description": "blueviolet color #8a2be2"
+            },
+            "brown": { 
+                "description": "brown color #a52a2a"
+            },
+            "burlywood": { 
+                "description": "burlywood color #deb887"
+            },
+            "cadetblue": { 
+                "description": "cadetblue color #5f9ea0"
+            },
+            "chartreuse": { 
+                "description": "chartreuse color #7fff00"
+            },
+            "chocolate": { 
+                "description": "chocolate color #d2691e"
+            },
+            "coral": { 
+                "description": "coral color #ff7f50"
+            },
+            "cornflowerblue": { 
+                "description": "cornflowerblue color #6495ed"
+            },
+            "cornsilk": { 
+                "description": "cornsilk color #fff8dc"
+            },
+            "crimson": { 
+                "description": "crimson color #dc143c"
+            },
+            "cyan": { 
+                "description": "cyan color #00ffff"
+            },
+            "darkblue": { 
+                "description": "darkblue color #00008b"
+            },
+            "darkcyan": { 
+                "description": "darkcyan color #008b8b"
+            },
+            "darkgoldenrod": { 
+                "description": "darkgoldenrod color #b8860b"
+            },
+            "darkgray": { 
+                "description": "darkgray color #a9a9a9"
+            },
+            "darkgreen": { 
+                "description": "darkgreen color #006400"
+            },
+            "darkgrey": { 
+                "description": "darkgrey color #a9a9a9"
+            },
+            "darkkhaki": { 
+                "description": "darkkhaki color #bdb76b"
+            },
+            "darkmagenta": { 
+                "description": "darkmagenta color #8b008b"
+            },
+            "darkolivegreen": { 
+                "description": "darkolivegreen color #556b2f"
+            },
+            "darkorange": { 
+                "description": "darkorange color #ff8c00"
+            },
+            "darkorchid": { 
+                "description": "darkorchid color #9932cc"
+            },
+            "darkred": { 
+                "description": "darkred color #8b0000"
+            },
+            "darksalmon": { 
+                "description": "darksalmon color #e9967a"
+            },
+            "darkseagreen": { 
+                "description": "darkseagreen color #8fbc8f"
+            },
+            "darkslateblue": { 
+                "description": "darkslateblue color #483d8b"
+            },
+            "darkslategray": { 
+                "description": "darkslategray color #2f4f4f"
+            },
+            "darkslategrey": { 
+                "description": "darkslategrey color #2f4f4f"
+            },
+            "darkturquoise": { 
+                "description": "darkturquoise color #00ced1"
+            },
+            "darkviolet": { 
+                "description": "darkviolet color #9400d3"
+            },
+            "deeppink": { 
+                "description": "deeppink color #ff1493"
+            },
+            "deepskyblue": { 
+                "description": "deepskyblue color #00bfff"
+            },
+            "dimgray": { 
+                "description": "dimgray color #696969"
+            },
+            "dimgrey": { 
+                "description": "dimgrey color #696969"
+            },
+            "dodgerblue": { 
+                "description": "dodgerblue color #1e90ff"
+            },
+            "firebrick": { 
+                "description": "firebrick color #b22222"
+            },
+            "floralwhite": { 
+                "description": "floralwhite color #fffaf0"
+            },
+            "forestgreen": { 
+                "description": "forestgreen color #228b22"
+            },
+            "gainsboro": { 
+                "description": "gainsboro color #dcdcdc"
+            },
+            "ghostwhite": { 
+                "description": "ghostwhite color #f8f8ff"
+            },
+            "gold": { 
+                "description": "gold color #ffd700"
+            },
+            "goldenrod": { 
+                "description": "goldenrod color #daa520"
+            },
+            "greenyellow": { 
+                "description": "greenyellow color #adff2f"
+            },
+            "grey": { 
+                "description": "grey color #808080"
+            },
+            "honeydew": { 
+                "description": "honeydew color #f0fff0"
+            },
+            "hotpink": { 
+                "description": "hotpink color #ff69b4"
+            },
+            "indianred": { 
+                "description": "indianred color #cd5c5c"
+            },
+            "indigo": { 
+                "description": "indigo color #4b0082"
+            },
+            "ivory": { 
+                "description": "ivory color #fffff0"
+            },
+            "khaki": { 
+                "description": "khaki color #f0e68c"
+            },
+            "lavender": { 
+                "description": "lavender color #e6e6fa"
+            },
+            "lavenderblush": { 
+                "description": "lavenderblush color #fff0f5"
+            },
+            "lawngreen": { 
+                "description": "lawngreen color #7cfc00"
+            },
+            "lemonchiffon": { 
+                "description": "lemonchiffon color #fffacd"
+            },
+            "lightblue": { 
+                "description": "lightblue color #add8e6"
+            },
+            "lightcoral": { 
+                "description": "lightcoral color #f08080"
+            },
+            "lightcyan": { 
+                "description": "lightcyan color #e0ffff"
+            },
+            "lightgoldenrodyellow": { 
+                "description": "lightgoldenrodyellow color #fafad2"
+            },
+            "lightgray": { 
+                "description": "lightgray color #d3d3d3"
+            },
+            "lightgreen": { 
+                "description": "lightgreen color #90ee90"
+            },
+            "lightgrey": { 
+                "description": "lightgrey color #d3d3d3"
+            },
+            "lightpink": { 
+                "description": "lightpink color #ffb6c1"
+            },
+            "lightsalmon": { 
+                "description": "lightsalmon color #ffa07a"
+            },
+            "lightseagreen": { 
+                "description": "lightseagreen color #20b2aa"
+            },
+            "lightskyblue": { 
+                "description": "lightskyblue color #87cefa"
+            },
+            "lightslategray": { 
+                "description": "lightslategray color #778899"
+            },
+            "lightslategrey": { 
+                "description": "lightslategrey color #778899"
+            },
+            "lightsteelblue": { 
+                "description": "lightsteelblue color #b0c4de"
+            },
+            "lightyellow": { 
+                "description": "lightyellow color #ffffe0"
+            },
+            "limegreen": { 
+                "description": "limegreen color #32cd32"
+            },
+            "linen": { 
+                "description": "linen color #faf0e6"
+            },
+            "magenta": { 
+                "description": "magenta color #ff00ff"
+            },
+            "mediumaquamarine": { 
+                "description": "mediumaquamarine color #66cdaa"
+            },
+            "mediumblue": { 
+                "description": "mediumblue color #0000cd"
+            },
+            "mediumorchid": { 
+                "description": "mediumorchid color #ba55d3"
+            },
+            "mediumpurple": { 
+                "description": "mediumpurple color #9370db"
+            },
+            "mediumseagreen": { 
+                "description": "mediumseagreen color #3cb371"
+            },
+            "mediumslateblue": { 
+                "description": "mediumslateblue color #7b68ee"
+            },
+            "mediumspringgreen": { 
+                "description": "mediumspringgreen color #00fa9a"
+            },
+            "mediumturquoise": { 
+                "description": "mediumturquoise color #48d1cc"
+            },
+            "mediumvioletred": { 
+                "description": "mediumvioletred color #c71585"
+            },
+            "midnightblue": { 
+                "description": "midnightblue color #191970"
+            },
+            "mintcream": { 
+                "description": "mintcream color #f5fffa"
+            },
+            "mistyrose": { 
+                "description": "mistyrose color #ffe4e1"
+            },
+            "moccasin": { 
+                "description": "moccasin color #ffe4b5"
+            },
+            "navajowhite": { 
+                "description": "navajowhite color #ffdead"
+            },
+            "oldlace": { 
+                "description": "oldlace color #fdf5e6"
+            },
+            "olivedrab": { 
+                "description": "olivedrab color #6b8e23"
+            },
+            "orange": { 
+                "description": "orange color #ffa500"
+            },
+            "orangered": { 
+                "description": "orangered color #ff4500"
+            },
+            "orchid": { 
+                "description": "orchid color #da70d6"
+            },
+            "palegoldenrod": { 
+                "description": "palegoldenrod color #eee8aa"
+            },
+            "palegreen": { 
+                "description": "palegreen color #98fb98"
+            },
+            "paleturquoise": { 
+                "description": "paleturquoise color #afeeee"
+            },
+            "palevioletred": { 
+                "description": "palevioletred color #db7093"
+            },
+            "papayawhip": { 
+                "description": "papayawhip color #ffefd5"
+            },
+            "peachpuff": { 
+                "description": "peachpuff color #ffdab9"
+            },
+            "peru": { 
+                "description": "peru color #cd853f"
+            },
+            "pink": { 
+                "description": "pink color #ffc0cb"
+            },
+            "plum": { 
+                "description": "plum color #dda0dd"
+            },
+            "powderblue": { 
+                "description": "powderblue color #b0e0e6"
+            },
+            "rosybrown": { 
+                "description": "rosybrown color #bc8f8f"
+            },
+            "royalblue": { 
+                "description": "royalblue color #4169e1"
+            },
+            "saddlebrown": { 
+                "description": "saddlebrown color #8b4513"
+            },
+            "salmon": { 
+                "description": "salmon color #fa8072"
+            },
+            "sandybrown": { 
+                "description": "sandybrown color #f4a460"
+            },
+            "seagreen": { 
+                "description": "seagreen color #2e8b57"
+            },
+            "seashell": { 
+                "description": "seashell color #fff5ee"
+            },
+            "sienna": { 
+                "description": "sienna color #a0522d"
+            },
+            "skyblue": { 
+                "description": "skyblue color #87ceeb"
+            },
+            "slateblue": { 
+                "description": "slateblue color #6a5acd"
+            },
+            "slategray": { 
+                "description": "slategray color #708090"
+            },
+            "slategrey": { 
+                "description": "slategrey color #708090"
+            },
+            "snow": { 
+                "description": "snow color #fffafa"
+            },
+            "springgreen": { 
+                "description": "springgreen color #00ff7f"
+            },
+            "steelblue": { 
+                "description": "steelblue color #4682b4"
+            },
+            "tan": { 
+                "description": "tan color #d2b48c"
+            },
+            "thistle": { 
+                "description": "thistle color #d8bfd8"
+            },
+            "tomato": { 
+                "description": "tomato color #ff6347"
+            },
+            "turquoise": { 
+                "description": "turquoise color #40e0d0"
+            },
+            "violet": { 
+                "description": "violet color #ee82ee"
+            },
+            "wheat": { 
+                "description": "wheat color #f5deb3"
+            },
+            "whitesmoke": { 
+                "description": "whitesmoke color #f5f5f5"
+            },
+            "yellowgreen": { 
+                "description": "yellowgreen color #9acd32"
+            },
+            "rebeccapurple": { 
+                "description": "rebeccapurple color #663399"
+            },
+            "currentColor": { 
+                "description": "current color"
             }
         },
         "description": "Defines a color in HTML/CSS."
@@ -665,7 +1109,7 @@
         },
         "description": "Used to select the backdrop filter property."
     },
-    "Visibility": {
+    "BackfaceVisibility": {
         "cases": {
             "hidden": {
                 "description": "The element is hidden."
@@ -910,7 +1354,6 @@
         "description": "The repeat behavior of the image."
     },
     "BgSize": {
-        "inherit": ["Length", "Percentage"],
         "cases": {
             "auto": {
                 "description": "The browser decides the size."
@@ -924,8 +1367,7 @@
         },
         "description": "The size of the background."
     },
-    "BlockSize": {
-        "inherit": ["Length", "Percentage"],
+    "Size": {
         "cases": {
             "max-content": {
                 "description": "The width is the maximum content width."
@@ -933,8 +1375,14 @@
             "min-content": {
                 "description": "The width is the minimum content width."
             },
-            "fit-content": {
+            "fit-content:0": {
                 "description": "The width is the fit content width."
+            },
+            "fit-content:1": {
+                "description": "The width is the fit content width.",
+                "values": ["Unit.LengthPercentage"],
+                "names": ["value"],
+                "format": "fit-content({{value}})"
             },
             "auto": {
                 "description": "the auto value"
@@ -1075,12 +1523,8 @@
         "description": "The source of the image."
     },
     "AutoLengthPercentage": {
-        "inherit": ["Length", "Percentage"],
-        "cases": {
-            "auto": {
-                "description": "The browser decides the length."
-            }
-        },
+        "inherit": ["Length", "Percentage", "Auto"],
+        "cases": { },
         "description": "The length of the element."
     },
     "Break": {
@@ -1486,6 +1930,327 @@
             }
         },
         "description": "The location of the element."
+    },
+    "Global": {
+        "cases": {
+            "initial": {
+                "description": "Specifies that all the element's properties should be changed to their initial values."
+            },
+            "inherit": {
+                "description": "Specifies that all the element's properties should be changed to their inherited values."
+            },
+            "revert": {
+                "description": "Reverts the filter to the parent."
+            },
+            "revert-layer": {
+                "description": "Specifies that all the element's properties should roll back the cascade to a previous cascade layer, if one exists. If no other cascade layer exists, the element's properties will roll back to the matching rule, if one exists, in the current layer or to a previous style origin."
+            },
+            "unset": {
+                "description": "Specifies that all the element's properties should be changed to their inherited values if they inherit by default, or to their initial values if not."
+            }
+        },
+        "description": "global css properties"
+    },
+    "ForcedColorAdjust": {
+        "cases": {
+            "auto": {
+                "description": "The browser decides the color adjustment."
+            },
+            "none": {
+                "description": "The color adjustment is none."
+            },
+            "preserve-parent-color": {
+                "description": "The parent color."
+            }
+        },
+        "description": "The color adjustment."
+    },
+    "GridLine": {
+        "inherit": ["Integer"],
+        "cases": {
+            "auto": {
+                "description": "The browser decides the grid line."
+            },
+            "custom:0": {
+                "description": "The grid line is custom.",
+                "names": ["customIdent"],
+                "values": ["String"],
+                "format": "{{customIdent}}"
+            },
+            "custom:1": {
+                "description": "The grid line is an integer.",
+                "names": ["value", "customIdent"],
+                "values": ["Int", "String"],
+                "format": "{{value}} {{customIdent}}"
+            },
+            "span:0": {
+                "description": "The grid line spans.",
+                "names": ["customIdent"],
+                "values": ["String"],
+                "format": "span {{customIdent}}"
+            },
+            "span:1": {
+                "description": "The grid line spans.",
+                "names": ["value"],
+                "values": ["Int"],
+                "format": "span {{value}}"
+            }
+        },
+        "description": "The grid line."
+    },
+    "HangingPunctuationForced": {
+        "cases": {
+            "force-end": {
+                "description": "The last line has hanging punctuation."
+            },
+            "allow-end": {
+                "description": "The last line has hanging punctuation."
+            }
+        },
+        "description": "The hanging punctuation."
+    },
+    "HangingPunctuation": {
+        "cases": {
+            "first": {
+                "description": "The first line has hanging punctuation."
+            },
+            "last": {
+                "description": "The last line has hanging punctuation."
+            }
+        },
+        "description": "The hanging punctuation."
+    },
+    "None": {
+        "cases": {
+            "none": {
+                "description": "No value."
+            }
+        },
+        "description": "No value."
+    },
+    "WordBreak": {
+        "cases": {
+            "normal": {
+                "description": "The word break is normal."
+            },
+            "break-all": {
+                "description": "The word break is break all."
+            },
+            "keep-all": {
+                "description": "The word break is keep all."
+            },
+            "break-word": {
+                "description": "The word break is break word."
+            }
+        },
+        "description": "The word break."
+    },
+    "Normal": {
+        "cases": {
+            "normal": {
+                "description": "The normal value."
+            }
+        },
+        "description": "The normal value."
+    },
+    "WritingMode": {     
+        "cases": {
+            "horizontal-tb": {
+                "description": "The writing mode is horizontal tb."
+            },
+            "vertical-rl": {
+                "description": "The writing mode is vertical rl."
+            },
+            "vertical-lr": {
+                "description": "The writing mode is vertical lr."
+            },
+            "sideways-rl": {
+                "description": "The writing mode is sideways rl."
+            },
+            "sideways-lr": {
+                "description": "The writing mode is sideways lr."
+            }
+        },
+        "description": "The writing mode."
+    },
+    "WhiteSpace": {
+        "cases": {
+            "normal": {
+                "description": "The white space is normal."
+            },
+            "nowrap": {
+                "description": "The white space is no wrap."
+            },
+            "pre": {
+                "description": "The white space is pre."
+            },
+            "pre-wrap": {
+                "description": "The white space is pre wrap."
+            },
+            "pre-line": {
+                "description": "The white space is pre line."
+            },
+            "break-spaces": {
+                "description": "The white space is break spaces."
+            }
+        },
+        "description": "The white space."
+    },
+    "WhiteSpaceCollapse": {
+        "cases": {
+            "collapse": {
+                "description": "The white space is collapsed."
+            },
+            "preserve": {
+                "description": "The white space is preserved."
+            },
+            "discard": {
+                "description": "The white space is discarded."
+            },
+            "preserve-breaks": {
+                "description": "The white space is preserved breaks."
+            },
+            "preserve-spaces": {
+                "description": "The white space is preserved spaces."
+            },
+            "break-spaces": {
+                "description": "The white space is break spaces."
+            }
+        },
+        "description": "The white space."
+    },
+    "Visibility": {
+        "cases": {
+            "hidden": {
+                "description": "The element is hidden."
+            },
+            "visible": {
+                "description": "The element is visible."
+            },
+            "collapse": {
+                "description": "The element is collapsed."
+            }
+        },
+        "description": "The visibility of the element."
+    },
+    "Contain": {
+        "cases": {
+            "none": {
+                "description": "The element is not contained."
+            },
+            "strict": {
+                "description": "The element is strictly contained."
+            },
+            "content": {
+                "description": "The element is contained in content."
+            },
+            "size": {
+                "description": "The element is contained in size."
+            },
+            "layout": {
+                "description": "The element is contained in layout."
+            },
+            "style": {
+                "description": "The element is contained in style."
+            },
+            "paint": {
+                "description": "The element is contained in paint."
+            }
+        },
+        "description": "The containment of the element."
+    },
+    "Auto": {
+        "cases": {
+            "auto": {
+                "description": "The browser decides the value."
+            }
+        },
+        "description": "The auto value."
+    },
+    "TextAlign": {
+        "cases": {
+            "start": {
+                "description": "The text is aligned to the start."
+            },
+            "end": {
+                "description": "The text is aligned to the end."
+            },
+            "left": {
+                "description": "The text is aligned to the left."
+            },
+            "right": {
+                "description": "The text is aligned to the right."
+            },
+            "center": {
+                "description": "The text is aligned to the center."
+            },
+            "justify": {
+                "description": "The text is justified."
+            },
+            "match-parent": {
+                "description": "The text is matched to the parent."
+            }
+        },
+        "description": "The text alignment."
+    },
+    "TextDecorationLine": {
+        "cases": {
+            "underline": {
+                "description": "The text is underlined."
+            },
+            "overline": {
+                "description": "The text is overlined."
+            },
+            "line-through": {
+                "description": "The text is line through."
+            },
+            "blink": {
+                "description": "The text blinks."
+            }
+        },
+        "description": "The text decoration line."
+    },
+    "TextJustify": {
+        "cases": {
+            "auto": {
+                "description": "The text is justified."
+            },
+            "none": {
+                "description": "The text is not justified."
+            },
+            "inter-word": {
+                "description": "The text is inter word."
+            },
+            "inter-character": {
+                "description": "The text is inter ideograph."
+            }
+        },
+        "description": "The text justification."
+    },
+    "PositionType": {
+        "cases": {
+            "static": {
+                "description": "The element is static."
+            },
+            "relative": {
+                "description": "The element is relative."
+            },
+            "absolute": {
+                "description": "The element is absolute."
+            },
+            "fixed": {
+                "description": "The element is fixed."
+            },
+            "sticky": {
+                "description": "The element is sticky."
+            },
+            "running": {
+                "description": "The element is running.",
+                "values": ["String"],
+                "names": ["customIdent"],
+                "format": "running({{customIdent}})"
+            }
+        },
+        "description": "The position type."
     }
-
 }

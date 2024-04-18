@@ -1,6 +1,7 @@
 {
     "a": {
         "description": "Together with its href attribute, creates a hyperlink to web pages, files, email addresses, locations within the current page, or anything else a URL can address.",
+        "alias": "Anchor",
         "inits": [
             {
                 "type": "required",
@@ -84,6 +85,7 @@
     },
     "img": {
         "description": "The img element represents an image.",
+        "alias": "Image",
         "inits": [
             {
                 "type": "required",
@@ -196,6 +198,7 @@
     },
     "p": {
         "description": "The p element represents a paragraph.",
+        "alias": "Paragraph",
         "inits": [
             {"type": "text"}
         ]
@@ -208,30 +211,35 @@
     },
     "i": {
         "description": "The i element represents a span of text in an alternate voice or mood, or otherwise offset from the normal prose in a manner indicating a different quality of text, such as a taxonomic designation, a technical term, an idiomatic phrase from another language, a thought, or a ship name in Western texts.",
+        "alias": "Italic",
         "inits": [
             {"type": "text"}
         ]
     },
     "b": {
         "description": "The b element represents a span of text to which attention is being drawn for utilitarian purposes without conveying any extra importance and with no implication of an alternate voice or mood, such as key words in a document abstract, product names in a review, actionable words in interactive text-driven software, or an article lede.",
+        "alias": "Bold",
         "inits": [
             {"type": "text"}
         ]
     },
     "u": {
         "description": "The u element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation, such as labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelt.",
+        "alias": "Underline",
         "inits": [
             {"type": "text"}
         ]
     },
     "ul": {
         "description": "The ul element represents an unordered list of items, typically rendered as a bulleted list.",
+        "alias": "UnorderedList",
         "inits": [
             {"type": "body"}
         ]
     },
     "ol": {
         "description": "The ol element represents an ordered list of items, typically rendered as a numbered list.",
+        "alias": "OrderedList",
         "inits": [
             {"type": "body"}
         ]

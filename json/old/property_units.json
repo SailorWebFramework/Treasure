@@ -1,7 +1,0 @@
-{
-    "Color": {
-        "inherit": ["Unit.Color"],
-        "cases": {},
-        "description": "A number."
-    }
-}

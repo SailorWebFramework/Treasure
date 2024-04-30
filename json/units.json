@@ -2252,5 +2252,142 @@
             }
         },
         "description": "The position type."
+    },
+    "Sandbox": {
+        "cases": {
+            "allow-downloads": {
+                "description": "The element allows downloads."
+            },
+            "allow-forms": {
+                "description": "The element allows forms."
+            },
+            "allow-modals": {
+                "description": "The element allows modals."
+            },
+            "allow-orientation-lock": {
+                "description": "The element allows orientation lock."
+            },
+            "allow-pointer-lock": {
+                "description": "The element allows pointer lock."
+            },
+            "allow-popups": {
+                "description": "The element allows popups."
+            },
+            "allow-popups-to-escape-sandbox": {
+                "description": "The element allows popups to escape sandbox."
+            },
+            "allow-presentation": {
+                "description": "The element allows presentation."
+            },
+            "allow-same-origin": {
+                "description": "The element allows same origin."
+            },
+            "allow-scripts": {
+                "description": "The element allows scripts."
+            },
+            "allow-top-navigation": {
+                "description": "The element allows top navigation."
+            },
+            "allow-top-navigation-by-user-activation": {
+                "description": "The element allows top navigation by user activation."
+            },
+            "allow-top-navigation-to-custom-protocols": {
+                "description": "The element allows top navigation to custom protocols."
+            }
+        },
+        "description": "The sandbox behavior."
+    },
+    "Scope": {
+        "cases": {
+            "row": {
+                "description": "The scope is row."
+            },
+            "col": {
+                "description": "The scope is column."
+            },
+            "rowgroup": {
+                "description": "The scope is row group."
+            },
+            "colgroup": {
+                "description": "The scope is column group."
+            }
+        },
+        "description": "The scope."
+    },
+    "Shape": {
+        "cases": {
+            "rect": {
+                "description": "The shape is rectangle."
+            },
+            "circle": {
+                "description": "The shape is circle."
+            },
+            "ellipse": {
+                "description": "The shape is ellipse."
+            },
+            "polygon": {
+                "description": "The shape is polygon."
+            }
+        },
+        "description": "The shape."
+    },
+    "Preload": {
+        "cases": {
+            "none": {
+                "description": "The element is not preloaded."
+            },
+            "metadata": {
+                "description": "The element is preloaded with metadata."
+            },
+            "auto": {
+                "description": "The element is preloaded."
+            }
+        },
+        "description": "The preload behavior."
+    },
+    "ShadowRootMode": {
+        "cases": {
+            "open": {
+                "description": "The shadow root is open."
+            },
+            "closed": {
+                "description": "The shadow root is closed."
+            }
+        },
+        "description": "The shadow root mode."
+    },
+    "TextWrap": {
+        "cases": {
+            "hard": {
+                "description": "The text is wrapped."
+            },
+            "soft": {
+                "description": "The text is not wrapped."
+            },
+            "off": {
+                "description": "The text is balanced."
+            }
+        },
+        "description": "The text wrap."
+    },
+    "TextTrackKind": {
+        "cases": {
+            "subtitles": {
+                "description": "The text track is subtitles."
+            },
+            "captions": {
+                "description": "The text track is captions."
+            },
+            "descriptions": {
+                "description": "The text track is descriptions."
+            },
+            "chapters": {
+                "description": "The text track is chapters."
+            },
+            "metadata": {
+                "description": "The text track is metadata."
+            }
+        },
+        "description": "The text track kind."
     }
 }

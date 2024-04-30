@@ -199,49 +199,57 @@
     "p": {
         "description": "The p element represents a paragraph.",
         "inits": [
-            {"type": "text"}
+            {"type": "text"},
+            {"type": "body"}
         ]
     },
     "span": {
         "description": "The span element doesn't mean anything on its own, but can be useful when used together with the global attributes, e.g. class, lang, or dir. It represents its children.",
         "inits": [
-            {"type": "text"}
+            {"type": "text"},
+            {"type": "body"}
         ]
     },
     "i": {
         "description": "The i element represents a span of text in an alternate voice or mood, or otherwise offset from the normal prose in a manner indicating a different quality of text, such as a taxonomic designation, a technical term, an idiomatic phrase from another language, a thought, or a ship name in Western texts.",
         "inits": [
-            {"type": "text"}
+            {"type": "text"},
+            {"type": "body"}
         ]
     },
     "b": {
         "description": "The b element represents a span of text to which attention is being drawn for utilitarian purposes without conveying any extra importance and with no implication of an alternate voice or mood, such as key words in a document abstract, product names in a review, actionable words in interactive text-driven software, or an article lede.",
         "inits": [
-            {"type": "text"}
+            {"type": "text"},
+            {"type": "body"}
         ]
     },
     "u": {
         "description": "The u element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation, such as labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelt.",
         "inits": [
-            {"type": "text"}
+            {"type": "text"},
+            {"type": "body"}
         ]
     },
     "ul": {
         "description": "The ul element represents an unordered list of items, typically rendered as a bulleted list.",
         "inits": [
+            {"type": "text"},
             {"type": "body"}
         ]
     },
     "ol": {
         "description": "The ol element represents an ordered list of items, typically rendered as a numbered list.",
         "inits": [
+            {"type": "text"},
             {"type": "body"}
         ]
     },
     "mark": {
         "description": "The mark element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.",
         "inits": [
-            {"type": "text"}
+            {"type": "text"},
+            {"type": "body"}
         ]
     },
     "input": {

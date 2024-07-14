@@ -658,25 +658,26 @@
                 "description": "The width of the iframe's embedded content area.",
                 "type": "int"
             }
-        },
-        "s": {
-            "description": "The s element represents contents that are no longer accurate or no longer relevant.",
-            "alias": "Strikethrough",
-            "inits": [
-                {"type": "text"}
-            ]
-        },
-        "q": {
-            "description": "The q element represents some phrasing content quoted from another source.",
-            "alias": "Quotation",
-            "inits": [
-                {"type": "text"}
-            ],
-            "attributes": {
-                "cite": {
-                    "description": "Contains a URL which points to the source of the quote.",
-                    "type": "String"
-                }
+        }
+    },
+    "s": {
+        "description": "The s element represents contents that are no longer accurate or no longer relevant.",
+        "alias": "Strikethrough",
+        "inits": [
+            {"type": "text"}
+        ]
+    },
+    "q": {
+        "description": "The q element represents some phrasing content quoted from another source.",
+        "alias": "Quotation",
+        "inits": [
+            {"type": "text"},
+            {"type": "body"}
+        ],
+        "attributes": {
+            "cite": {
+                "description": "Contains a URL which points to the source of the quote.",
+                "type": "String"
             }
         }
     },
@@ -760,7 +761,7 @@
             },
             "shape": {
                 "description": "The shape of the area.",
-                "type": "Unit.Shape"
+                "type": "Unit.AreaShape"
             },
             "target": {
                 "description": "The browsing context for the hyperlink.",

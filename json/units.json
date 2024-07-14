@@ -99,6 +99,11 @@
         },
         "description": "A percentage."
     },
+    "NoneLength": {
+        "inherit": ["None", "Length"],
+        "cases": {},
+        "description": "No length."
+    },
     "Number": {
         "cases": {
             "number": {
@@ -240,6 +245,49 @@
             }
         },
         "description": "The answer to a yes/no question."
+    },
+    "LineBreak": {
+        "cases": {
+            "auto": { 
+                "description": "The default behavior."
+            },
+            "loose": { 
+                "description": "The line break is loose."
+            },
+            "normal": { 
+                "description": "The line break is normal."
+            },
+            "strict": { 
+                "description": "The line break is strict."
+            },
+            "anywhere": { 
+                "description": "The line break can occur anywhere."
+            }
+        },
+        "description": "The line break behavior."
+    },
+    "LineHeight": {
+        "cases": {
+            "normal": { 
+                "description": "The default line height."
+            },
+            "number": { 
+                "values": ["Double"],
+                "names": ["number"],
+                "description": "A number."
+            },
+            "length": { 
+                "values": ["Unit.Length"],
+                "names": ["length"],
+                "description": "A length."
+            },
+            "percent": { 
+                "values": ["Int"],
+                "names": ["percent"],
+                "description": "A percentage."
+            }
+        },
+        "description": "The height of a line."
     },
     "Color": {
         "todo": "Add more color types",
@@ -1201,6 +1249,29 @@
         },
         "description": "The box model for the element."
     }, 
+    "Position": {
+        "cases": {
+            "x": {
+                "values": ["Unit.PositionX"],
+                "names": ["value"],
+                "description": "The element is positioned at a specific length.",
+                "format": "{{value}}"
+            },
+            "y": {
+                "values": ["Unit.PositionY"],
+                "names": ["value"],
+                "description": "The element is positioned at a specific length.",
+                "format": "{{value}}"
+            },
+            "xy": {
+                "values": ["Unit.PositionX", "Unit.PositionY"],
+                "names": ["x", "y"],
+                "description": "The element is positioned.",
+                "format": "{{x}} {{y}}"
+            }
+        },
+        "description": "The position of the element."
+    },
     "PositionX": {
         "cases": {
             "direction": {
@@ -1209,7 +1280,7 @@
                 "description": "The element is positioned at a specific length.",
                 "format": "{{value}}"
             },
-            "length": {
+            "offset": {
                 "values": ["Unit.Length"],
                 "names": ["value"],
                 "description": "The element is positioned at a specific length.",
@@ -1232,7 +1303,7 @@
                 "description": "The element is positioned at a specific length.",
                 "format": "{{value}}"
             },
-            "length": {
+            "offset": {
                 "values": ["Unit.Length"],
                 "names": ["value"],
                 "description": "The element is positioned at a specific length.",
@@ -1330,6 +1401,23 @@
         },
         "description": "The appearance of the feature."
     },
+    "InnerRepeat": {
+        "cases": {
+            "repeat": {
+                "description": "The image is repeated."
+            },
+            "no-repeat": {
+                "description": "The image is not repeated."
+            },
+            "space": {
+                "description": "The image is repeated with space."
+            },
+            "round": {
+                "description": "The image is repeated with rounding."
+            }
+        },
+        "description": "The repeat behavior of the image."
+    },
     "Repeat": {
         "cases": {
             "repeat": {
@@ -1349,11 +1437,17 @@
             },
             "round": {
                 "description": "The image is repeated with rounding."
+            },
+            "both": {
+                "description": "both directions specified",
+                "values": ["Unit.InnerRepeat", "Unit.InnerRepeat"],
+                "names": ["horizontal", "vertical"],
+                "format": "{{horizontal}} {{vertical}}"
             }
         },
         "description": "The repeat behavior of the image."
     },
-    "BgSize": {
+    "BackgroundSize": {
         "cases": {
             "auto": {
                 "description": "The browser decides the size."
@@ -1363,6 +1457,18 @@
             },
             "contain": {
                 "description": "The image is contained in the element."
+            },
+            "size:0": {
+                "description": "both directions specified",
+                "values": ["Unit.AutoLengthPercentage"],
+                "names": ["widthAndHeight"],
+                "format": "{{both}}"
+            },
+            "size:1":  {
+                "description": "both directions specified",
+                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+                "names": ["width", "height"],
+                "format": "{{width}} {{height}}"
             }
         },
         "description": "The size of the background."
@@ -1424,6 +1530,84 @@
             }
         },
         "description": "The style of the line."
+    },
+    "UnidirectionalWidth": {
+        "cases": {
+            "both": {
+                "values": ["Unit.LineWidth"],
+                "names": ["startAndEndWidth"],
+                "description": "The border width for all four sides.",
+                "format": "{{startAndEndWidth}}"
+            },
+            "each": {
+                "values": ["Unit.LineWidth", "Unit.LineWidth"],
+                "names": ["start", "end"],
+                "description": "The border width for the top, right, bottom, and left sides.",
+                "format": "{{start}} {{end}}"
+            }
+        },
+        "description": "The width of the border."
+    },
+    "DirectionBreak": {
+        "cases": {
+            "slice": {
+                "description": "The break is sliced."
+            },
+            "clone": {
+                "description": "The break is cloned."
+            }
+        },
+        "description": "The break behavior of the element."
+    },
+    "BorderRadius": {
+        "cases": {
+            "all": {
+                "values": ["Unit.LengthPercentage"],
+                "names": ["all"],
+                "description": "The radius of the border.",
+                "format": "{{all}}"
+            },
+            "each": {
+                "values": ["Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.LengthPercentage"],
+                "names": ["topLeft", "topRight", "bottomRight", "bottomLeft"],
+                "description": "The radius of the border.",
+                "format": "{{topLeft}} {{topRight}} {{bottomRight}} {{bottomLeft}}"
+            }
+        },
+        "description": "The radius of the border."
+    },
+    "BorderLineWidth": {
+        "cases": {
+            "with:0": {
+                "values": ["Unit.LineWidth"],
+                "names": ["allSides"],
+                "shown": [true],
+                "description": "The border width for all four sides.",
+                "format": "{{allSides}}"
+            },
+            "with:1": {
+                "values": ["Unit.LineWidth", "Unit.LineWidth"],
+                "names": ["vertical", "horizontal"],
+                "shown": [true, true],
+                "description": "The border width for the top, right, bottom, and left sides.",
+                "format": "{{vertical}} {{horizontal}}"
+            },
+            "with:2": {
+                "values": ["Unit.LineWidth", "Unit.LineWidth", "Unit.LineWidth", "Unit.LineWidth"],
+                "names": ["top", "horizontal", "bottom"],
+                "shown": [true, true, true],
+                "description": "The border width for the top, right, bottom, and left sides.",
+                "format": "{{top}} {{horizontal}} {{bottom}}"
+            },
+            "with:3": {
+                "values": ["Unit.LineWidth", "Unit.LineWidth", "Unit.LineWidth", "Unit.LineWidth"],
+                "names": ["top", "right", "bottom", "left"],
+                "shown": [true, true, true, true],
+                "description": "The border width for the top, right, bottom, and left sides.",
+                "format": "{{top}} {{right}} {{bottom}} {{left}}"
+            }
+        },
+        "description": "The width of the border."
     },
     "LineWidth": {
         "inherit": ["Length"],
@@ -1504,7 +1688,7 @@
         },
         "description": "A gradient."
     },
-    "ImageSource": {
+    "Source": {
         "inherit": ["Gradient"],
         "cases": {
             "url": {
@@ -1784,7 +1968,39 @@
         },
         "description": "The width of the column."
     },
-
+    "BorderWidth": {
+        "cases": {
+            "with:0": {
+                "values": ["Unit.AutoLengthPercentage"],
+                "names": ["allSides"],
+                "shown": [true],
+                "description": "The border width for all four sides.",
+                "format": "{{allSides}}"
+            },
+            "with:1": {
+                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+                "names": ["vertical", "horizontal"],
+                "shown": [true, true],
+                "description": "The border width for the top, right, bottom, and left sides.",
+                "format": "{{vertical}} {{horizontal}}"
+            },
+            "with:2": {
+                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+                "names": ["top", "horizontal", "bottom"],
+                "shown": [true, true, true],
+                "description": "The border width for the top, right, bottom, and left sides.",
+                "format": "{{top}} {{horizontal}} {{bottom}}"
+            },
+            "with:3": {
+                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+                "names": ["top", "right", "bottom", "left"],
+                "shown": [true, true, true, true],
+                "description": "The border width for the top, right, bottom, and left sides.",
+                "format": "{{top}} {{right}} {{bottom}} {{left}}"
+            }
+        },
+        "description": "The width of the column."
+    },
     "ContainerType": {
         "cases": {
             "normal": {
@@ -1804,7 +2020,7 @@
             "auto": {
                 "description": "The container is name."
             },
-            "custom": {
+            "string": {
                 "description": "The container is custom name.",
                 "names": ["value"],
                 "values": ["String"],
@@ -2009,6 +2225,17 @@
         },
         "description": "The hanging punctuation."
     },
+    "FirstOrLast": {
+        "cases": {
+            "first": {
+                "description": "The first line."
+            },
+            "last": {
+                "description": "The last line."
+            }
+        },
+        "description": "The first or last line."
+    },
     "HangingPunctuation": {
         "cases": {
             "first": {
@@ -2167,6 +2394,40 @@
         },
         "description": "The auto value."
     },
+    "UnderlineTextPosition": {
+        "cases": {
+            "auto": {
+                "description": "The text is over."
+            },
+            "under": {
+                "description": "The text is under."
+            },
+            "left": {
+                "description": "The text is left."
+            },
+            "right": {
+                "description": "The text is right."
+            }
+        },
+        "description": "The text position."
+    },
+    "TextRendering": {
+        "cases": {
+            "auto": {
+                "description": "The browser decides the text rendering."
+            },
+            "optimizeSpeed": {
+                "description": "The text rendering is optimized for speed."
+            },
+            "optimizeLegibility": {
+                "description": "The text rendering is optimized for legibility."
+            },
+            "geometricPrecision": {
+                "description": "The text rendering is geometric precision."
+            }
+        },
+        "description": "The text rendering."
+    },
     "TextAlign": {
         "cases": {
             "start": {
@@ -2189,9 +2450,136 @@
             },
             "match-parent": {
                 "description": "The text is matched to the parent."
+            },
+            "justify-all": {
+                "description": "The text is justified all."
             }
         },
         "description": "The text alignment."
+    },
+    "CombineUpright": {
+        "cases": {
+            "all": {
+                "description": "The text is combined upright."
+            },
+            "none": {
+                "description": "The text is not combined."
+            }
+        },
+        "description": "The text combination."
+    },
+    "Hanging": {
+        "cases": {
+            "hanging": {
+                "description": "The text combination."
+            }
+        },
+        "description": "The text combination."
+    },
+    "EachLine": {
+        "cases": {
+            "each-line": {
+                "description": "The text combination."
+            }
+        },
+        "description": "The text combination."
+    },
+    "TextOrientation": {
+        "cases": {
+            "mixed": {
+                "description": ""
+            },
+            "upright": {
+                "description": ""
+            },
+            "sideways": {
+                "description": ""
+            }
+        },
+        "description": ""
+    },
+    "TextOverflow": {
+        "cases": {
+            "clip": {
+                "description": ""
+            },
+            "elipsis": {
+                "description": ""
+            }
+        },
+        "description": ""
+    },
+    "TextTransform": {
+        "cases": {
+            "none": {
+                "description": "No capitalization or transformation."
+            },
+            "capitalize": {
+                "description": "Capitalize the first letter of each word."
+            },
+            "uppercase": {
+                "description": "Transform all characters to uppercase."
+            },
+            "lowercase": {
+                "description": "Transform all characters to lowercase."
+            },
+            "full-width": {
+                "description": "Transform characters to full-width form."
+            },
+            "full-size-kana": {
+                "description": "Transform characters to full-size kana."
+            },
+            "math-auto": {
+                "description": "Automatically adjust text for mathematical typesetting."
+            }
+        },
+        "description": "text transformation"
+    },
+    "TextDecorationThickness": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "auto": {
+                "description": "auto."
+            },
+            "from-font": {
+                "description": "from font."
+            }
+        },
+        "description": "thickness"
+    },
+    "TextDecorationSkipInk": {
+        "cases": {
+            "auto": {
+                "description": "auto."
+            },
+            "all": {
+                "description": "The text is combined upright."
+            },
+            "none": {
+                "description": "The text is not combined."
+            }
+        },
+        "description": "The text combination."
+    },
+    "TextDecorationStyle": {
+        "cases": {
+            "solid": {
+                "description": "The text is solid."
+            },
+            "double": {
+                "description": "The text is double."
+            },
+            "dotted": {
+                "description": "The text is dotted."
+            },
+            "dashed": {
+                "description": "The text is dashed."
+            },
+            "wavy": {
+                "description": "The text is wavy."
+            }
+        },
+        "description": "The text decoration style."
     },
     "TextDecorationLine": {
         "cases": {
@@ -2209,6 +2597,29 @@
             }
         },
         "description": "The text decoration line."
+    },
+    "FontFamily": {
+        "cases": {
+            "named": {
+                "description": "The element is named.",
+                "values": ["String"],
+                "names": ["name"],
+                "format": "{{name}}"
+            },
+            "customIdent": {
+                "description": "The element is named.",
+                "values": ["String"],
+                "names": ["ident"],
+                "format": "{{ident}}"            
+            },
+            "generic": {
+                "description": "The element is named.",
+                "values": ["String"],
+                "names": ["name"],
+                "format": "generic({{name}})"
+            }
+        },
+        "description": "The text justification."
     },
     "TextJustify": {
         "cases": {
@@ -2314,7 +2725,7 @@
         },
         "description": "The scope."
     },
-    "Shape": {
+    "AreaShape": {
         "cases": {
             "rect": {
                 "description": "The shape is rectangle."
@@ -2389,5 +2800,960 @@
             }
         },
         "description": "The text track kind."
+    },
+    "PrintColorAdjust": {
+        "cases": {
+            "economy": {
+                "description": "The color adjustment is economy."
+            },
+            "exact": {
+                "description": "The color adjustment is exact."
+            }
+        },
+        "description": "The print color adjustment."
+    },
+    "Pair": {
+        "cases": {
+            "pair": {
+                "description": "The pair is custom.",
+                "values": ["String", "String"],
+                "names": ["open", "close"],
+                "format": "'{{open}}' '{{close}}'"
+            }
+        },
+        "description": "The pair."
+    },
+    "Quotes": {
+        "cases": {
+            "none": {
+                "description": "The quotes are none."
+            },
+            "auto": {
+                "description": "The quotes are auto."
+            },
+            "with": {
+                "description": "Custom quotes.",
+                "values": ["sequence[Unit.Pair]"],
+                "names": ["pairs"],
+                "format": "#SEQ "
+            }
+        },
+        "description": "The quotes."
+    },
+    "Resize": {
+        "cases": {
+            "none": {
+                "description": "The element is not resizable."
+            },
+            "both": {
+                "description": "The element is resizable."
+            },
+            "horizontal": {
+                "description": "The element is resizable horizontally."
+            },
+            "vertical": {
+                "description": "The element is resizable vertically."
+            },
+            "block": {
+                "description": "The element is resizable in block."
+            },
+            "inline": {
+                "description": "The element is resizable in inline."
+            }
+        },
+        "description": "The resize behavior."
+    },
+    "CaptionSide": { 
+        "cases": {
+            "top": {
+                "description": "The caption is on top."
+            },
+            "bottom": {
+                "description": "The caption is on bottom."
+            }
+        },
+        "description": "The caption side."
+    },
+    "BoxSizing": {
+        "cases": {
+            "content-box": {
+                "description": "The box sizing is content box."
+            },
+            "border-box": {
+                "description": "The box sizing is border box."
+            }
+        },
+        "description": "The box sizing."
+    },
+    "BoxShadow": {
+        "cases": {
+            "with:0": {
+                "values": ["Unit.Color", "Unit.Length", "Unit.Length", "Unit.Length", "Unit.Length", "optional[Unit.BoxShadowPosition]"],
+                "names": ["color", "offsetX", "offsetY", "blur", "spread", "position"],
+                "description": "Defines the shadow effect around an element's frame.",
+                "format": "{{color}} {{offsetX}} {{offsetY}} {{blur}} {{spread}} {{position}}"
+            },
+            "with:1": {
+                "values": ["Unit.Color", "Unit.Length", "Unit.Length", "optional[Unit.BoxShadowPosition]"],
+                "names": ["color", "offsetX", "offsetY", "position"],
+                "description": "Defines the shadow effect around an element's frame.",
+                "format": "{{color}} {{offsetX}} {{offsetY}} {{position}}"
+            },
+            "with:2": {
+                "values": ["Unit.Color", "Unit.Length", "Unit.Length", "Unit.Length", "optional[Unit.BoxShadowPosition]"],
+                "names": ["color", "offsetX", "offsetY", "blur", "position"],
+                "description": "Defines the shadow effect around an element's frame.",
+                "format": "{{color}} {{offsetX}} {{offsetY}} {{blur}} {{position}}"
+            }
+        },
+        "description": "Used to define the box-shadow property."
+    },
+    "BoxShadowPosition": {
+        "cases": {
+            "inset": {
+                "description": "The shadow is inset."
+            }
+        },
+        "description": "Represents the position of the shadow."
+    },
+    "Translate": {
+        "cases": {
+            "none": {
+                "description": "The element is not translated."
+            },
+            "translate-x": {
+                "values": ["Unit.LengthPercentage"],
+                "names": ["x"],
+                "description": "The translation of the element in the x-axis.",
+                "format": "{{x}}"
+            },
+            "translate-xy": {
+                "values": ["Unit.LengthPercentage", "Unit.LengthPercentage"],
+                "names": ["x", "y"],
+                "description": "The translation of the element.",
+                "format": "{{x}} {{y}}"
+            },
+            "translate-xyz": {
+                "values": ["Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.Length"],
+                "names": ["x", "y", "z"],
+                "description": "The translation of the element in the y, x and z axis.",
+                "format": "{{x}} {{y}} {{z}}"
+            }
+        },
+        "description": "The translation of the element."
+    },
+    "TextEmphasisStyle": {
+        "cases": {
+            "none": {
+                "description": "The text emphasis style is none."
+            },
+            "filled": {
+                "description": "The text emphasis style is filled."
+            },
+            "open": {
+                "description": "The text emphasis style is open."
+            },
+            "dot": {
+                "description": "The text emphasis style is dot."
+            },
+            "circle": {
+                "description": "The text emphasis style is circle."
+            },
+            "double-circle": {
+                "description": "The text emphasis style is double circle."
+            },
+            "triangle": {
+                "description": "The text emphasis style is triangle."
+            },
+            "sesame": {
+                "description": "The text emphasis style is sesame."
+            },
+            "filled-sesame": {
+                "description": "The text emphasis style is filled sesame."
+            },
+            "open-sesame": {
+                "description": "The text emphasis style is open sesame."
+            },
+            "character": {
+                "description": "The text emphasis style is custom.",
+                "values": ["Character"],
+                "names": ["value"],
+                "format": "'{{value}}'"
+            }
+        },
+        "description": "The text emphasis style."
+    },
+    "TextEmphasisPosition": {
+        "cases": {
+            "over": {
+                "description": "The text emphasis is over."
+            },
+            "under": {
+                "description": "The text emphasis is under."
+            },
+            "right": {
+                "description": "The text emphasis is right."
+            },
+            "left": {
+                "description": "The text emphasis is left."
+            }
+        },
+        "description": "The text emphasis position."
+    },
+    "Indent": {
+        "cases": {
+            "none": {
+                "description": "The element is not indented."
+            },
+            "with": {
+                "values": ["Unit.LengthPercentage", "optional[Bool]", "optional[Bool]"],
+                "names": ["length", "@hanging", "@each-line"],
+                "shown": [false, true, true],
+                "description": "The indentation of the element.",
+                "format": "{{length}} {{hanging}} {{eachLine}}"
+            }
+        },
+        "description": "The indentation of the element."
+    },
+    "UnicodeBidi": {
+        "cases": {
+            "normal": {
+                "description": "The element is normal."
+            },
+            "embed": {
+                "description": "The element is embedded."
+            },
+            "isolate": {
+                "description": "The element is isolated."
+            },
+            "bidi-override": {
+                "description": "The element is bidi override."
+            },
+            "isolate-override": {
+                "description": "The element is isolated override."
+            },
+            "plaintext": {
+                "description": "The element is plaintext."
+            }
+        },
+        "description": "The unicode bidi."
+    },
+    "BackgroundImage": {
+        "cases": {
+            "image": {
+                "values": ["Unit.Image"],
+                "names": ["image"],
+                "description": "A URL image.",
+                "format": "{{image}}"
+            },
+            "none": {
+                "description": "A source image."
+            }
+        },
+        "description": "The background image."
+    },
+    "Image": {
+        "cases": {
+            "url": {
+                "values": ["String"],
+                "names": ["url"],
+                "description": "A URL image.",
+                "format": "url({{url}})"
+            },
+            "src": {
+                "values": ["String"],
+                "names": ["src"],
+                "description": "A source image.",
+                "format": "src({{src}})"
+            },
+            "gradient": {
+                "values": ["Unit.Gradient"],
+                "names": ["gradient"],
+                "description": "A gradient image.",
+                "format": "{{gradient}}"
+            }
+        },
+        "description": "The image."
+    },
+    "Shape": {
+        "cases": {
+            "rect:0": {
+                "showNames": true,
+                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+                "names": ["top", "right", "bottom", "left"],
+                "description": "A rectangle shape.",
+                "format": "rect({{top}}, {{right}}, {{bottom}}, {{left}})"
+            },
+            "rect:1": {
+                "showNames": true,
+                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+                "names": ["top", "right", "bottom", "left", "cornerRadius"],
+                "description": "A rectangle shape.",
+                "format": "rect({{top}}, {{right}}, {{bottom}}, {{left}} round {{cornerRadius}})"
+            },
+            "circle:0": {
+                "showNames": true,
+                "values": ["Unit.AutoLengthPercentage"],
+                "names": ["radius"],
+                "description": "A circle shape.",
+                "format": "circle({{radius}})"
+            },
+            "circle:1": {
+                "showNames": true,
+                "values": ["Unit.AutoLengthPercentage", "Unit.Position"],
+                "names": ["radius", "position"],
+                "description": "A circle shape.",
+                "format": "circle({{radius}} at {{position}})"
+            }
+        },
+        "description": "The shape."
+    },
+    "GeometryBox": {
+        "cases": {
+            "fill-box": {
+                "description": "The geometry box is the fill box."
+            },
+            "stroke-box": {
+                "description": "The geometry box is the stroke box."
+            },
+            "view-box": {
+                "description": "The geometry box is the view box."
+            },
+            "content-box": {
+                "description": "The geometry box is the content box."
+            },
+            "padding-box": {
+                "description": "The geometry box is the padding box."
+            },
+            "border-box": {
+                "description": "The geometry box is the border box."
+            }
+        },
+        "description": "The geometry box."
+    },
+    "NumberPercentage": {
+        "inherit": ["Number", "Percentage"],
+        "cases": {},
+        "description": "The number or percentage."
+    },
+    "Scale": {
+        "cases": {
+            "none": {
+                "description": "The element is not scaled."
+            },
+            "by:0": {
+                "values": ["Unit.NumberPercentage"],
+                "names": ["xy"],
+                "shown": [true],
+                "description": "The scaling of the element in the x-axis.",
+                "format": "{{xy}}"
+            },
+            "by:1": {
+                "values": ["Unit.NumberPercentage", "Unit.NumberPercentage"],
+                "names": ["x", "y"],
+                "shown": [true, true],
+                "description": "The scaling of the element.",
+                "format": "{{x}} {{y}}"
+            },
+            "by:2": {
+                "values": ["Unit.NumberPercentage", "Unit.NumberPercentage", "Unit.NumberPercentage"],
+                "names": ["x", "y", "z"],
+                "shown": [true, true, true],
+                "description": "The scaling of the element in the y, x and z axis.",
+                "format": "{{x}} {{y}} {{z}}"
+            }
+        },
+        "description": "The scaling of the element."
+    },
+    "Zoom": {
+        "inherit": ["Number", "Percentage"],
+        "cases": {
+            "normal": {
+                "description": "The zooming is normal."
+            },
+            "reset": {
+                "description": "The zooming is reset."
+            }
+        },
+        "description": "The zooming of the element."
+    },
+    "TableLayout": {
+        "cases": {
+            "auto": {
+                "description": "The table layout is auto."
+            },
+            "fixed": {
+                "description": "The table layout is fixed."
+            }
+        },
+        "description": "The table layout."
+    },
+    "TouchAction": {
+        "cases": {
+            "auto": {
+                "description": "The touch action is auto."
+            },
+            "none": {
+                "description": "The touch action is none."
+            },
+            "pan-x": {
+                "description": "The touch action is pan x."
+            },
+            "pan-y": {
+                "description": "The touch action is pan y."
+            },
+            "manipulation": {
+                "description": "The touch action is manipulation."
+            }
+        },
+        "description": "The touch action."
+    },
+    "VerticalAlign": {
+        "cases": {
+            "baseline": {
+                "description": "The element is aligned to the baseline."
+            },
+            "sub": {
+                "description": "The element is aligned to the sub."
+            },
+            "super": {
+                "description": "The element is aligned to the super."
+            },
+            "text-top": {
+                "description": "The element is aligned to the text top."
+            },
+            "text-bottom": {
+                "description": "The element is aligned to the text bottom."
+            },
+            "top": {
+                "description": "The element is aligned to the top."
+            },
+            "middle": {
+                "description": "The element is aligned to the middle."
+            },
+            "percentage": {
+                "values": ["Unit.Percentage"],
+                "names": ["percentage"],
+                "description": "The element is aligned to the percentage.",
+                "format": "{{percentage}}"
+            },
+            "length": {
+                "values": ["Unit.Length"],
+                "names": ["length"],
+                "description": "The element is aligned to the length.",
+                "format": "{{length}}"
+            }
+        },
+        "description": "The vertical alignment."
+    },
+    "Axis": {
+        "cases": {
+            "x": {
+                "description": "The axis is x."
+            },
+            "y": {
+                "description": "The axis is y."
+            },
+            "z": {
+                "description": "The axis is z."
+            },
+            "vector": {
+                "values": ["Double", "Double", "Double"],
+                "names": ["x", "y", "z"],
+                "description": "The axis.",
+                "format": "{{x}} {{y}} {{z}}"
+            }
+        },
+        "description": "The axis."
+    },
+    "Rotate": {
+        "cases": {
+            "none": {
+                "description": "The element is not rotated."
+            },
+            "angle": {
+                "values": ["Unit.Angle"],
+                "names": ["angle"],
+                "description": "The rotation of the element.",
+                "format": "{{angle}}"
+            },
+            "by": {
+                "values": ["Unit.Axis", "Unit.Angle"],
+                "names": ["axis", "angle"],
+                "shown": [true, true],
+                "description": "The rotation of the element.",
+                "format": "{{axis}} {{angle}}"
+            }
+        },
+        "description": "The rotation of the element."
+    },
+    "Hyphens": {
+        "cases": {
+            "none": {
+                "description": "The hyphens are none."
+            },
+            "manual": {
+                "description": "The hyphens are manual."
+            },
+            "auto": {
+                "description": "The hyphens are auto."
+            }
+        },
+        "description": "The hyphens."
+    },
+    "InlineSize": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "auto": {
+                "description": "The inline size is auto."
+            },
+            "max-content": {
+                "description": "The inline size is max content."
+            },
+            "min-content": {
+                "description": "The inline size is min content."
+            },
+            "fit-content": {
+                "values": ["Unit.LengthPercentage"],
+                "names": ["length"],
+                "description": "The inline size is fit content.",
+                "format": "fit-content({{length}})"
+            }
+        },
+        "description": "The inline size."
+    },
+    "HyphenateCharacter": {
+        "cases": {
+            "auto": {
+                "description": "The hyphenate character is auto."
+            },
+            "string": {
+                "values": ["String"],
+                "names": ["string"],
+                "description": "The hyphenate character is a string.",
+                "format": "{{string}}"
+            }
+        },
+        "description": "The hyphenate character."
+    },
+    "HyphenateLimitChars": {
+        "cases": {
+            "by": {
+                "values": ["Unit.AutoInt", "optional[Unit.AutoInt]", "optional[Unit.AutoInt]"],
+                "names": ["x", "y", "z"],
+                "shown": [true, true, true],
+                "description": "The hyphenate limit chars is a length.",
+                "format": "{{x}} {{y}} {{z}}"
+            }
+        },
+        "description": "The hyphenate limit chars."
+    },
+    "IsolationMode": {
+        "cases": {
+            "auto": {
+                "description": "The isolation mode is auto."
+            },
+            "isolate": {
+                "description": "The isolation mode is isolate."
+            }
+        },
+        "description": "The isolation mode."
+    },
+    "LetterSpacing": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "normal": {
+                "description": "The letter spacing is normal."
+            }
+        },
+        "description": "The letter spacing."
+    }, 
+    "MixBlendMode": {
+        "cases": {
+            "normal": {
+                "description": "The mix blend mode is normal."
+            },
+            "multiply": {
+                "description": "The mix blend mode is multiply."
+            },
+            "screen": {
+                "description": "The mix blend mode is screen."
+            },
+            "overlay": {
+                "description": "The mix blend mode is overlay."
+            },
+            "darken": {
+                "description": "The mix blend mode is darken."
+            },
+            "lighten": {
+                "description": "The mix blend mode is lighten."
+            },
+            "color-dodge": {
+                "description": "The mix blend mode is color dodge."
+            },
+            "color-burn": {
+                "description": "The mix blend mode is color burn."
+            },
+            "hard-light": {
+                "description": "The mix blend mode is hard light."
+            },
+            "soft-light": {
+                "description": "The mix blend mode is soft light."
+            },
+            "difference": {
+                "description": "The mix blend mode is difference."
+            },
+            "exclusion": {
+                "description": "The mix blend mode is exclusion."
+            },
+            "hue": {
+                "description": "The mix blend mode is hue."
+            },
+            "saturation": {
+                "description": "The mix blend mode is saturation."
+            },
+            "color": {
+                "description": "The mix blend mode is color."
+            },
+            "luminosity": {
+                "description": "The mix blend mode is luminosity."
+            },
+            "plus-darker": {
+                "description": "The mix blend mode is plus darker."
+            },
+            "plus-lighter": {
+                "description": "The mix blend mode is plus lighter."
+            }
+        },
+        "description": "The mix blend mode."
+    },
+    "ObjectFit": {
+        "cases": {
+            "fill": {
+                "description": "The object fit is fill."
+            },
+            "contain": {
+                "description": "The object fit is contain."
+            },
+            "cover": {
+                "description": "The object fit is cover."
+            },
+            "none": {
+                "description": "The object fit is none."
+            },
+            "scale-down": {
+                "description": "The object fit is scale down."
+            }
+        },
+        "description": "The object fit."
+    },
+    "OPC": {
+        "cases": {
+            "center": {
+                "description": "The object position is center."
+            }
+        },
+        "description": "The object position."
+    },
+    "OPLR": {
+        "cases": {
+            "left": {
+                "description": "The object position is left."
+            },
+            "right": {
+                "description": "The object position is right."
+            }
+        },
+        "description": "The object position."
+    },
+    "OPLCR": {
+        "inherit": ["OPLR", "OPC"],
+        "cases": { },
+        "description": "The object position."
+    },
+    "OPLCRLP": {
+        "inherit": ["OPLR", "OPC", "LengthPercentage"],
+        "cases": { },
+        "description": "The object position."
+    },
+    "OPTCB": {
+        "inherit": ["OPTB", "OPC"],
+        "cases": {},
+        "description": "The object position."
+    },
+    "OPTCBLP": {
+        "inherit": ["OPTB", "OPC", "LengthPercentage"],
+        "cases": {},
+        "description": "The object position."
+    },
+    "OPTB": {
+        "cases": {
+            "top": {
+                "description": "The object position is top."
+            },
+            "bottom": {
+                "description": "The object position is bottom."
+            }
+        },
+        "description": "The object position."
+    },
+    "OPFull": {
+        "inherit": ["OPTB", "OPLR", "OPC"],
+        "cases": { },
+        "description": "The object position."
+    },
+    "ObjectPosition": {
+        "inherit": ["OPTB", "OPLR", "OPC"],
+        "cases": {
+            "with:0": {
+                "values": ["Unit.OPFull", "Unit.LengthPercentage"],
+                "names": ["location", "adjacentOffset"],
+                "description": "The object position is a adjacent offset.",
+                "format": "{{location}} {{adjacentOffset}}"
+            }, 
+            "with:2": {
+                "values": ["Unit.OPLCRLP", "Unit.OPTCBLP"],
+                "names": ["horizontal", "vertical"],
+                "description": "The object position is a length.",
+                "format": "{{horizontal}} {{vertical}}"
+            }, 
+            "with:3": {
+                "values": ["Unit.OPLCRLP", "Unit.LengthPercentage", "Unit.OPTCBLP", "Unit.LengthPercentage"],
+                "names": ["horizontal", "offsetX", "vertical", "offsetY"],
+                "description": "The object position is a length.",
+                "format": "{{horizontal}} {{offsetX}} {{vertical}} {{offsetY}}"
+            }
+        },
+        "description": "The object position."
+    },
+    "PaintOrder": {
+        "cases": {
+            "normal": {
+                "description": "The paint order is normal."
+            },
+            "fill": {
+                "description": "The paint order is fill."
+            },
+            "stroke": {
+                "description": "The paint order is stroke."
+            },
+            "markers": {
+                "description": "The paint order is markers."
+            },
+            "with": {
+                "values": ["optional[Bool]", "optional[Bool]", "optional[Bool]"],
+                "names": ["@fill", "@stroke", "@markers"],
+                "shown": [true, true, true],
+                "description": "The paint order is custom.",
+                "format": "{{fill}} {{stroke}} {{markers}}"
+            }
+        },
+        "description": "The paint order."
+    },
+    "PointerEvents": {
+        "cases": {
+            "auto": {
+                "description": "The pointer events are auto."
+            },
+            "none": {
+                "description": "The pointer events are none."
+            },
+            "visible": {
+                "description": "The pointer events are visible."
+            },
+            "visibleFill": {
+                "description": "The pointer events are visible fill."
+            },
+            "visibleStroke": {
+                "description": "The pointer events are visible stroke."
+            },
+            "visiblePainted": {
+                "description": "The pointer events are visible paint."
+            },
+            "all": {
+                "description": "The pointer events are all."
+            },
+            "painted": {
+                "description": "The pointer events are painted."
+            },
+            "fill": {
+                "description": "The pointer events are fill."
+            },
+            "stroke": {
+                "description": "The pointer events are stroke."
+            }
+        },
+        "description": "The pointer events."
+    },
+
+    "ContentPosition": {
+        "cases": {
+            "center": {
+                "description": "The content is centered."
+            },
+            "start": {
+                "description": "The content is at the start."
+            },
+            "end": {
+                "description": "The content is at the end."
+            },
+            "flex-start": {
+                "description": "The content is at the start."
+            },
+            "flex-end": {
+                "description": "The content is at the end."
+            },
+            "left": {
+                "description": "The content is at the left."
+            },
+            "right": {
+                "description": "The content is at the right."
+            }
+        },
+        "description": "The content position."
+    },
+    "ItemsPosition": {
+        "cases": {
+            "center": {
+                "description": "The items are centered."
+            },
+            "start": {
+                "description": "The items are at the start."
+            },
+            "end": {
+                "description": "The items are at the end."
+            },
+            "flex-start": {
+                "description": "The items are at the start."
+            },
+            "flex-end": {
+                "description": "The items are at the end."
+            },
+            "self-start": {
+                "description": "The items are at the start."
+            },
+            "self-end": {
+                "description": "The items are at the end."
+            },
+            "left": {
+                "description": "The items are at the left."
+            },
+            "right": {
+                "description": "The items are at the right."
+            }
+        },
+        "description": "The items position."
+    },
+    "ContentSafety": {
+        "cases": {
+            "safe": {
+                "description": "The content is safe."
+            },
+            "unsafe": {
+                "description": "The content is unsafe."
+            }
+        },
+        "description": "The content safety."
+    },
+    "JustifyContent": {
+        "inherit": ["ContentPosition"],
+        "cases": {
+            "space-between": {
+                "description": "The content is justified with space between."
+            },
+            "space-around": {
+                "description": "The content is justified with space around."
+            },
+            "space-evenly": {
+                "description": "The content is justified with space evenly."
+            },
+            "stretch": {
+                "description": "The content is stretched."
+            },
+            "with": {
+                "values": ["Unit.ContentSafety", "Unit.ContentPosition"],
+                "names": ["contentSafety", "contentPosition"],
+                "description": "The content is justified with a length.",
+                "format": "{{contentSafety}} {{contentPosition}}"
+            }
+        },
+        "description": "The justify content."
+    },
+    "JustifyItems": {
+        "inherit": ["ContentPosition"],
+        "cases": {
+            "normal": {
+                "description": "The items are normal."
+            },
+            "baseline:0": {
+                "description": "The items are aligned to the baseline."
+            },
+            "legacy:0": {
+                "description": "The items are legacy."
+            },
+            "legacy:1": {
+                "values": ["Unit.OPLCR"],
+                "names": ["position"],
+                "description": "The items are legacy.",
+                "format": "legacy {{position}}"
+            },
+            "stretch": {
+                "description": "The items are stretched."
+            },
+            "baseline:1": {
+                "values": ["Unit.FirstOrLast"],
+                "names": ["order"],
+                "description": "The items are aligned to the baseline.",
+                "format": "{{order}} baseline"
+
+            },
+            "with": {
+                "values": ["Unit.ContentSafety", "Unit.ItemsPosition"],
+                "names": ["contentSafety", "contentPosition"],
+                "description": "The items are justified with a length.",
+                "format": "{{contentSafety}} {{contentPosition}}"
+            }
+        },
+        "description": "The justify items."
+    },
+    "JustifySelf": {
+        "inherit": ["ContentPosition"],
+        "cases": {
+            "auto": {
+                "description": "The self is auto."
+            },
+            "normal": {
+                "description": "The items are normal."
+            },
+            "baseline:0": {
+                "description": "The items are aligned to the baseline."
+            },
+            "legacy:0": {
+                "description": "The items are legacy."
+            },
+            "legacy:1": {
+                "values": ["Unit.OPLCR"],
+                "names": ["position"],
+                "description": "The items are legacy.",
+                "format": "legacy {{position}}"
+            },
+            "stretch": {
+                "description": "The items are stretched."
+            },
+            "baseline:1": {
+                "values": ["Unit.FirstOrLast"],
+                "names": ["order"],
+                "description": "The items are aligned to the baseline.",
+                "format": "{{order}} baseline"
+
+            },
+            "with": {
+                "values": ["Unit.ContentSafety", "Unit.ItemsPosition"],
+                "names": ["contentSafety", "contentPosition"],
+                "description": "The items are justified with a length.",
+                "format": "{{contentSafety}} {{contentPosition}}"
+            }
+        },
+        "description": "The justify items."
     }
 }

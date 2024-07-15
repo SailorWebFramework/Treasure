@@ -1040,67 +1040,11 @@
         "names": ["rowGap", "columnGap"],
         "format": "{{rowGap}} {{columnGap}}"
     },
-    "grid-*": {
-        "area:0": {
-            "description": "Sets the grid area property.",
-            "types": ["Unit.GridLine"],
-            "names": ["value"],
-            "format": "{{value}}"
-        },
-        "area:1": {
-            "description": "Sets the grid area property.",
-            "types": ["Unit.GridLine", "Unit.GridLine"],
-            "names": ["value", "value2"],
-            "format": "{{value}} / {{value2}}"
-        },
-        "area:2": {
-            "description": "Sets the grid area property.",
-            "types": ["Unit.GridLine", "Unit.GridLine", "Unit.GridLine"],
-            "names": ["value", "value2", "value3"],
-            "format": "{{value}} / {{value2}} / {{value3}}"
-        },
-        "area:3": {
-            "description": "Sets the grid area property.",
-            "types": ["Unit.GridLine", "Unit.GridLine", "Unit.GridLine", "Unit.GridLine"],
-            "names": ["value", "value2", "value3", "value4"],
-            "format": "{{value}} / {{value2}} / {{value3}} / {{value4}}"
-        }
-    },
-    "hanging-punctuation:0": {
-        "description": "Sets the hanging punctuation property.",
-        "types": ["Unit.HangingPunctuation"],
+    "filter": {
+        "description": "Sets the filter property.",
+        "types": ["Unit.Filter"],
         "names": ["value"],
         "format": "{{value}}"
-    },
-    "hanging-punctuation:1": {
-        "description": "Sets the hanging punctuation property.",
-        "types": ["Unit.None"],
-        "names": ["value"],
-        "format": "{{value}}"
-    },
-    "hanging-punctuation:2": {
-        "description": "Sets the hanging punctuation property.",
-        "types": ["Unit.HangingPunctuation", "Unit.HangingPunctuation"],
-        "names": ["value", "value1"],
-        "format": "{{value}} {{value1}}"
-    },
-    "hanging-punctuation:3": {
-        "description": "Sets the hanging punctuation property.",
-        "types": ["Unit.HangingPunctuation", "Unit.HangingPunctuationForced"],
-        "names": ["value", "value1"],
-        "format": "{{value}} {{value1}}"
-    },
-    "hanging-punctuation:4": {
-        "description": "Sets the hanging punctuation property.",
-        "types": ["Unit.HangingPunctuation", "Unit.HangingPunctuation", "Unit.HangingPunctuationForced"],
-        "names": ["value", "value2", "value3"],
-        "format": "{{value}} {{value2}} {{value3}}"
-    },
-    "hanging-punctuation:5": {
-        "description": "Sets the hanging punctuation property.",
-        "types": ["Unit.HangingPunctuation", "Unit.HangingPunctuation", "Unit.HangingPunctuation", "Unit.HangingPunctuationForced"],
-        "names": ["value", "value2", "value3", "value4"],
-        "format": "{{value}} {{value2}} {{value3}} {{value4}}"
     },
     "height:0": {
         "description": "Sets the height property.",
@@ -1706,6 +1650,40 @@
             "format": "{{height}}"
         }
     },
+    "place-*": {
+        "content": {
+            "description": "Sets the place content property.",
+            "types": ["Unit.PlaceContent"],
+            "names": ["content"],
+            "format": "{{content}}"
+        },
+        "items": {
+            "description": "Sets the place content property.",
+            "types": ["Unit.PlaceItems"],
+            "names": ["items"],
+            "format": "{{items}}"
+        },
+        "self": {
+            "description": "Sets the place content property.",
+            "types": ["Unit.PlaceSelf"],
+            "names": ["self"],
+            "format": "{{self}}"
+        }
+    },
+    "page": {
+        "description": "Sets the page property.",
+        "types": ["Unit.Page"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "user-*": {
+        "select": {
+            "description": "Sets the user select property.",
+            "types": ["Unit.UserSelect"],
+            "names": ["value"],
+            "format": "{{value}}"
+        }
+    },  
     "justify-*": {
         "content": {
             "description": "Sets the justify content property.",
@@ -1725,5 +1703,306 @@
             "names": ["value"],
             "format": "{{value}}"
         }
+    },
+    "overscroll-behavior":{   
+        "description": "Sets the overscroll behavior property.",
+        "shorthand": true,
+        "types": ["Unit.OverscrollBehavior", "Unit.OverscrollBehavior"],
+        "names": ["x", "y"],
+        "format": "{{x}} {{y}}"
+    },
+    "overscroll-behavior-*": {
+        "block": {
+            "description": "Sets the overscroll behavior block property.",
+            "types": ["Unit.OverscrollBehavior"],
+            "names": ["block"],
+            "format": "{{block}}"
+        },
+        "inline": {
+            "description": "Sets the overscroll behavior inline property.",
+            "types": ["Unit.OverscrollBehavior"],
+            "names": ["inline"],
+            "format": "{{inline}}"
+        },
+        "x": {
+            "description": "Sets the overscroll behavior x property.",
+            "types": ["Unit.OverscrollBehavior"],
+            "names": ["x"],
+            "format": "{{x}}"
+        },
+        "y": {
+            "description": "Sets the overscroll behavior y property.",
+            "types": ["Unit.OverscrollBehavior"],
+            "names": ["y"],
+            "format": "{{y}}"
+        }
+    },
+    "outline": {
+        "shorthand": true,
+        "description": "Sets the outline property.",
+        "types": ["optional[Unit.Color]", "optional[Unit.LineWidth]", "optional[Unit.LineStyle]"],
+        "names": ["color", "width", "style"],
+        "format": "{{color}} {{width}} {{style}}"
+    },
+    "outline-*": {
+        "color": {
+            "description": "Sets the outline color property.",
+            "types": ["Unit.AutoColor"],
+            "names": ["color"],
+            "format": "{{color}}"
+        },
+        "offset": {
+            "description": "Sets the outline offset property.",
+            "types": ["Unit.Length"],
+            "names": ["offset"],
+            "format": "{{offset}}"
+        },
+        "style": {
+            "description": "Sets the outline style property.",
+            "types": ["Unit.AutoLineStyle"],
+            "names": ["style"],
+            "format": "{{style}}"
+        },
+        "width": {
+            "description": "Sets the outline width property.",
+            "types": ["Unit.LineWidth"],
+            "names": ["width"],
+            "format": "{{width}}"
+        }
+    },
+    "counter-*": {
+        "increment:0": {
+            "description": "Sets the counter increment property.",
+            "types": ["sequence[Unit.CounterIncrement]"],
+            "names": ["increment"],
+            "format": "#SEQ "
+        },
+        "increment:1": {
+            "description": "Sets the counter increment property.",
+            "types": ["Unit.None"],
+            "names": ["increment"],
+            "format": "{{increment}}"
+        },
+        "reset:0": {
+            "description": "Sets the counter reset property.",
+            "types": ["sequence[Unit.CounterReset]"],
+            "names": ["reset"],
+            "format": "#SEQ "
+        },
+        "reset:1": {
+            "description": "Sets the counter reset property.",
+            "types": ["Unit.None"],
+            "names": ["reset"],
+            "format": "{{reset}}"
+        },
+        "set:0": {
+            "description": "Sets the counter set property.",
+            "types": ["sequence[Unit.CounterSet]"],
+            "names": ["set"],
+            "format": "#SEQ "
+        },
+        "set:1": {
+            "description": "Sets the counter set property.",
+            "types": ["Unit.None"],
+            "names": ["set"],
+            "format": "{{set}}"
+        }
+    },
+    "list-style": {
+        "shorthand": true,
+        "description": "Sets the list style property.",
+        "types": ["optional[Unit.ListStyleType]", "optional[Unit.ListStylePosition]", "optional[Unit.NoneImage]"],
+        "names": ["type", "position", "image"],
+        "format": "{{type}} {{position}} {{image}}"
+    },
+    "list-style-*": {
+        "image": {
+            "description": "Sets the list style image property.",
+            "types": ["Unit.NoneImage"],
+            "names": ["image"],
+            "format": "{{image}}"
+        },
+        "position": {
+            "description": "Sets the list style position property.",
+            "types": ["Unit.ListStylePosition"],
+            "names": ["position"],
+            "format": "{{position}}"
+        },
+        "type": {
+            "description": "Sets the list style type property.",
+            "types": ["Unit.ListStyleType"],
+            "names": ["type"],
+            "format": "{{type}}"
+        }
+    },
+    "grid-*": {
+        "area:0": {
+            "description": "Sets the grid area property.",
+            "types": ["Unit.GridLine"],
+            "names": ["area"],
+            "format": "{{area}}"
+        }
+    },
+    "inset:0": {
+        "shorthand": true,
+        "description": "Sets the inset property.",
+        "types": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+        "names": ["top", "right", "bottom", "left"],
+        "format": "{{top}} {{right}} {{bottom}} {{left}}"
+    },
+    "inset:1": {
+        "shorthand": true,
+        "description": "Sets the inset property.",
+        "types": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+        "names": ["topBottom", "leftRight"],
+        "format": "{{topBottom}} {{leftRight}}"
+    },
+    "inset:2": {
+        "shorthand": true,
+        "description": "Sets the inset property.",
+        "types": ["Unit.AutoLengthPercentage"],
+        "names": ["all"],
+        "format": "{{all}}"
+    },
+    "inset:3": {
+        "shorthand": true,
+        "description": "Sets the inset property.",
+        "types": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+        "names": ["top", "leftRight", "bottom"],
+        "format": "{{top}} {{leftRight}} {{bottom}}"
+    },
+    "inset-*": { },
+    "inset-inline": {
+        "shorthand": true,
+        "description": "Sets the inset inline property.",
+        "types": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+        "names": ["start", "end"],
+        "format": "{{start}} {{end}}"
+    },
+    "inset-inline-*": {
+        "end": {
+            "description": "Sets the inset inline end property.",
+            "types": ["Unit.AutoLengthPercentage"],
+            "names": ["end"],
+            "format": "{{end}}"
+        },
+        "start": {
+            "description": "Sets the inset inline start property.",
+            "types": ["Unit.AutoLengthPercentage"],
+            "names": ["start"],
+            "format": "{{start}}"
+        }
+    },
+    "inset-block": {
+        "shorthand": true,
+        "description": "Sets the inset block property.",
+        "types": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
+        "names": ["start", "end"],
+        "format": "{{start}} {{end}}"
+    },
+    "inset-block-*": {
+        "end": {
+            "description": "Sets the inset block end property.",
+            "types": ["Unit.AutoLengthPercentage"],
+            "names": ["end"],
+            "format": "{{end}}"
+        },
+        "start": {
+            "description": "Sets the inset block start property.",
+            "types": ["Unit.AutoLengthPercentage"],
+            "names": ["start"],
+            "format": "{{start}}"
+        }
+    },
+    "image-*": {
+        "orientation": {
+            "description": "Sets the image orientation property.",
+            "types": ["Unit.ImageOrientation"],
+            "names": ["orientation"],
+            "format": "{{orientation}}"
+        },
+        "rendering": {
+            "description": "Sets the image rendering property.",
+            "types": ["Unit.ImageRendering"],
+            "names": ["rendering"],
+            "format": "{{rendering}}"
+        }
+    },
+    "math-*": {
+        "style": {
+            "description": "Sets the math style property.",
+            "types": ["Unit.MathStyle"],
+            "names": ["style"],
+            "format": "{{style}}"
+        },
+        "depth": {
+            "description": "Sets the math display property.",
+            "types": ["Unit.MathDepth"],
+            "names": ["depth"],
+            "format": "{{depth}}"
+        }
+    },
+    "overflow-*": {
+        "block": {
+            "description": "Sets the overflow block property.",
+            "types": ["Unit.OverflowValue"],
+            "names": ["block"],
+            "format": "{{block}}"
+        },
+        "inline": {
+            "description": "Sets the overflow inline property.",
+            "types": ["Unit.OverflowValue"],
+            "names": ["inline"],
+            "format": "{{inline}}"
+        },
+        "x": {
+            "description": "Sets the overflow x property.",
+            "types": ["Unit.OverflowValue"],
+            "names": ["x"],
+            "format": "{{x}}"
+        },
+        "y": {
+            "description": "Sets the overflow y property.",
+            "types": ["Unit.OverflowValue"],
+            "names": ["y"],
+            "format": "{{y}}"
+        },
+        "anchor": {
+            "description": "Sets the overflow anchor property.",
+            "types": ["Unit.OverflowAnchor"],
+            "names": ["anchor"],
+            "format": "{{anchor}}"
+        },
+        "clip-margin": {
+            "description": "Sets the overflow clip margin property.",
+            "types": ["Unit.OverflowClipMargin"],
+            "names": ["clipMargin"],
+            "format": "{{clipMargin}}"
+        },
+        "wrap": {
+            "description": "Sets the overflow wrap property.",
+            "types": ["Unit.OverflowWrap"],
+            "names": ["wrap"],
+            "format": "{{wrap}}"
+        }
+    },
+    "cursor": {
+        "description": "Sets the cursor property.",
+        "types": ["Unit.CursorAccent", "optional[Unit.XYValue]", "sequence[Unit.Source]"],
+        "shown": [true, true, true],
+        "names": ["value", "position", "urls"],
+        "format": "#SEQ, {{position}} {{value}}"
+    },
+    "display": {
+        "description": "Sets the display property.",
+        "types": ["Unit.Display"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "content": {
+        "description": "Sets the content property.",
+        "types": ["Unit.Content"],
+        "names": ["value"],
+        "format": "{{value}}"
     }
 }

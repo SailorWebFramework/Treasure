@@ -1531,6 +1531,11 @@
         },
         "description": "The style of the line."
     },
+    "AutoLineStyle": {
+        "inherit": ["LineStyle", "Auto"],
+        "cases": {},
+        "description": "The style of the line."
+    },
     "UnidirectionalWidth": {
         "cases": {
             "both": {
@@ -3755,5 +3760,410 @@
             }
         },
         "description": "The justify items."
+    },
+    "PlaceContent": {
+        "cases": {
+            "with": {
+                "values": ["Unit.AlignContent", "optional[Unit.JustifyContent]"],
+                "names": ["alignContent", "justifyContent"],
+                "description": "The content is placed with a length.",
+                "format": "{{alignContent}} {{justifyContent}}"
+            }
+        },
+        "description": "The place content."
+    },
+    "PlaceItems": {
+        "cases": {
+            "with": {
+                "values": ["Unit.AlignItems", "optional[Unit.JustifyItems]"],
+                "names": ["alignItems", "justifyItems"],
+                "description": "The items are placed with a length.",
+                "format": "{{alignItems}} {{justifyItems}}"
+            }
+        },
+        "description": "The place items."
+    },
+    "PlaceSelf": {
+        "cases": {
+            "with": {
+                "values": ["Unit.AlignSelf", "optional[Unit.JustifySelf]"],
+                "names": ["alignSelf", "justifySelf"],
+                "description": "The self is placed with a length.",
+                "format": "{{alignSelf}} {{justifySelf}}"
+            }
+        },
+        "description": "The place self."
+    },
+    "Page": {
+        "cases": {
+            "auto": {
+                "description": "The page is auto."
+            },
+            "string": {
+                "values": ["String"],
+                "names": ["identifier"],
+                "description": "The page is a name.",
+                "format": "{{identifier}}"
+            }
+        },
+        "description": "The page."
+    },
+    "UserSelect": {
+        "cases": {
+            "auto": {
+                "description": "The user select is auto."
+            },
+            "none": {
+                "description": "The user select is none."
+            },
+            "text": {
+                "description": "The user select is text."
+            },
+            "all": {
+                "description": "The user select is all."
+            },
+            "contain": {
+                "description": "The user select is contain."
+            }
+        },
+        "description": "The user select."
+    },
+    "OverscrollBehavior": {
+        "cases": {
+            "auto": {
+                "description": "The overscroll value is auto."
+            },
+            "contain": {
+                "description": "The overscroll value is contain."
+            },
+            "none": {
+                "description": "The overscroll value is none."
+            }
+        },
+        "description": "The overscroll value."
+    },
+    "CounterSet": {
+        "cases": {
+            "with": {
+                "values": ["String", "Int"],
+                "shown": [false, true],
+                "names": ["identifier", "to"],
+                "description": "The counter set is a name.",
+                "format": "{{identifier}} {{to}}"
+            }
+        },
+        "description": "The counter set."
+    },
+    "CounterIncrement": {
+        "cases": {
+            "with": {
+                "values": ["String", "optional[Int]"],
+                "shown": [false, true],
+                "names": ["identifier", "by"],
+                "description": "The counter set is a name.",
+                "format": "{{identifier}} {{by}}"
+            }
+        },
+        "description": "The counter increment."
+    },
+    "CounterReset": {
+        "cases": {
+            "with:1": {
+                "values": ["String", "optional[Int]"],
+                "names": ["identifier", "to"],
+                "shown": [false, true],
+                "description": "The counter reset is a name.",
+                "format": "{{identifier}} {{to}}"
+            }
+        },
+        "description": "The counter reset."
+    },
+    "NoneImage": {
+        "inherit": ["None", "Image"],
+        "cases": { },
+        "description": "The none image."
+    },
+    "ListStylePosition": {
+        "cases": {
+            "inside": {
+                "description": "The list style position is inside."
+            },
+            "outside": {
+                "description": "The list style position is outside."
+            }
+        },
+        "description": "The list style position."
+    },
+    "ListStyleType": {
+        "cases": {
+            "image": {
+                "values": ["Unit.Image"],
+                "names": ["image"],
+                "description": "The list style type is an image.",
+                "format": "{{image}}"
+            },
+            "none": {
+                "description": "The list style type is none."
+            },
+            "string": {
+                "values": ["String"],
+                "names": ["string"],
+                "description": "The list style type is a string.",
+                "format": "{{string}}"
+            }
+        },
+        "description": "The list style type."
+    },
+    "ImageRendering": {
+        "cases": {
+            "auto": {
+                "description": "The image rendering is auto."
+            },
+            "crisp-edges": {
+                "description": "The image rendering is crisp edges."
+            },
+            "pixelated": {
+                "description": "The image rendering is pixelated."
+            },
+            "high-quality": {
+                "description": "The image rendering is high quality."
+            },
+            "smooth": {
+                "description": "The image rendering is smooth."
+            }
+        },
+        "description": "The image rendering."
+    },
+    "ImageOrientation": {
+        "cases": {
+            "from-image": {
+                "description": "The image orientation is from image."
+            },
+            "flip": {
+                "description": "The image orientation is flip."
+            },
+            "none": {
+                "description": "The image orientation is none."
+            }
+        },
+        "description": "The image orientation."
+    },
+    "MathStyle": {
+        "cases": {
+            "normal": {
+                "description": "The math style is normal."
+            },
+            "compact": {
+                "description": "The math style is compact."
+            }
+        },
+        "description": "The math style."
+    },
+    "MathDepth": {
+        "cases": {
+            "auto-add": {
+                "description": "The math depth is auto."
+            },
+            "integer": {
+                "values": ["Int"],
+                "names": ["integer"],
+                "description": "The math depth is a string.",
+                "format": "{{integer}}"
+            },
+            "add": {
+                "values": ["Int"],
+                "names": ["integer"],
+                "description": "The math depth is a string.",
+                "format": "add({{integer}})"
+            }
+        },
+        "description": "The math depth."
+    },
+    "OverflowValue": {
+        "cases": {
+            "visible": {
+                "description": "The overflow position is visible."
+            },
+            "hidden": {
+                "description": "The overflow position is hidden."
+            },
+            "clip": {
+                "description": "The overflow position is clip."
+            },
+            "scroll": {
+                "description": "The overflow position is scroll."
+            },
+            "auto": {
+                "description": "The overflow position is auto."
+            }
+        },
+        "description": "The overflow position."
+    },
+    "OverflowAnchor": {
+        "cases": {
+            "auto": {
+                "description": "The overflow anchor is auto."
+            },
+            "none": {
+                "description": "The overflow anchor is none."
+            }
+        },
+        "description": "The overflow anchor."
+    },
+    "OverflowClipMargin": {
+        "cases": {
+            "box": {
+                "values": ["Unit.VisualBox"],
+                "names": ["box"],
+                "description": "The overflow clip margin is a box.",
+                "format": "{{box}}"
+            },
+            "length": {
+                "values": ["Unit.Length"],
+                "names": ["length"],
+                "description": "The overflow clip margin is a length.",
+                "format": "{{length}}"
+            }
+        },
+        "description": "The overflow clip margin."
+    },
+    "OverflowWrap": {
+        "cases": {
+            "normal": {
+                "description": "The overflow wrap is normal."
+            },
+            "break-word": {
+                "description": "The overflow wrap is break word."
+            },
+            "anywhere": {
+                "description": "The overflow wrap is anywhere."
+            }
+        },
+        "description": "The overflow wrap."
+    },
+    "CursorAccent": {
+        "cases": {
+            "auto": {
+                "description": "The cursor is automatically determined based on the context."
+            },
+            "default": {
+                "description": "The default cursor."
+            },
+            "none": {
+                "description": "No cursor is rendered."
+            },
+            "context-menu": {
+                "description": "A context menu is available."
+            },
+            "help": {
+                "description": "Help is available."
+            },
+            "pointer": {
+                "description": "The cursor is a pointer indicating a link."
+            },
+            "progress": {
+                "description": "The program is busy in the background but the user can still interact."
+            },
+            "wait": {
+                "description": "The program is busy and the user cannot interact."
+            },
+            "cell": {
+                "description": "The cursor indicates a cell or table."
+            },
+            "crosshair": {
+                "description": "The cursor is a crosshair."
+            },
+            "text": {
+                "description": "The cursor indicates text."
+            },
+            "vertical-text": {
+                "description": "The cursor indicates vertical text."
+            },
+            "alias": {
+                "description": "The cursor indicates an alias or shortcut."
+            },
+            "copy": {
+                "description": "The cursor indicates something is to be copied."
+            },
+            "move": {
+                "description": "The cursor indicates something is to be moved."
+            },
+            "no-drop": {
+                "description": "The cursor indicates that the dragged item cannot be dropped here."
+            },
+            "not-allowed": {
+                "description": "The cursor indicates that the action is not allowed."
+            },
+            "grab": {
+                "description": "The cursor indicates something can be grabbed."
+            },
+            "grabbing": {
+                "description": "The cursor indicates something is being grabbed."
+            },
+            "e-resize": {
+                "description": "The cursor indicates that an edge is to be moved east."
+            },
+            "n-resize": {
+                "description": "The cursor indicates that an edge is to be moved north."
+            },
+            "ne-resize": {
+                "description": "The cursor indicates that an edge is to be moved northeast."
+            },
+            "nw-resize": {
+                "description": "The cursor indicates that an edge is to be moved northwest."
+            },
+            "s-resize": {
+                "description": "The cursor indicates that an edge is to be moved south."
+            },
+            "se-resize": {
+                "description": "The cursor indicates that an edge is to be moved southeast."
+            },
+            "sw-resize": {
+                "description": "The cursor indicates that an edge is to be moved southwest."
+            },
+            "w-resize": {
+                "description": "The cursor indicates that an edge is to be moved west."
+            },
+            "ew-resize": {
+                "description": "The cursor indicates that an edge is to be moved east or west."
+            },
+            "ns-resize": {
+                "description": "The cursor indicates that an edge is to be moved north or south."
+            },
+            "nesw-resize": {
+                "description": "The cursor indicates that an edge is to be moved northeast or southwest."
+            },
+            "nwse-resize": {
+                "description": "The cursor indicates that an edge is to be moved northwest or southeast."
+            },
+            "col-resize": {
+                "description": "The cursor indicates that a column is to be resized."
+            },
+            "row-resize": {
+                "description": "The cursor indicates that a row is to be resized."
+            },
+            "all-scroll": {
+                "description": "The cursor indicates that something can be scrolled in any direction."
+            },
+            "zoom-in": {
+                "description": "The cursor indicates that something can be zoomed in."
+            },
+            "zoom-out": {
+                "description": "The cursor indicates that something can be zoomed out."
+            }
+        },
+        "description": "The cursor."
+    },
+    "XYValue": {
+        "cases": {
+            "with": {
+                "values": ["Int", "Int"],
+                "names": ["x", "y"],
+                "shown": [true, true],
+                "description": "The x and y value.",
+                "format": "{{x}} {{y}}"
+            }
+        },
+        "description": "The x and y value."
     }
 }

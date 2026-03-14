@@ -4400,5 +4400,150 @@
             }
         },
         "description": "The font language override value."
+    },
+    "GridAutoFlow": {
+        "cases": {
+            "row": {
+                "description": "Items are placed by filling each row."
+            },
+            "column": {
+                "description": "Items are placed by filling each column."
+            },
+            "dense": {
+                "description": "Packing algorithm attempts to fill holes."
+            },
+            "row-dense": {
+                "description": "Items fill rows using dense packing.",
+                "format": "row dense"
+            },
+            "column-dense": {
+                "description": "Items fill columns using dense packing.",
+                "format": "column dense"
+            }
+        },
+        "description": "How auto-placed items flow into the grid."
+    },
+    "GridTrackSize": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "auto": {
+                "description": "The track is sized automatically."
+            },
+            "min-content": {
+                "description": "The track is sized to the minimum content."
+            },
+            "max-content": {
+                "description": "The track is sized to the maximum content."
+            },
+            "fr": {
+                "values": ["Double"],
+                "names": ["value"],
+                "description": "A fractional unit of remaining space.",
+                "format": "{{value}}fr"
+            },
+            "minmax": {
+                "values": ["Unit.GridTrackMin", "Unit.GridTrackMax"],
+                "names": ["min", "max"],
+                "description": "A size range between min and max.",
+                "format": "minmax({{min}}, {{max}})"
+            },
+            "fit-content": {
+                "values": ["Unit.LengthPercentage"],
+                "names": ["value"],
+                "description": "Clamps to fit-content formula.",
+                "format": "fit-content({{value}})"
+            },
+            "repeat:0": {
+                "values": ["Int", "Unit.GridTrackList"],
+                "names": ["count", "tracks"],
+                "description": "Repeats a track pattern a fixed number of times.",
+                "format": "repeat({{count}}, {{tracks}})"
+            },
+            "repeat:1": {
+                "values": ["Unit.AutoRepeat", "Unit.GridTrackList"],
+                "names": ["auto", "tracks"],
+                "description": "Repeats a track pattern with auto-fill or auto-fit.",
+                "format": "repeat({{auto}}, {{tracks}})"
+            }
+        },
+        "description": "The sizing of a grid track."
+    },
+    "GridTrackMin": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "auto": {
+                "description": "Automatic minimum."
+            },
+            "min-content": {
+                "description": "The minimum content size."
+            },
+            "max-content": {
+                "description": "The maximum content size."
+            },
+            "fr": {
+                "values": ["Double"],
+                "names": ["value"],
+                "description": "A fractional unit.",
+                "format": "{{value}}fr"
+            }
+        },
+        "description": "The minimum bound of a grid track."
+    },
+    "GridTrackMax": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "auto": {
+                "description": "Automatic maximum."
+            },
+            "min-content": {
+                "description": "The minimum content size."
+            },
+            "max-content": {
+                "description": "The maximum content size."
+            },
+            "fr": {
+                "values": ["Double"],
+                "names": ["value"],
+                "description": "A fractional unit.",
+                "format": "{{value}}fr"
+            }
+        },
+        "description": "The maximum bound of a grid track."
+    },
+    "GridTrackList": {
+        "cases": {
+            "tracks": {
+                "values": ["sequence[Unit.GridTrackSize]"],
+                "names": ["sizes"],
+                "description": "A list of track sizes.",
+                "format": "#SEQ "
+            }
+        },
+        "description": "A list of grid track sizes."
+    },
+    "AutoRepeat": {
+        "cases": {
+            "auto-fill": {
+                "description": "Fill with as many tracks as fit."
+            },
+            "auto-fit": {
+                "description": "Fill and collapse empty tracks."
+            }
+        },
+        "description": "Auto repeat mode for grid tracks."
+    },
+    "GridTemplateAreas": {
+        "cases": {
+            "none": {
+                "description": "No named grid areas."
+            },
+            "areas": {
+                "values": ["sequence[String]"],
+                "names": ["rows"],
+                "description": "Named grid areas as quoted row strings.",
+                "format": "#SEQ "
+            }
+        },
+        "description": "Named grid template areas."
     }
 }

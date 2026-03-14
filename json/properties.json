@@ -1895,12 +1895,173 @@
             "format": "{{type}}"
         }
     },
+    "grid:0": {
+        "shorthand": true,
+        "description": "Sets the grid shorthand with template rows and columns.",
+        "types": ["sequence[Unit.GridTrackSize]", "sequence[Unit.GridTrackSize]"],
+        "names": ["templateRows", "templateColumns"],
+        "format": "#SEQ  / #SEQ "
+    },
+    "grid:1": {
+        "shorthand": true,
+        "description": "Sets the grid shorthand with auto-flow rows.",
+        "types": ["Unit.GridAutoFlow", "sequence[Unit.GridTrackSize]"],
+        "names": ["autoFlow", "autoColumns"],
+        "format": "{{autoFlow}} / #SEQ "
+    },
+    "grid:2": {
+        "shorthand": true,
+        "description": "Sets the grid to none.",
+        "types": ["Unit.None"],
+        "names": ["none"],
+        "format": "{{none}}"
+    },
     "grid-*": {
         "area:0": {
             "description": "Sets the grid area property.",
             "types": ["Unit.GridLine"],
             "names": ["area"],
             "format": "{{area}}"
+        },
+        "area:1": {
+            "description": "Sets the grid area property with row and column.",
+            "types": ["Unit.GridLine", "Unit.GridLine"],
+            "names": ["rowStart", "columnStart"],
+            "format": "{{rowStart}} / {{columnStart}}"
+        },
+        "area:2": {
+            "description": "Sets the grid area property with row start/end and column start.",
+            "types": ["Unit.GridLine", "Unit.GridLine", "Unit.GridLine"],
+            "names": ["rowStart", "columnStart", "rowEnd"],
+            "format": "{{rowStart}} / {{columnStart}} / {{rowEnd}}"
+        },
+        "area:3": {
+            "description": "Sets the grid area property with all four values.",
+            "types": ["Unit.GridLine", "Unit.GridLine", "Unit.GridLine", "Unit.GridLine"],
+            "names": ["rowStart", "columnStart", "rowEnd", "columnEnd"],
+            "format": "{{rowStart}} / {{columnStart}} / {{rowEnd}} / {{columnEnd}}"
+        },
+        "auto-columns:0": {
+            "description": "Sets the grid auto columns property.",
+            "types": ["Unit.GridTrackSize"],
+            "names": ["size"],
+            "format": "{{size}}"
+        },
+        "auto-columns:1": {
+            "description": "Sets the grid auto columns property with multiple track sizes.",
+            "types": ["sequence[Unit.GridTrackSize]"],
+            "names": ["sizes"],
+            "format": "#SEQ "
+        },
+        "auto-flow": {
+            "description": "Sets the grid auto flow property.",
+            "types": ["Unit.GridAutoFlow"],
+            "names": ["flow"],
+            "format": "{{flow}}"
+        },
+        "auto-rows:0": {
+            "description": "Sets the grid auto rows property.",
+            "types": ["Unit.GridTrackSize"],
+            "names": ["size"],
+            "format": "{{size}}"
+        },
+        "auto-rows:1": {
+            "description": "Sets the grid auto rows property with multiple track sizes.",
+            "types": ["sequence[Unit.GridTrackSize]"],
+            "names": ["sizes"],
+            "format": "#SEQ "
+        },
+        "column:0": {
+            "description": "Sets the grid column property.",
+            "types": ["Unit.GridLine"],
+            "names": ["start"],
+            "format": "{{start}}"
+        },
+        "column:1": {
+            "description": "Sets the grid column start and end.",
+            "types": ["Unit.GridLine", "Unit.GridLine"],
+            "names": ["start", "end"],
+            "format": "{{start}} / {{end}}"
+        },
+        "column-end": {
+            "description": "Sets the grid column end property.",
+            "types": ["Unit.GridLine"],
+            "names": ["end"],
+            "format": "{{end}}"
+        },
+        "column-start": {
+            "description": "Sets the grid column start property.",
+            "types": ["Unit.GridLine"],
+            "names": ["start"],
+            "format": "{{start}}"
+        },
+        "gap:0": {
+            "description": "Sets the grid gap property (same as gap).",
+            "shorthand": true,
+            "types": ["Unit.LengthPercentage"],
+            "names": ["both"],
+            "format": "{{both}}"
+        },
+        "gap:1": {
+            "description": "Sets the grid gap property with row and column.",
+            "shorthand": true,
+            "types": ["Unit.LengthPercentage", "Unit.LengthPercentage"],
+            "names": ["row", "column"],
+            "format": "{{row}} {{column}}"
+        },
+        "row:0": {
+            "description": "Sets the grid row property.",
+            "types": ["Unit.GridLine"],
+            "names": ["start"],
+            "format": "{{start}}"
+        },
+        "row:1": {
+            "description": "Sets the grid row start and end.",
+            "types": ["Unit.GridLine", "Unit.GridLine"],
+            "names": ["start", "end"],
+            "format": "{{start}} / {{end}}"
+        },
+        "row-end": {
+            "description": "Sets the grid row end property.",
+            "types": ["Unit.GridLine"],
+            "names": ["end"],
+            "format": "{{end}}"
+        },
+        "row-start": {
+            "description": "Sets the grid row start property.",
+            "types": ["Unit.GridLine"],
+            "names": ["start"],
+            "format": "{{start}}"
+        },
+        "template-areas": {
+            "description": "Sets the grid template areas property.",
+            "types": ["Unit.GridTemplateAreas"],
+            "names": ["areas"],
+            "format": "{{areas}}"
+        },
+        "template-columns:0": {
+            "description": "Sets the grid template columns property.",
+            "types": ["Unit.GridTrackSize"],
+            "names": ["size"],
+            "format": "{{size}}"
+        },
+        "template-columns:1": {
+            "description": "Sets the grid template columns property with multiple tracks.",
+            "types": ["sequence[Unit.GridTrackSize]"],
+            "names": ["sizes"],
+            "format": "#SEQ "
+        },
+        "template-rows:0": {
+            "description": "Sets the grid template rows property.",
+            "types": ["Unit.GridTrackSize"],
+            "names": ["size"],
+            "format": "{{size}}"
+        },
+        "template-rows:1": {
+            "description": "Sets the grid template rows property with multiple tracks.",
+            "types": ["sequence[Unit.GridTrackSize]"],
+            "names": ["sizes"],
+            "format": "#SEQ "
         }
     },
     "inset:0": {

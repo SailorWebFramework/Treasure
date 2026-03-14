@@ -2028,5 +2028,58 @@
         "types": ["Unit.Content"],
         "names": ["value"],
         "format": "{{value}}"
+    },
+    "transition:0": {
+        "shorthand": true,
+        "description": "Sets the transition shorthand property.",
+        "types": ["Unit.TransitionProperty", "Unit.Time", "Unit.TimingFunction", "Unit.Time"],
+        "names": ["property", "duration", "timingFunction", "delay"],
+        "format": "{{property}} {{duration}} {{timingFunction}} {{delay}}"
+    },
+    "transition:1": {
+        "shorthand": true,
+        "description": "Sets the transition shorthand property.",
+        "types": ["Unit.TransitionProperty", "Unit.Time", "Unit.TimingFunction"],
+        "names": ["property", "duration", "timingFunction"],
+        "format": "{{property}} {{duration}} {{timingFunction}}"
+    },
+    "transition:2": {
+        "shorthand": true,
+        "description": "Sets the transition shorthand property.",
+        "types": ["Unit.TransitionProperty", "Unit.Time"],
+        "names": ["property", "duration"],
+        "format": "{{property}} {{duration}}"
+    },
+    "transition-*": {
+        "delay": {
+            "description": "Sets the transition delay property.",
+            "types": ["Unit.Time"],
+            "names": ["delay"],
+            "format": "{{delay}}"
+        },
+        "duration": {
+            "description": "Sets the transition duration property.",
+            "types": ["Unit.Time"],
+            "names": ["duration"],
+            "format": "{{duration}}"
+        },
+        "property:0": {
+            "description": "Sets the transition property property.",
+            "types": ["Unit.TransitionProperty"],
+            "names": ["property"],
+            "format": "{{property}}"
+        },
+        "property:1": {
+            "description": "Sets the transition property to a list of properties.",
+            "types": ["sequence[Unit.TransitionProperty]"],
+            "names": ["properties"],
+            "format": "#SEQ,"
+        },
+        "timing-function": {
+            "description": "Sets the transition timing function property.",
+            "types": ["Unit.TimingFunction"],
+            "names": ["timingFunction"],
+            "format": "{{timingFunction}}"
+        }
     }
 }

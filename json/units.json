@@ -4154,6 +4154,107 @@
         },
         "description": "The cursor."
     },
+    "StepPosition": {
+        "cases": {
+            "jump-start": {
+                "description": "The first rise happens at input progress 0."
+            },
+            "jump-end": {
+                "description": "The last rise happens at input progress 1."
+            },
+            "jump-none": {
+                "description": "No jump at start or end."
+            },
+            "jump-both": {
+                "description": "Jumps at both start and end."
+            },
+            "start": {
+                "description": "Equivalent to jump-start."
+            },
+            "end": {
+                "description": "Equivalent to jump-end."
+            }
+        },
+        "description": "The position of steps in a step timing function."
+    },
+    "Time": {
+        "cases": {
+            "s": {
+                "values": ["Double"],
+                "names": ["value"],
+                "description": "Defines a time in seconds.",
+                "format": "{{value}}s"
+            },
+            "ms": {
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "Defines a time in milliseconds.",
+                "format": "{{value}}ms"
+            }
+        },
+        "description": "A time value."
+    },
+    "TimingFunction": {
+        "cases": {
+            "ease": {
+                "description": "Default easing — slow start, fast middle, slow end."
+            },
+            "ease-in": {
+                "description": "Slow start."
+            },
+            "ease-out": {
+                "description": "Slow end."
+            },
+            "ease-in-out": {
+                "description": "Slow start and end."
+            },
+            "linear": {
+                "description": "Constant speed throughout."
+            },
+            "step-start": {
+                "description": "Equivalent to steps(1, jump-start)."
+            },
+            "step-end": {
+                "description": "Equivalent to steps(1, jump-end)."
+            },
+            "cubic-bezier": {
+                "values": ["Double", "Double", "Double", "Double"],
+                "names": ["x1", "y1", "x2", "y2"],
+                "description": "Custom cubic bezier curve.",
+                "format": "cubic-bezier({{x1}}, {{y1}}, {{x2}}, {{y2}})"
+            },
+            "steps:0": {
+                "values": ["Int"],
+                "names": ["count"],
+                "description": "Steps function with count only.",
+                "format": "steps({{count}})"
+            },
+            "steps:1": {
+                "values": ["Int", "Unit.StepPosition"],
+                "names": ["count", "position"],
+                "description": "Steps function with count and position.",
+                "format": "steps({{count}}, {{position}})"
+            }
+        },
+        "description": "A timing function for transitions and animations."
+    },
+    "TransitionProperty": {
+        "cases": {
+            "none": {
+                "description": "No property will transition."
+            },
+            "all": {
+                "description": "All properties will transition."
+            },
+            "custom": {
+                "values": ["String"],
+                "names": ["property"],
+                "description": "A specific CSS property to transition.",
+                "format": "{{property}}"
+            }
+        },
+        "description": "The CSS property to apply a transition to."
+    },
     "XYValue": {
         "cases": {
             "with": {

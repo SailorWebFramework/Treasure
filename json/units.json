@@ -4266,5 +4266,139 @@
             }
         },
         "description": "The x and y value."
+    },
+    "FontWeight": {
+        "cases": {
+            "normal": {
+                "description": "Normal font weight (400)."
+            },
+            "bold": {
+                "description": "Bold font weight (700)."
+            },
+            "bolder": {
+                "description": "One weight bolder than the parent."
+            },
+            "lighter": {
+                "description": "One weight lighter than the parent."
+            },
+            "weight": {
+                "values": ["Int"],
+                "names": ["value"],
+                "description": "A numeric font weight (1-1000).",
+                "format": "{{value}}"
+            }
+        },
+        "description": "The weight (boldness) of the font."
+    },
+    "FontStyle": {
+        "cases": {
+            "normal": {
+                "description": "Normal font style."
+            },
+            "italic": {
+                "description": "Italic font style."
+            },
+            "oblique": {
+                "description": "Oblique font style."
+            },
+            "obliqueAngle": {
+                "values": ["Unit.Angle"],
+                "names": ["angle"],
+                "description": "Oblique font style with a specific angle.",
+                "format": "oblique {{angle}}"
+            }
+        },
+        "description": "The style of the font."
+    },
+    "FontVariant": {
+        "cases": {
+            "normal": {
+                "description": "Normal font variant."
+            },
+            "small-caps": {
+                "description": "Small caps font variant."
+            },
+            "all-small-caps": {
+                "description": "All small caps font variant."
+            },
+            "petite-caps": {
+                "description": "Petite caps font variant."
+            },
+            "all-petite-caps": {
+                "description": "All petite caps font variant."
+            },
+            "unicase": {
+                "description": "Unicase font variant."
+            },
+            "titling-caps": {
+                "description": "Titling caps font variant."
+            }
+        },
+        "description": "The variant of the font."
+    },
+    "WordSpacing": {
+        "inherit": ["Length", "Percentage"],
+        "cases": {
+            "normal": {
+                "description": "The word spacing is normal."
+            }
+        },
+        "description": "The spacing between words."
+    },
+    "FontFeatureSettings": {
+        "cases": {
+            "normal": {
+                "description": "No OpenType feature overrides."
+            },
+            "feature": {
+                "values": ["String"],
+                "names": ["settings"],
+                "description": "A comma-separated list of OpenType feature tag value pairs.",
+                "format": "{{settings}}"
+            }
+        },
+        "description": "OpenType font feature settings."
+    },
+    "FontSizeAdjust": {
+        "cases": {
+            "none": {
+                "description": "No font size adjustment."
+            },
+            "number": {
+                "values": ["Double"],
+                "names": ["value"],
+                "description": "The aspect ratio to use for fallback fonts.",
+                "format": "{{value}}"
+            }
+        },
+        "description": "The font size adjust value."
+    },
+    "FontVariationSettings": {
+        "cases": {
+            "normal": {
+                "description": "No variation settings overrides."
+            },
+            "settings": {
+                "values": ["String"],
+                "names": ["settings"],
+                "description": "A comma-separated list of variation axis tag value pairs.",
+                "format": "{{settings}}"
+            }
+        },
+        "description": "Variable font variation settings."
+    },
+    "FontLanguageOverride": {
+        "cases": {
+            "normal": {
+                "description": "Use the default language for the font."
+            },
+            "language": {
+                "values": ["String"],
+                "names": ["language"],
+                "description": "An OpenType language system tag string.",
+                "format": "{{language}}"
+            }
+        },
+        "description": "The font language override value."
     }
 }

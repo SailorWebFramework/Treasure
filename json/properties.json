@@ -967,6 +967,48 @@
             "types": ["Unit.Size"],
             "names": ["size"],
             "format": "{{size}}"
+        },
+        "weight": {
+            "description": "Sets the font weight property.",
+            "types": ["Unit.FontWeight"],
+            "names": ["weight"],
+            "format": "{{weight}}"
+        },
+        "style": {
+            "description": "Sets the font style property.",
+            "types": ["Unit.FontStyle"],
+            "names": ["style"],
+            "format": "{{style}}"
+        },
+        "variant": {
+            "description": "Sets the font variant property.",
+            "types": ["Unit.FontVariant"],
+            "names": ["variant"],
+            "format": "{{variant}}"
+        },
+        "feature-settings": {
+            "description": "Sets the font feature settings property for OpenType features.",
+            "types": ["Unit.FontFeatureSettings"],
+            "names": ["settings"],
+            "format": "{{settings}}"
+        },
+        "size-adjust": {
+            "description": "Sets the font size adjust property.",
+            "types": ["Unit.FontSizeAdjust"],
+            "names": ["adjust"],
+            "format": "{{adjust}}"
+        },
+        "variation-settings": {
+            "description": "Sets the font variation settings property for variable fonts.",
+            "types": ["Unit.FontVariationSettings"],
+            "names": ["settings"],
+            "format": "{{settings}}"
+        },
+        "language-override": {
+            "description": "Sets the font language override property.",
+            "types": ["Unit.FontLanguageOverride"],
+            "names": ["override"],
+            "format": "{{override}}"
         }
     },
     "flex:0": {
@@ -1574,6 +1616,12 @@
     "letter-spacing": {
         "description": "Sets the letter spacing property.",
         "types": ["Unit.LetterSpacing"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "word-spacing": {
+        "description": "Sets the word spacing property.",
+        "types": ["Unit.WordSpacing"],
         "names": ["value"],
         "format": "{{value}}"
     },

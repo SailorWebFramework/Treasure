@@ -4866,5 +4866,36 @@
             }
         },
         "description": "Hints to the renderer about trade-offs in SVG shape rendering."
+    },
+    "Fraction": {
+        "cases": {
+            "_1_2":   { "description": "One half (50%)",               "format": "50%" },
+            "_1_3":   { "description": "One third (33.333333%)",       "format": "33.333333%" },
+            "_2_3":   { "description": "Two thirds (66.666667%)",      "format": "66.666667%" },
+            "_1_4":   { "description": "One quarter (25%)",            "format": "25%" },
+            "_2_4":   { "description": "Two quarters (50%)",           "format": "50%" },
+            "_3_4":   { "description": "Three quarters (75%)",         "format": "75%" },
+            "_1_5":   { "description": "One fifth (20%)",              "format": "20%" },
+            "_2_5":   { "description": "Two fifths (40%)",             "format": "40%" },
+            "_3_5":   { "description": "Three fifths (60%)",           "format": "60%" },
+            "_4_5":   { "description": "Four fifths (80%)",            "format": "80%" },
+            "_1_6":   { "description": "One sixth (16.666667%)",       "format": "16.666667%" },
+            "_2_6":   { "description": "Two sixths (33.333333%)",      "format": "33.333333%" },
+            "_3_6":   { "description": "Three sixths (50%)",           "format": "50%" },
+            "_4_6":   { "description": "Four sixths (66.666667%)",     "format": "66.666667%" },
+            "_5_6":   { "description": "Five sixths (83.333333%)",     "format": "83.333333%" },
+            "_1_12":  { "description": "One twelfth (8.333333%)",      "format": "8.333333%" },
+            "_2_12":  { "description": "Two twelfths (16.666667%)",    "format": "16.666667%" },
+            "_3_12":  { "description": "Three twelfths (25%)",         "format": "25%" },
+            "_4_12":  { "description": "Four twelfths (33.333333%)",   "format": "33.333333%" },
+            "_5_12":  { "description": "Five twelfths (41.666667%)",   "format": "41.666667%" },
+            "_6_12":  { "description": "Six twelfths (50%)",           "format": "50%" },
+            "_7_12":  { "description": "Seven twelfths (58.333333%)",  "format": "58.333333%" },
+            "_8_12":  { "description": "Eight twelfths (66.666667%)",  "format": "66.666667%" },
+            "_9_12":  { "description": "Nine twelfths (75%)",          "format": "75%" },
+            "_10_12": { "description": "Ten twelfths (83.333333%)",    "format": "83.333333%" },
+            "_11_12": { "description": "Eleven twelfths (91.666667%)", "format": "91.666667%" }
+        },
+        "description": "A fractional CSS value."
     }
 }

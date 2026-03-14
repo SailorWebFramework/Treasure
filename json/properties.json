@@ -954,7 +954,7 @@
             "description": "Sets the font family property.",
             "types": ["sequence[Unit.FontFamily]"],
             "names": ["family"],
-            "format": "SEQ,"
+            "format": "#SEQ,"
         },
         "size:0": {
             "description": "Sets the font size property.",

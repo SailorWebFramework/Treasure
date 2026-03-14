@@ -4414,10 +4414,14 @@
             },
             "row-dense": {
                 "description": "Items fill rows using dense packing.",
+                "names": [],
+                "values": [],
                 "format": "row dense"
             },
             "column-dense": {
                 "description": "Items fill columns using dense packing.",
+                "names": [],
+                "values": [],
                 "format": "column dense"
             }
         },

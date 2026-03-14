@@ -1,9 +1,9 @@
 {
     "all": {
-        "description": "Sets all properties.",
-        "types": [],
-        "names": [],
-        "format": ""
+        "description": "The all shorthand CSS property resets all of an element's properties except unicode-bidi, direction, and CSS Custom Properties.",
+        "types": ["Unit.Global"],
+        "names": ["value"],
+        "format": "{{value}}"
     },
     "accent-color": {
         "description": "Sets the accent color property.",
@@ -955,6 +955,18 @@
             "types": ["sequence[Unit.FontFamily]"],
             "names": ["family"],
             "format": "SEQ,"
+        },
+        "size:0": {
+            "description": "Sets the font size property.",
+            "types": ["Unit.LengthPercentage"],
+            "names": ["size"],
+            "format": "{{size}}"
+        },
+        "size:1": {
+            "description": "Sets the font size property.",
+            "types": ["Unit.Size"],
+            "names": ["size"],
+            "format": "{{size}}"
         }
     },
     "flex:0": {
@@ -1180,13 +1192,13 @@
         "format": "{{top}} {{right}} {{bottom}} {{left}}"
     },
     "padding-block-*": {
-        "block-end": {
+        "end": {
             "description": "Sets the padding block end property.",
             "types": ["Unit.LengthPercentage"],
             "names": ["blockEnd"],
             "format": "{{blockEnd}}"
         },
-        "block-start": {
+        "start": {
             "description": "Sets the padding block start property.",
             "types": ["Unit.LengthPercentage"],
             "names": ["blockStart"],
@@ -1871,7 +1883,6 @@
         "names": ["top", "leftRight", "bottom"],
         "format": "{{top}} {{leftRight}} {{bottom}}"
     },
-    "inset-*": { },
     "inset-inline": {
         "shorthand": true,
         "description": "Sets the inset inline property.",
@@ -1941,6 +1952,19 @@
             "names": ["depth"],
             "format": "{{depth}}"
         }
+    },
+    "overflow:0": {
+        "shorthand": true,
+        "description": "Sets the overflow property.",
+        "types": ["Unit.OverflowValue", "Unit.OverflowValue"],
+        "names": ["x", "y"],
+        "format": "{{x}} {{y}}"
+    },
+    "overflow:1": {
+        "description": "Sets the overflow property.",
+        "types": ["Unit.OverflowValue"],
+        "names": ["value"],
+        "format": "{{value}}"
     },
     "overflow-*": {
         "block": {

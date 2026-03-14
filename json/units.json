@@ -4545,5 +4545,250 @@
             }
         },
         "description": "Named grid template areas."
+    },
+    "AnimationDirection": {
+        "cases": {
+            "normal": {
+                "description": "The animation plays forwards."
+            },
+            "reverse": {
+                "description": "The animation plays backwards."
+            },
+            "alternate": {
+                "description": "The animation alternates between forwards and backwards."
+            },
+            "alternate-reverse": {
+                "description": "The animation alternates starting backwards."
+            }
+        },
+        "description": "The direction of an animation."
+    },
+    "AnimationFillMode": {
+        "cases": {
+            "none": {
+                "description": "No fill mode applied."
+            },
+            "forwards": {
+                "description": "Retains the last keyframe styles."
+            },
+            "backwards": {
+                "description": "Applies the first keyframe styles before start."
+            },
+            "both": {
+                "description": "Applies both forwards and backwards fill."
+            }
+        },
+        "description": "How styles apply before and after animation."
+    },
+    "AnimationIterationCount": {
+        "cases": {
+            "infinite": {
+                "description": "The animation repeats indefinitely."
+            },
+            "count": {
+                "values": ["Double"],
+                "names": ["value"],
+                "description": "The animation repeats a specific number of times.",
+                "format": "{{value}}"
+            }
+        },
+        "description": "How many times the animation repeats."
+    },
+    "AnimationName": {
+        "cases": {
+            "none": {
+                "description": "No animation."
+            },
+            "custom": {
+                "values": ["String"],
+                "names": ["name"],
+                "description": "A named keyframes animation.",
+                "format": "{{name}}"
+            }
+        },
+        "description": "The name of a keyframes animation."
+    },
+    "AnimationPlayState": {
+        "cases": {
+            "running": {
+                "description": "The animation is playing."
+            },
+            "paused": {
+                "description": "The animation is paused."
+            }
+        },
+        "description": "Whether the animation is running or paused."
+    },
+    "TransformFunction": {
+        "cases": {
+            "none": {
+                "description": "No transform."
+            },
+            "translate:0": {
+                "values": ["Unit.LengthPercentage"],
+                "names": ["x"],
+                "description": "Translate in the x-axis.",
+                "format": "translate({{x}})"
+            },
+            "translate:1": {
+                "values": ["Unit.LengthPercentage", "Unit.LengthPercentage"],
+                "names": ["x", "y"],
+                "description": "Translate in x and y axes.",
+                "format": "translate({{x}}, {{y}})"
+            },
+            "translateX": {
+                "values": ["Unit.LengthPercentage"],
+                "names": ["x"],
+                "description": "Translate in the x-axis.",
+                "format": "translateX({{x}})"
+            },
+            "translateY": {
+                "values": ["Unit.LengthPercentage"],
+                "names": ["y"],
+                "description": "Translate in the y-axis.",
+                "format": "translateY({{y}})"
+            },
+            "translateZ": {
+                "values": ["Unit.Length"],
+                "names": ["z"],
+                "description": "Translate in the z-axis.",
+                "format": "translateZ({{z}})"
+            },
+            "translate3d": {
+                "values": ["Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.Length"],
+                "names": ["x", "y", "z"],
+                "description": "Translate in all three axes.",
+                "format": "translate3d({{x}}, {{y}}, {{z}})"
+            },
+            "scale:0": {
+                "values": ["Double"],
+                "names": ["xy"],
+                "description": "Scale uniformly.",
+                "format": "scale({{xy}})"
+            },
+            "scale:1": {
+                "values": ["Double", "Double"],
+                "names": ["x", "y"],
+                "description": "Scale in x and y axes.",
+                "format": "scale({{x}}, {{y}})"
+            },
+            "scaleX": {
+                "values": ["Double"],
+                "names": ["x"],
+                "description": "Scale in the x-axis.",
+                "format": "scaleX({{x}})"
+            },
+            "scaleY": {
+                "values": ["Double"],
+                "names": ["y"],
+                "description": "Scale in the y-axis.",
+                "format": "scaleY({{y}})"
+            },
+            "scaleZ": {
+                "values": ["Double"],
+                "names": ["z"],
+                "description": "Scale in the z-axis.",
+                "format": "scaleZ({{z}})"
+            },
+            "scale3d": {
+                "values": ["Double", "Double", "Double"],
+                "names": ["x", "y", "z"],
+                "description": "Scale in all three axes.",
+                "format": "scale3d({{x}}, {{y}}, {{z}})"
+            },
+            "rotate:0": {
+                "values": ["Unit.Angle"],
+                "names": ["angle"],
+                "description": "Rotate by an angle.",
+                "format": "rotate({{angle}})"
+            },
+            "rotateX": {
+                "values": ["Unit.Angle"],
+                "names": ["angle"],
+                "description": "Rotate around the x-axis.",
+                "format": "rotateX({{angle}})"
+            },
+            "rotateY": {
+                "values": ["Unit.Angle"],
+                "names": ["angle"],
+                "description": "Rotate around the y-axis.",
+                "format": "rotateY({{angle}})"
+            },
+            "rotateZ": {
+                "values": ["Unit.Angle"],
+                "names": ["angle"],
+                "description": "Rotate around the z-axis.",
+                "format": "rotateZ({{angle}})"
+            },
+            "rotate3d": {
+                "values": ["Double", "Double", "Double", "Unit.Angle"],
+                "names": ["x", "y", "z", "angle"],
+                "description": "Rotate around a vector axis.",
+                "format": "rotate3d({{x}}, {{y}}, {{z}}, {{angle}})"
+            },
+            "skew:0": {
+                "values": ["Unit.Angle"],
+                "names": ["x"],
+                "description": "Skew in the x-axis.",
+                "format": "skew({{x}})"
+            },
+            "skew:1": {
+                "values": ["Unit.Angle", "Unit.Angle"],
+                "names": ["x", "y"],
+                "description": "Skew in x and y axes.",
+                "format": "skew({{x}}, {{y}})"
+            },
+            "skewX": {
+                "values": ["Unit.Angle"],
+                "names": ["x"],
+                "description": "Skew in the x-axis.",
+                "format": "skewX({{x}})"
+            },
+            "skewY": {
+                "values": ["Unit.Angle"],
+                "names": ["y"],
+                "description": "Skew in the y-axis.",
+                "format": "skewY({{y}})"
+            },
+            "matrix": {
+                "values": ["Double", "Double", "Double", "Double", "Double", "Double"],
+                "names": ["a", "b", "c", "d", "tx", "ty"],
+                "description": "2D transformation matrix.",
+                "format": "matrix({{a}}, {{b}}, {{c}}, {{d}}, {{tx}}, {{ty}})"
+            },
+            "matrix3d": {
+                "values": ["Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double"],
+                "names": ["a1", "b1", "c1", "d1", "a2", "b2", "c2", "d2", "a3", "b3", "c3", "d3", "a4", "b4", "c4", "d4"],
+                "description": "3D transformation matrix.",
+                "format": "matrix3d({{a1}}, {{b1}}, {{c1}}, {{d1}}, {{a2}}, {{b2}}, {{c2}}, {{d2}}, {{a3}}, {{b3}}, {{c3}}, {{d3}}, {{a4}}, {{b4}}, {{c4}}, {{d4}})"
+            },
+            "perspective": {
+                "values": ["Unit.Length"],
+                "names": ["depth"],
+                "description": "Applies perspective transform.",
+                "format": "perspective({{depth}})"
+            }
+        },
+        "description": "Individual CSS transform functions."
+    },
+    "TransformBox": {
+        "cases": {
+            "content-box": {
+                "description": "The content box is the reference box."
+            },
+            "border-box": {
+                "description": "The border box is the reference box."
+            },
+            "fill-box": {
+                "description": "The object bounding box is the reference box."
+            },
+            "stroke-box": {
+                "description": "The stroke bounding box is the reference box."
+            },
+            "view-box": {
+                "description": "The SVG viewport is the reference box."
+            }
+        },
+        "description": "The reference box for transform and transform-origin."
     }
 }

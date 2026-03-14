@@ -2290,5 +2290,120 @@
             "names": ["timingFunction"],
             "format": "{{timingFunction}}"
         }
+    },
+    "animation:0": {
+        "shorthand": true,
+        "description": "Sets the animation shorthand property.",
+        "types": ["Unit.AnimationName", "Unit.Time", "Unit.TimingFunction", "Unit.Time", "Unit.AnimationIterationCount", "Unit.AnimationDirection", "Unit.AnimationFillMode", "Unit.AnimationPlayState"],
+        "names": ["name", "duration", "timingFunction", "delay", "iterationCount", "direction", "fillMode", "playState"],
+        "format": "{{name}} {{duration}} {{timingFunction}} {{delay}} {{iterationCount}} {{direction}} {{fillMode}} {{playState}}"
+    },
+    "animation:1": {
+        "shorthand": true,
+        "description": "Sets the animation shorthand with name, duration, and timing.",
+        "types": ["Unit.AnimationName", "Unit.Time", "Unit.TimingFunction"],
+        "names": ["name", "duration", "timingFunction"],
+        "format": "{{name}} {{duration}} {{timingFunction}}"
+    },
+    "animation:2": {
+        "shorthand": true,
+        "description": "Sets the animation shorthand with name and duration.",
+        "types": ["Unit.AnimationName", "Unit.Time"],
+        "names": ["name", "duration"],
+        "format": "{{name}} {{duration}}"
+    },
+    "animation-*": {
+        "delay": {
+            "description": "Sets the animation delay property.",
+            "types": ["Unit.Time"],
+            "names": ["delay"],
+            "format": "{{delay}}"
+        },
+        "direction": {
+            "description": "Sets the animation direction property.",
+            "types": ["Unit.AnimationDirection"],
+            "names": ["direction"],
+            "format": "{{direction}}"
+        },
+        "duration": {
+            "description": "Sets the animation duration property.",
+            "types": ["Unit.Time"],
+            "names": ["duration"],
+            "format": "{{duration}}"
+        },
+        "fill-mode": {
+            "description": "Sets the animation fill mode property.",
+            "types": ["Unit.AnimationFillMode"],
+            "names": ["fillMode"],
+            "format": "{{fillMode}}"
+        },
+        "iteration-count": {
+            "description": "Sets the animation iteration count property.",
+            "types": ["Unit.AnimationIterationCount"],
+            "names": ["count"],
+            "format": "{{count}}"
+        },
+        "name": {
+            "description": "Sets the animation name property.",
+            "types": ["Unit.AnimationName"],
+            "names": ["name"],
+            "format": "{{name}}"
+        },
+        "play-state": {
+            "description": "Sets the animation play state property.",
+            "types": ["Unit.AnimationPlayState"],
+            "names": ["playState"],
+            "format": "{{playState}}"
+        },
+        "timing-function": {
+            "description": "Sets the animation timing function property.",
+            "types": ["Unit.TimingFunction"],
+            "names": ["timingFunction"],
+            "format": "{{timingFunction}}"
+        }
+    },
+    "transform:0": {
+        "description": "Sets the transform property with a single function.",
+        "types": ["Unit.TransformFunction"],
+        "names": ["transform"],
+        "format": "{{transform}}"
+    },
+    "transform:1": {
+        "description": "Sets the transform property with multiple functions.",
+        "types": ["sequence[Unit.TransformFunction]"],
+        "names": ["transforms"],
+        "format": "#SEQ "
+    },
+    "transform-*": {
+        "box": {
+            "description": "Sets the transform box property.",
+            "types": ["Unit.TransformBox"],
+            "names": ["box"],
+            "format": "{{box}}"
+        },
+        "origin:0": {
+            "description": "Sets the transform origin with a single value.",
+            "types": ["Unit.LengthPercentage"],
+            "names": ["offset"],
+            "format": "{{offset}}"
+        },
+        "origin:1": {
+            "description": "Sets the transform origin with x and y.",
+            "types": ["Unit.LengthPercentage", "Unit.LengthPercentage"],
+            "names": ["x", "y"],
+            "format": "{{x}} {{y}}"
+        },
+        "origin:2": {
+            "description": "Sets the transform origin with x, y, and z.",
+            "types": ["Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.Length"],
+            "names": ["x", "y", "z"],
+            "format": "{{x}} {{y}} {{z}}"
+        },
+        "origin:3": {
+            "description": "Sets the transform origin with keyword positions.",
+            "types": ["Unit.ObjectPosition"],
+            "names": ["position"],
+            "format": "{{position}}"
+        }
     }
 }

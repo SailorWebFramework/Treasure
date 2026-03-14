@@ -2441,9 +2441,9 @@
                 "Unit.Fraction"
             ],
             "names": [
-                "fraction"
+                "widthFraction"
             ],
-            "format": "{{fraction}}"
+            "format": "{{widthFraction}}"
         },
         "height:2": {
             "description": "Sets the min height property.",
@@ -2451,9 +2451,9 @@
                 "Unit.Fraction"
             ],
             "names": [
-                "fraction"
+                "heightFraction"
             ],
-            "format": "{{fraction}}"
+            "format": "{{heightFraction}}"
         }
     },
     "max-*": {
@@ -2543,9 +2543,9 @@
                 "Unit.Fraction"
             ],
             "names": [
-                "fraction"
+                "widthFraction"
             ],
-            "format": "{{fraction}}"
+            "format": "{{widthFraction}}"
         },
         "height:2": {
             "description": "Sets the max height property.",
@@ -2553,9 +2553,9 @@
                 "Unit.Fraction"
             ],
             "names": [
-                "fraction"
+                "heightFraction"
             ],
-            "format": "{{fraction}}"
+            "format": "{{heightFraction}}"
         }
     },
     "left": {
@@ -3362,9 +3362,9 @@
                 "Unit.GridTrackSize"
             ],
             "names": [
-                "size"
+                "autoColumnSize"
             ],
-            "format": "{{size}}"
+            "format": "{{autoColumnSize}}"
         },
         "auto-columns:1": {
             "description": "Sets the grid auto columns property with multiple track sizes.",
@@ -3372,9 +3372,9 @@
                 "sequence[Unit.GridTrackSize]"
             ],
             "names": [
-                "sizes"
+                "autoColumnSizes"
             ],
-            "format": "#SEQ "
+            "format": "{{autoColumnSizes}}"
         },
         "auto-flow": {
             "description": "Sets the grid auto flow property.",
@@ -3392,9 +3392,9 @@
                 "Unit.GridTrackSize"
             ],
             "names": [
-                "size"
+                "autoRowSize"
             ],
-            "format": "{{size}}"
+            "format": "{{autoRowSize}}"
         },
         "auto-rows:1": {
             "description": "Sets the grid auto rows property with multiple track sizes.",
@@ -3402,9 +3402,9 @@
                 "sequence[Unit.GridTrackSize]"
             ],
             "names": [
-                "sizes"
+                "autoRowSizes"
             ],
-            "format": "#SEQ "
+            "format": "{{autoRowSizes}}"
         },
         "column:0": {
             "description": "Sets the grid column property.",
@@ -3412,9 +3412,9 @@
                 "Unit.GridLine"
             ],
             "names": [
-                "start"
+                "columnStart"
             ],
-            "format": "{{start}}"
+            "format": "{{columnStart}}"
         },
         "column:1": {
             "description": "Sets the grid column start and end.",
@@ -3423,10 +3423,10 @@
                 "Unit.GridLine"
             ],
             "names": [
-                "start",
-                "end"
+                "columnStart",
+                "columnEnd"
             ],
-            "format": "{{start}} / {{end}}"
+            "format": "{{columnStart}} / {{columnEnd}}"
         },
         "column-end": {
             "description": "Sets the grid column end property.",
@@ -3434,9 +3434,9 @@
                 "Unit.GridLine"
             ],
             "names": [
-                "end"
+                "colEnd"
             ],
-            "format": "{{end}}"
+            "format": "{{colEnd}}"
         },
         "column-start": {
             "description": "Sets the grid column start property.",
@@ -3444,9 +3444,9 @@
                 "Unit.GridLine"
             ],
             "names": [
-                "start"
+                "colStart"
             ],
-            "format": "{{start}}"
+            "format": "{{colStart}}"
         },
         "gap:0": {
             "description": "Sets the grid gap property (same as gap).",
@@ -3478,9 +3478,9 @@
                 "Unit.GridLine"
             ],
             "names": [
-                "start"
+                "rowStart"
             ],
-            "format": "{{start}}"
+            "format": "{{rowStart}}"
         },
         "row:1": {
             "description": "Sets the grid row start and end.",
@@ -3489,10 +3489,10 @@
                 "Unit.GridLine"
             ],
             "names": [
-                "start",
-                "end"
+                "rowStart",
+                "rowEnd"
             ],
-            "format": "{{start}} / {{end}}"
+            "format": "{{rowStart}} / {{rowEnd}}"
         },
         "row-end": {
             "description": "Sets the grid row end property.",
@@ -3500,9 +3500,9 @@
                 "Unit.GridLine"
             ],
             "names": [
-                "end"
+                "rowEndLine"
             ],
-            "format": "{{end}}"
+            "format": "{{rowEndLine}}"
         },
         "row-start": {
             "description": "Sets the grid row start property.",
@@ -3510,9 +3510,9 @@
                 "Unit.GridLine"
             ],
             "names": [
-                "start"
+                "rowStartLine"
             ],
-            "format": "{{start}}"
+            "format": "{{rowStartLine}}"
         },
         "template-areas": {
             "description": "Sets the grid template areas property.",
@@ -3530,9 +3530,9 @@
                 "Unit.GridTrackSize"
             ],
             "names": [
-                "size"
+                "colSize"
             ],
-            "format": "{{size}}"
+            "format": "{{colSize}}"
         },
         "template-columns:1": {
             "description": "Sets the grid template columns property with multiple tracks.",
@@ -3540,9 +3540,9 @@
                 "sequence[Unit.GridTrackSize]"
             ],
             "names": [
-                "sizes"
+                "colSizes"
             ],
-            "format": "#SEQ "
+            "format": "{{colSizes}}"
         },
         "template-rows:0": {
             "description": "Sets the grid template rows property.",
@@ -3550,9 +3550,9 @@
                 "Unit.GridTrackSize"
             ],
             "names": [
-                "size"
+                "rowSize"
             ],
-            "format": "{{size}}"
+            "format": "{{rowSize}}"
         },
         "template-rows:1": {
             "description": "Sets the grid template rows property with multiple tracks.",
@@ -3560,9 +3560,9 @@
                 "sequence[Unit.GridTrackSize]"
             ],
             "names": [
-                "sizes"
+                "rowSizes"
             ],
-            "format": "#SEQ "
+            "format": "{{rowSizes}}"
         }
     },
     "inset:0": {
@@ -4226,9 +4226,9 @@
                 "Unit.Length"
             ],
             "names": [
-                "value"
+                "dasharray"
             ],
-            "format": "{{value}}"
+            "format": "{{dasharray}}"
         },
         "dashoffset": {
             "description": "Sets the offset for the start position of the SVG stroke dash array.",
@@ -4236,9 +4236,9 @@
                 "Unit.Length"
             ],
             "names": [
-                "value"
+                "dashoffset"
             ],
-            "format": "{{value}}"
+            "format": "{{dashoffset}}"
         },
         "linecap": {
             "description": "Sets the shape to be used at the end of open subpaths when they are stroked.",
@@ -4286,9 +4286,9 @@
                 "Unit.Length"
             ],
             "names": [
-                "value"
+                "strokeWidth"
             ],
-            "format": "{{value}}"
+            "format": "{{strokeWidth}}"
         }
     },
     "clip-rule": {
@@ -4318,9 +4318,9 @@
                 "Unit.NoneUrl"
             ],
             "names": [
-                "marker"
+                "startMarker"
             ],
-            "format": "{{marker}}"
+            "format": "{{startMarker}}"
         },
         "mid": {
             "description": "Sets the arrowhead or polymarker drawn at the middle vertices of an SVG element.",
@@ -4328,9 +4328,9 @@
                 "Unit.NoneUrl"
             ],
             "names": [
-                "marker"
+                "midMarker"
             ],
-            "format": "{{marker}}"
+            "format": "{{midMarker}}"
         },
         "end": {
             "description": "Sets the arrowhead or polymarker drawn at the final vertex of an SVG element.",
@@ -4338,9 +4338,9 @@
                 "Unit.NoneUrl"
             ],
             "names": [
-                "marker"
+                "endMarker"
             ],
-            "format": "{{marker}}"
+            "format": "{{endMarker}}"
         }
     },
     "width:2": {

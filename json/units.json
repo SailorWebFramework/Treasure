@@ -4867,6 +4867,53 @@
         },
         "description": "Hints to the renderer about trade-offs in SVG shape rendering."
     },
+    "Content": {
+        "cases": {
+            "normal": {
+                "description": "The default value. Computes to none for replaced elements, and the element's value for non-replaced elements."
+            },
+            "none": {
+                "description": "No content is generated."
+            },
+            "open-quote": {
+                "description": "Inserts an open quote."
+            },
+            "close-quote": {
+                "description": "Inserts a close quote."
+            },
+            "no-open-quote": {
+                "description": "Removes an open quote but does not insert anything."
+            },
+            "no-close-quote": {
+                "description": "Removes a close quote but does not insert anything."
+            },
+            "text": {
+                "values": ["String"],
+                "names": ["text"],
+                "description": "Sets the content to a text value.",
+                "format": "{{text}}"
+            },
+            "attr": {
+                "values": ["String"],
+                "names": ["attribute"],
+                "description": "Returns the value of an attribute.",
+                "format": "attr({{attribute}})"
+            },
+            "url": {
+                "values": ["String"],
+                "names": ["url"],
+                "description": "Sets the content to a URL.",
+                "format": "url({{url}})"
+            },
+            "counter": {
+                "values": ["String"],
+                "names": ["name"],
+                "description": "Sets the content to a counter value.",
+                "format": "counter({{name}})"
+            }
+        },
+        "description": "The CSS content property value."
+    },
     "Fraction": {
         "cases": {
             "_1_2":   { "description": "One half (50%)",               "format": "50%" },

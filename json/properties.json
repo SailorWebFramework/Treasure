@@ -2405,5 +2405,105 @@
             "names": ["position"],
             "format": "{{position}}"
         }
+    },
+    "fill:0": {
+        "description": "Sets the SVG fill color.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "fill-opacity": {
+        "description": "Sets the opacity of the SVG fill.",
+        "types": ["Unit.NumberPercentage"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "fill-rule": {
+        "description": "Sets the algorithm used to determine the inside part of an SVG shape.",
+        "types": ["Unit.FillRule"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "stroke:0": {
+        "description": "Sets the SVG stroke color.",
+        "types": ["Unit.Color"],
+        "names": ["color"],
+        "format": "{{color}}"
+    },
+    "stroke-*": {
+        "dasharray": {
+            "description": "Sets the pattern of dashes and gaps used to paint the outline of SVG shapes.",
+            "types": ["Unit.Length"],
+            "names": ["value"],
+            "format": "{{value}}"
+        },
+        "dashoffset": {
+            "description": "Sets the offset for the start position of the SVG stroke dash array.",
+            "types": ["Unit.Length"],
+            "names": ["value"],
+            "format": "{{value}}"
+        },
+        "linecap": {
+            "description": "Sets the shape to be used at the end of open subpaths when they are stroked.",
+            "types": ["Unit.StrokeLinecap"],
+            "names": ["value"],
+            "format": "{{value}}"
+        },
+        "linejoin": {
+            "description": "Sets the shape to be used at the corners of paths when they are stroked.",
+            "types": ["Unit.StrokeLinejoin"],
+            "names": ["value"],
+            "format": "{{value}}"
+        },
+        "miterlimit": {
+            "description": "Sets the limit on the ratio of the miter length to the stroke width for mitered stroke joins.",
+            "types": ["Unit.Number"],
+            "names": ["value"],
+            "format": "{{value}}"
+        },
+        "opacity": {
+            "description": "Sets the opacity of the SVG stroke.",
+            "types": ["Unit.NumberPercentage"],
+            "names": ["value"],
+            "format": "{{value}}"
+        },
+        "width": {
+            "description": "Sets the width of the SVG stroke.",
+            "types": ["Unit.Length"],
+            "names": ["value"],
+            "format": "{{value}}"
+        }
+    },
+    "clip-rule": {
+        "description": "Sets the algorithm used to determine what parts of the canvas are included inside a clip path.",
+        "types": ["Unit.FillRule"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "shape-rendering": {
+        "description": "Provides hints to the renderer about what trade-offs to make when rendering SVG shapes.",
+        "types": ["Unit.ShapeRendering"],
+        "names": ["value"],
+        "format": "{{value}}"
+    },
+    "marker-*": {
+        "start": {
+            "description": "Sets the arrowhead or polymarker drawn at the first vertex of an SVG element.",
+            "types": ["Unit.NoneUrl"],
+            "names": ["marker"],
+            "format": "{{marker}}"
+        },
+        "mid": {
+            "description": "Sets the arrowhead or polymarker drawn at the middle vertices of an SVG element.",
+            "types": ["Unit.NoneUrl"],
+            "names": ["marker"],
+            "format": "{{marker}}"
+        },
+        "end": {
+            "description": "Sets the arrowhead or polymarker drawn at the final vertex of an SVG element.",
+            "types": ["Unit.NoneUrl"],
+            "names": ["marker"],
+            "format": "{{marker}}"
+        }
     }
 }

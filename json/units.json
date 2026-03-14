@@ -4790,5 +4790,77 @@
             }
         },
         "description": "The reference box for transform and transform-origin."
+    },
+    "Url": {
+        "cases": {
+            "url": {
+                "values": ["String"],
+                "names": ["url"],
+                "description": "A URL reference.",
+                "format": "url({{url}})"
+            }
+        },
+        "description": "A URL reference value."
+    },
+    "NoneUrl": {
+        "inherit": ["None", "Url"],
+        "cases": {},
+        "description": "No URL or a URL reference."
+    },
+    "FillRule": {
+        "cases": {
+            "nonzero": {
+                "description": "Determines the inside of a shape using the nonzero winding rule."
+            },
+            "evenodd": {
+                "description": "Determines the inside of a shape using the even-odd rule."
+            }
+        },
+        "description": "The algorithm used to determine the inside of a shape."
+    },
+    "StrokeLinecap": {
+        "cases": {
+            "butt": {
+                "description": "The stroke ends with a flat edge at the endpoint."
+            },
+            "round": {
+                "description": "The stroke ends with a semicircle at the endpoint."
+            },
+            "square": {
+                "description": "The stroke ends with a square projection beyond the endpoint."
+            }
+        },
+        "description": "The shape at the end of open subpaths when they are stroked."
+    },
+    "StrokeLinejoin": {
+        "cases": {
+            "miter": {
+                "description": "The outer edges of the strokes are extended to meet at a point."
+            },
+            "round": {
+                "description": "The corner is rounded off with a circular arc."
+            },
+            "bevel": {
+                "description": "The corner is cut off with a straight line."
+            }
+        },
+        "description": "The shape used to join two line segments where they meet."
+    },
+    "ShapeRendering": {
+        "cases": {
+            "auto": {
+                "description": "The browser makes trade-offs between speed, crispness, and geometric precision."
+            },
+            "optimizeSpeed": {
+                "description": "Rendering emphasizes speed over geometric precision and crispness."
+            },
+            "crispEdges": {
+                "description": "Rendering emphasizes crispness of edges over speed and geometric precision."
+            },
+            "geometricPrecision": {
+                "description": "Rendering emphasizes geometric precision over speed and crispness."
+            }
+        },
+        "description": "Hints to the renderer about trade-offs in SVG shape rendering."
     }
 }

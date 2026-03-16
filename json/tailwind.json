@@ -2530,5 +2530,7 @@
     ".ring-fuchsia-950": ".ring-fuchsia-950 { --tw-ring-color: #4a044e; }",
     ".bg-gray-950": ".bg-gray-950 { background-color: #030712; }",
     ".text-gray-950": ".text-gray-950 { color: #030712; }",
-    ".border-gray-950": ".border-gray-950 { border-color: #030712; }"
+    ".border-gray-950": ".border-gray-950 { border-color: #030712; }",
+    ".overscroll-auto": ".overscroll-auto { overscroll-behavior: auto; }",
+    ".overscroll-none": ".overscroll-none { overscroll-behavior: none; }"
 }

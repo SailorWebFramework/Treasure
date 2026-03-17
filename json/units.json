@@ -1,87 +1,143 @@
 {
     "Length": {
         "cases": {
-            "px": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "px": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of pixels.",
                 "format": "{{value}}px"
             },
-            "em": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "em": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of ems.",
                 "format": "{{value}}em"
             },
-            "vh": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "vh": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of viewport heights.",
                 "format": "{{value}}vh"
             },
-            "vw": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "vw": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of viewport widths.",
                 "format": "{{value}}vw"
             },
-            "rem": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "rem": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of rems.",
                 "format": "{{value}}rem"
             },
-            "ch": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "ch": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of characters.",
                 "format": "{{value}}ch"
             },
-            "ex": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "ex": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of exs.",
                 "format": "{{value}}ex"
             },
-            "mm": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "mm": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of millimeters.",
                 "format": "{{value}}mm"
             },
-            "cm": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "cm": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of centimeters.",
                 "format": "{{value}}cm"
             },
-            "in": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "in": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of inches.",
                 "format": "{{value}}in"
             },
-            "pt": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "pt": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of points.",
                 "format": "{{value}}pt"
             },
-            "pc": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "pc": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of picas.",
                 "format": "{{value}}pc"
             },
             "vmin": {
-                "values": ["Int"],
-                "names": ["value"],
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of viewport minimums.",
                 "format": "{{value}}vmin"
             },
             "vmax": {
-                "values": ["Int"],
-                "names": ["value"],
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a number of viewport maximums.",
                 "format": "{{value}}vmax"
             }
@@ -91,8 +147,12 @@
     "Percentage": {
         "cases": {
             "percent": {
-                "values": ["Int"],
-                "names": ["percent"],
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "percent"
+                ],
                 "description": "The image is a specific percentage of the element.",
                 "format": "{{percent}}%"
             }
@@ -100,15 +160,22 @@
         "description": "A percentage."
     },
     "NoneLength": {
-        "inherit": ["None", "Length"],
+        "inherit": [
+            "None",
+            "Length"
+        ],
         "cases": {},
         "description": "No length."
     },
     "Number": {
         "cases": {
             "number": {
-                "values": ["Double"],
-                "names": ["number"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "number"
+                ],
                 "description": "A raw number.",
                 "format": "{{number}}%"
             }
@@ -118,8 +185,12 @@
     "Integer": {
         "cases": {
             "int": {
-                "values": ["Int"],
-                "names": ["int"],
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "int"
+                ],
                 "description": "A raw integer.",
                 "format": "{{number}}%"
             }
@@ -128,27 +199,43 @@
     },
     "Angle": {
         "cases": {
-            "deg": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "deg": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines an angle in degrees.",
                 "format": "{{value}}deg"
             },
-            "grad": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "grad": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines an angle in gradians.",
                 "format": "{{value}}grad"
             },
-            "rad": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "rad": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines an angle in radians.",
                 "format": "{{value}}rad"
             },
-            "turn": { 
-                "values": ["Int"],
-                "names": ["value"],
+            "turn": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines an angle in turns.",
                 "format": "{{value}}turn"
             }
@@ -157,10 +244,10 @@
     },
     "Direction": {
         "cases": {
-            "ltr": { 
+            "ltr": {
                 "description": "The default value. Defines left to right text rendering."
             },
-            "rtl": { 
+            "rtl": {
                 "description": "Defines right to left text rendering."
             }
         },
@@ -168,13 +255,13 @@
     },
     "AutoBool": {
         "cases": {
-            "true": { 
+            "true": {
                 "description": "true value for auto-bool."
             },
-            "false": { 
+            "false": {
                 "description": "false value for auto-bool."
             },
-            "auto": { 
+            "auto": {
                 "description": "default behavior of this element on this browser."
             }
         },
@@ -182,25 +269,25 @@
     },
     "EnterKeyHint": {
         "cases": {
-            "done": { 
+            "done": {
                 "description": "The user is done with this text field."
             },
-            "enter": { 
+            "enter": {
                 "description": "The user is done with this text field."
             },
-            "go": { 
+            "go": {
                 "description": "The user is done with this text field."
             },
-            "next": { 
+            "next": {
                 "description": "The user is done with this text field."
             },
-            "previous": { 
+            "previous": {
                 "description": "The user is done with this text field."
             },
-            "search": { 
+            "search": {
                 "description": "The user is done with this text field."
             },
-            "send": { 
+            "send": {
                 "description": "The user is done with this text field."
             }
         },
@@ -208,28 +295,28 @@
     },
     "InputMode": {
         "cases": {
-            "decimal": { 
+            "decimal": {
                 "description": "A numeric value with a decimal point."
             },
-            "email": { 
+            "email": {
                 "description": "An email address."
             },
-            "none": { 
+            "none": {
                 "description": "No input mode."
             },
-            "numeric": { 
+            "numeric": {
                 "description": "A numeric value."
             },
-            "search": { 
+            "search": {
                 "description": "A search field."
             },
-            "tel": { 
+            "tel": {
                 "description": "A telephone number."
             },
-            "text": { 
+            "text": {
                 "description": "A free-form text field."
             },
-            "url": { 
+            "url": {
                 "description": "A URL."
             }
         },
@@ -237,10 +324,10 @@
     },
     "Question": {
         "cases": {
-            "yes": { 
+            "yes": {
                 "description": "The answer is yes."
             },
-            "no": { 
+            "no": {
                 "description": "The answer is no."
             }
         },
@@ -248,19 +335,19 @@
     },
     "LineBreak": {
         "cases": {
-            "auto": { 
+            "auto": {
                 "description": "The default behavior."
             },
-            "loose": { 
+            "loose": {
                 "description": "The line break is loose."
             },
-            "normal": { 
+            "normal": {
                 "description": "The line break is normal."
             },
-            "strict": { 
+            "strict": {
                 "description": "The line break is strict."
             },
-            "anywhere": { 
+            "anywhere": {
                 "description": "The line break can occur anywhere."
             }
         },
@@ -268,22 +355,34 @@
     },
     "LineHeight": {
         "cases": {
-            "normal": { 
+            "normal": {
                 "description": "The default line height."
             },
-            "number": { 
-                "values": ["Double"],
-                "names": ["number"],
+            "number": {
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "number"
+                ],
                 "description": "A number."
             },
-            "length": { 
-                "values": ["Unit.Length"],
-                "names": ["length"],
+            "length": {
+                "values": [
+                    "Unit.Length"
+                ],
+                "names": [
+                    "length"
+                ],
                 "description": "A length."
             },
-            "percent": { 
-                "values": ["Int"],
-                "names": ["percent"],
+            "percent": {
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "percent"
+                ],
                 "description": "A percentage."
             }
         },
@@ -292,35 +391,75 @@
     "Color": {
         "todo": "Add more color types",
         "cases": {
-            "hex": { 
-                "values": ["String"],
-                "names": ["hex"],
+            "hex": {
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "hex"
+                ],
                 "description": "Defines a color in hexadecimal format.",
                 "format": "{{hex}}"
             },
-            "rgb": { 
-                "values": ["Int", "Int", "Int"],
-                "names": ["r", "g", "b"],
+            "rgb": {
+                "values": [
+                    "Int",
+                    "Int",
+                    "Int"
+                ],
+                "names": [
+                    "r",
+                    "g",
+                    "b"
+                ],
                 "description": "Defines an RGB color."
             },
-            "rgba": { 
-                "values": ["Int", "Int", "Int", "Double"],
-                "names": ["r", "g", "b", "a"],
+            "rgba": {
+                "values": [
+                    "Int",
+                    "Int",
+                    "Int",
+                    "Double"
+                ],
+                "names": [
+                    "r",
+                    "g",
+                    "b",
+                    "a"
+                ],
                 "description": "Defines an RGBA color."
             },
-            "hsl": { 
-                "values": ["Int", "Percent", "Percent"],
-                "names": ["h", "s", "l"],
+            "hsl": {
+                "values": [
+                    "Int",
+                    "Percent",
+                    "Percent"
+                ],
+                "names": [
+                    "h",
+                    "s",
+                    "l"
+                ],
                 "description": "Defines an HSL color.",
                 "format": "hsl({{h}} {{s}}% {{l}}%)"
             },
-            "hsla": { 
-                "values": ["Int", "Percent", "Percent", "Double"],
-                "names": ["h", "s", "l", "a"],
+            "hsla": {
+                "values": [
+                    "Int",
+                    "Percent",
+                    "Percent",
+                    "Double"
+                ],
+                "names": [
+                    "h",
+                    "s",
+                    "l",
+                    "a"
+                ],
                 "description": "Defines an HSLA color.",
                 "format": "hsla({{h}} {{s}}% {{l}}% {{a}})"
             },
-            "transparent": { 
+            "transparent": {
                 "description": "Defines a transparent color."
             },
             "black": {
@@ -338,436 +477,436 @@
             "maroon": {
                 "description": "maroon color #800000"
             },
-            "red": { 
+            "red": {
                 "description": "red color #ff0000"
             },
-            "purple": { 
+            "purple": {
                 "description": "purple color #800080"
             },
-            "fuchsia": { 
+            "fuchsia": {
                 "description": "fuchsia color #ff00ff"
             },
-            "green": { 
+            "green": {
                 "description": "green color #008000"
             },
-            "lime": { 
+            "lime": {
                 "description": "lime color #00ff00"
             },
-            "olive": { 
+            "olive": {
                 "description": "olive color #808000"
             },
-            "yellow": { 
+            "yellow": {
                 "description": "yellow color #ffff00"
             },
-            "navy": { 
+            "navy": {
                 "description": "navy color #000080"
             },
-            "blue": { 
+            "blue": {
                 "description": "blue color #0000ff"
             },
-            "teal": { 
+            "teal": {
                 "description": "teal color #008080"
             },
-            "aqua": { 
+            "aqua": {
                 "description": "aqua color #00ffff"
             },
-            "aliceblue": { 
+            "aliceblue": {
                 "description": "aliceblue color #f0f8ff"
             },
-            "antiquewhite": { 
+            "antiquewhite": {
                 "description": "antiquewhite color #faebd7"
             },
-            "aquamarine": { 
+            "aquamarine": {
                 "description": "aquamarine color #7fffd4"
             },
-            "azure": { 
+            "azure": {
                 "description": "azure color #f0ffff"
             },
-            "beige": { 
+            "beige": {
                 "description": "beige color #f5f5dc"
             },
-            "bisque": { 
+            "bisque": {
                 "description": "bisque color #ffe4c4"
             },
-            "blanchedalmond": { 
+            "blanchedalmond": {
                 "description": "blanchedalmond color #ffebcd"
             },
-            "blueviolet": { 
+            "blueviolet": {
                 "description": "blueviolet color #8a2be2"
             },
-            "brown": { 
+            "brown": {
                 "description": "brown color #a52a2a"
             },
-            "burlywood": { 
+            "burlywood": {
                 "description": "burlywood color #deb887"
             },
-            "cadetblue": { 
+            "cadetblue": {
                 "description": "cadetblue color #5f9ea0"
             },
-            "chartreuse": { 
+            "chartreuse": {
                 "description": "chartreuse color #7fff00"
             },
-            "chocolate": { 
+            "chocolate": {
                 "description": "chocolate color #d2691e"
             },
-            "coral": { 
+            "coral": {
                 "description": "coral color #ff7f50"
             },
-            "cornflowerblue": { 
+            "cornflowerblue": {
                 "description": "cornflowerblue color #6495ed"
             },
-            "cornsilk": { 
+            "cornsilk": {
                 "description": "cornsilk color #fff8dc"
             },
-            "crimson": { 
+            "crimson": {
                 "description": "crimson color #dc143c"
             },
-            "cyan": { 
+            "cyan": {
                 "description": "cyan color #00ffff"
             },
-            "darkblue": { 
+            "darkblue": {
                 "description": "darkblue color #00008b"
             },
-            "darkcyan": { 
+            "darkcyan": {
                 "description": "darkcyan color #008b8b"
             },
-            "darkgoldenrod": { 
+            "darkgoldenrod": {
                 "description": "darkgoldenrod color #b8860b"
             },
-            "darkgray": { 
+            "darkgray": {
                 "description": "darkgray color #a9a9a9"
             },
-            "darkgreen": { 
+            "darkgreen": {
                 "description": "darkgreen color #006400"
             },
-            "darkgrey": { 
+            "darkgrey": {
                 "description": "darkgrey color #a9a9a9"
             },
-            "darkkhaki": { 
+            "darkkhaki": {
                 "description": "darkkhaki color #bdb76b"
             },
-            "darkmagenta": { 
+            "darkmagenta": {
                 "description": "darkmagenta color #8b008b"
             },
-            "darkolivegreen": { 
+            "darkolivegreen": {
                 "description": "darkolivegreen color #556b2f"
             },
-            "darkorange": { 
+            "darkorange": {
                 "description": "darkorange color #ff8c00"
             },
-            "darkorchid": { 
+            "darkorchid": {
                 "description": "darkorchid color #9932cc"
             },
-            "darkred": { 
+            "darkred": {
                 "description": "darkred color #8b0000"
             },
-            "darksalmon": { 
+            "darksalmon": {
                 "description": "darksalmon color #e9967a"
             },
-            "darkseagreen": { 
+            "darkseagreen": {
                 "description": "darkseagreen color #8fbc8f"
             },
-            "darkslateblue": { 
+            "darkslateblue": {
                 "description": "darkslateblue color #483d8b"
             },
-            "darkslategray": { 
+            "darkslategray": {
                 "description": "darkslategray color #2f4f4f"
             },
-            "darkslategrey": { 
+            "darkslategrey": {
                 "description": "darkslategrey color #2f4f4f"
             },
-            "darkturquoise": { 
+            "darkturquoise": {
                 "description": "darkturquoise color #00ced1"
             },
-            "darkviolet": { 
+            "darkviolet": {
                 "description": "darkviolet color #9400d3"
             },
-            "deeppink": { 
+            "deeppink": {
                 "description": "deeppink color #ff1493"
             },
-            "deepskyblue": { 
+            "deepskyblue": {
                 "description": "deepskyblue color #00bfff"
             },
-            "dimgray": { 
+            "dimgray": {
                 "description": "dimgray color #696969"
             },
-            "dimgrey": { 
+            "dimgrey": {
                 "description": "dimgrey color #696969"
             },
-            "dodgerblue": { 
+            "dodgerblue": {
                 "description": "dodgerblue color #1e90ff"
             },
-            "firebrick": { 
+            "firebrick": {
                 "description": "firebrick color #b22222"
             },
-            "floralwhite": { 
+            "floralwhite": {
                 "description": "floralwhite color #fffaf0"
             },
-            "forestgreen": { 
+            "forestgreen": {
                 "description": "forestgreen color #228b22"
             },
-            "gainsboro": { 
+            "gainsboro": {
                 "description": "gainsboro color #dcdcdc"
             },
-            "ghostwhite": { 
+            "ghostwhite": {
                 "description": "ghostwhite color #f8f8ff"
             },
-            "gold": { 
+            "gold": {
                 "description": "gold color #ffd700"
             },
-            "goldenrod": { 
+            "goldenrod": {
                 "description": "goldenrod color #daa520"
             },
-            "greenyellow": { 
+            "greenyellow": {
                 "description": "greenyellow color #adff2f"
             },
-            "grey": { 
+            "grey": {
                 "description": "grey color #808080"
             },
-            "honeydew": { 
+            "honeydew": {
                 "description": "honeydew color #f0fff0"
             },
-            "hotpink": { 
+            "hotpink": {
                 "description": "hotpink color #ff69b4"
             },
-            "indianred": { 
+            "indianred": {
                 "description": "indianred color #cd5c5c"
             },
-            "indigo": { 
+            "indigo": {
                 "description": "indigo color #4b0082"
             },
-            "ivory": { 
+            "ivory": {
                 "description": "ivory color #fffff0"
             },
-            "khaki": { 
+            "khaki": {
                 "description": "khaki color #f0e68c"
             },
-            "lavender": { 
+            "lavender": {
                 "description": "lavender color #e6e6fa"
             },
-            "lavenderblush": { 
+            "lavenderblush": {
                 "description": "lavenderblush color #fff0f5"
             },
-            "lawngreen": { 
+            "lawngreen": {
                 "description": "lawngreen color #7cfc00"
             },
-            "lemonchiffon": { 
+            "lemonchiffon": {
                 "description": "lemonchiffon color #fffacd"
             },
-            "lightblue": { 
+            "lightblue": {
                 "description": "lightblue color #add8e6"
             },
-            "lightcoral": { 
+            "lightcoral": {
                 "description": "lightcoral color #f08080"
             },
-            "lightcyan": { 
+            "lightcyan": {
                 "description": "lightcyan color #e0ffff"
             },
-            "lightgoldenrodyellow": { 
+            "lightgoldenrodyellow": {
                 "description": "lightgoldenrodyellow color #fafad2"
             },
-            "lightgray": { 
+            "lightgray": {
                 "description": "lightgray color #d3d3d3"
             },
-            "lightgreen": { 
+            "lightgreen": {
                 "description": "lightgreen color #90ee90"
             },
-            "lightgrey": { 
+            "lightgrey": {
                 "description": "lightgrey color #d3d3d3"
             },
-            "lightpink": { 
+            "lightpink": {
                 "description": "lightpink color #ffb6c1"
             },
-            "lightsalmon": { 
+            "lightsalmon": {
                 "description": "lightsalmon color #ffa07a"
             },
-            "lightseagreen": { 
+            "lightseagreen": {
                 "description": "lightseagreen color #20b2aa"
             },
-            "lightskyblue": { 
+            "lightskyblue": {
                 "description": "lightskyblue color #87cefa"
             },
-            "lightslategray": { 
+            "lightslategray": {
                 "description": "lightslategray color #778899"
             },
-            "lightslategrey": { 
+            "lightslategrey": {
                 "description": "lightslategrey color #778899"
             },
-            "lightsteelblue": { 
+            "lightsteelblue": {
                 "description": "lightsteelblue color #b0c4de"
             },
-            "lightyellow": { 
+            "lightyellow": {
                 "description": "lightyellow color #ffffe0"
             },
-            "limegreen": { 
+            "limegreen": {
                 "description": "limegreen color #32cd32"
             },
-            "linen": { 
+            "linen": {
                 "description": "linen color #faf0e6"
             },
-            "magenta": { 
+            "magenta": {
                 "description": "magenta color #ff00ff"
             },
-            "mediumaquamarine": { 
+            "mediumaquamarine": {
                 "description": "mediumaquamarine color #66cdaa"
             },
-            "mediumblue": { 
+            "mediumblue": {
                 "description": "mediumblue color #0000cd"
             },
-            "mediumorchid": { 
+            "mediumorchid": {
                 "description": "mediumorchid color #ba55d3"
             },
-            "mediumpurple": { 
+            "mediumpurple": {
                 "description": "mediumpurple color #9370db"
             },
-            "mediumseagreen": { 
+            "mediumseagreen": {
                 "description": "mediumseagreen color #3cb371"
             },
-            "mediumslateblue": { 
+            "mediumslateblue": {
                 "description": "mediumslateblue color #7b68ee"
             },
-            "mediumspringgreen": { 
+            "mediumspringgreen": {
                 "description": "mediumspringgreen color #00fa9a"
             },
-            "mediumturquoise": { 
+            "mediumturquoise": {
                 "description": "mediumturquoise color #48d1cc"
             },
-            "mediumvioletred": { 
+            "mediumvioletred": {
                 "description": "mediumvioletred color #c71585"
             },
-            "midnightblue": { 
+            "midnightblue": {
                 "description": "midnightblue color #191970"
             },
-            "mintcream": { 
+            "mintcream": {
                 "description": "mintcream color #f5fffa"
             },
-            "mistyrose": { 
+            "mistyrose": {
                 "description": "mistyrose color #ffe4e1"
             },
-            "moccasin": { 
+            "moccasin": {
                 "description": "moccasin color #ffe4b5"
             },
-            "navajowhite": { 
+            "navajowhite": {
                 "description": "navajowhite color #ffdead"
             },
-            "oldlace": { 
+            "oldlace": {
                 "description": "oldlace color #fdf5e6"
             },
-            "olivedrab": { 
+            "olivedrab": {
                 "description": "olivedrab color #6b8e23"
             },
-            "orange": { 
+            "orange": {
                 "description": "orange color #ffa500"
             },
-            "orangered": { 
+            "orangered": {
                 "description": "orangered color #ff4500"
             },
-            "orchid": { 
+            "orchid": {
                 "description": "orchid color #da70d6"
             },
-            "palegoldenrod": { 
+            "palegoldenrod": {
                 "description": "palegoldenrod color #eee8aa"
             },
-            "palegreen": { 
+            "palegreen": {
                 "description": "palegreen color #98fb98"
             },
-            "paleturquoise": { 
+            "paleturquoise": {
                 "description": "paleturquoise color #afeeee"
             },
-            "palevioletred": { 
+            "palevioletred": {
                 "description": "palevioletred color #db7093"
             },
-            "papayawhip": { 
+            "papayawhip": {
                 "description": "papayawhip color #ffefd5"
             },
-            "peachpuff": { 
+            "peachpuff": {
                 "description": "peachpuff color #ffdab9"
             },
-            "peru": { 
+            "peru": {
                 "description": "peru color #cd853f"
             },
-            "pink": { 
+            "pink": {
                 "description": "pink color #ffc0cb"
             },
-            "plum": { 
+            "plum": {
                 "description": "plum color #dda0dd"
             },
-            "powderblue": { 
+            "powderblue": {
                 "description": "powderblue color #b0e0e6"
             },
-            "rosybrown": { 
+            "rosybrown": {
                 "description": "rosybrown color #bc8f8f"
             },
-            "royalblue": { 
+            "royalblue": {
                 "description": "royalblue color #4169e1"
             },
-            "saddlebrown": { 
+            "saddlebrown": {
                 "description": "saddlebrown color #8b4513"
             },
-            "salmon": { 
+            "salmon": {
                 "description": "salmon color #fa8072"
             },
-            "sandybrown": { 
+            "sandybrown": {
                 "description": "sandybrown color #f4a460"
             },
-            "seagreen": { 
+            "seagreen": {
                 "description": "seagreen color #2e8b57"
             },
-            "seashell": { 
+            "seashell": {
                 "description": "seashell color #fff5ee"
             },
-            "sienna": { 
+            "sienna": {
                 "description": "sienna color #a0522d"
             },
-            "skyblue": { 
+            "skyblue": {
                 "description": "skyblue color #87ceeb"
             },
-            "slateblue": { 
+            "slateblue": {
                 "description": "slateblue color #6a5acd"
             },
-            "slategray": { 
+            "slategray": {
                 "description": "slategray color #708090"
             },
-            "slategrey": { 
+            "slategrey": {
                 "description": "slategrey color #708090"
             },
-            "snow": { 
+            "snow": {
                 "description": "snow color #fffafa"
             },
-            "springgreen": { 
+            "springgreen": {
                 "description": "springgreen color #00ff7f"
             },
-            "steelblue": { 
+            "steelblue": {
                 "description": "steelblue color #4682b4"
             },
-            "tan": { 
+            "tan": {
                 "description": "tan color #d2b48c"
             },
-            "thistle": { 
+            "thistle": {
                 "description": "thistle color #d8bfd8"
             },
-            "tomato": { 
+            "tomato": {
                 "description": "tomato color #ff6347"
             },
-            "turquoise": { 
+            "turquoise": {
                 "description": "turquoise color #40e0d0"
             },
-            "violet": { 
+            "violet": {
                 "description": "violet color #ee82ee"
             },
-            "wheat": { 
+            "wheat": {
                 "description": "wheat color #f5deb3"
             },
-            "whitesmoke": { 
+            "whitesmoke": {
                 "description": "whitesmoke color #f5f5f5"
             },
-            "yellowgreen": { 
+            "yellowgreen": {
                 "description": "yellowgreen color #9acd32"
             },
-            "rebeccapurple": { 
+            "rebeccapurple": {
                 "description": "rebeccapurple color #663399"
             },
-            "currentColor": { 
+            "currentColor": {
                 "description": "current color"
             }
         },
@@ -775,28 +914,28 @@
     },
     "ReferrerPolicy": {
         "cases": {
-            "no-referrer": { 
+            "no-referrer": {
                 "description": "The browser will not send a referrer."
             },
-            "no-referrer-when-downgrade": { 
+            "no-referrer-when-downgrade": {
                 "description": "The browser will not send a referrer when navigating from HTTPS to HTTP."
             },
-            "origin": { 
+            "origin": {
                 "description": "The browser will send the origin of the referrer."
             },
-            "origin-when-cross-origin": { 
+            "origin-when-cross-origin": {
                 "description": "The browser will send the origin of the referrer when navigating from the same origin."
             },
-            "same-origin": { 
+            "same-origin": {
                 "description": "The browser will send the full referrer when navigating from the same origin."
             },
-            "strict-origin": { 
+            "strict-origin": {
                 "description": "The browser will send the origin of the referrer."
             },
-            "strict-origin-when-cross-origin": { 
+            "strict-origin-when-cross-origin": {
                 "description": "The browser will send the origin of the referrer when navigating from the same origin."
             },
-            "unsafe-url": { 
+            "unsafe-url": {
                 "description": "The browser will send the full referrer."
             }
         },
@@ -804,16 +943,16 @@
     },
     "Target": {
         "cases": {
-            "_blank": { 
+            "_blank": {
                 "description": "Opens the link in a new window or tab."
             },
-            "_self": { 
+            "_self": {
                 "description": "Opens the link in the same frame as it was clicked."
             },
-            "_parent": { 
+            "_parent": {
                 "description": "Opens the link in the parent frame."
             },
-            "_top": { 
+            "_top": {
                 "description": "Opens the link in the full body of the window."
             }
         },
@@ -821,10 +960,10 @@
     },
     "FormMethod": {
         "cases": {
-            "get": { 
+            "get": {
                 "description": "The form data is appended to the URL."
             },
-            "post": { 
+            "post": {
                 "description": "The form data is sent to the server."
             }
         },
@@ -832,13 +971,13 @@
     },
     "ButtonType": {
         "cases": {
-            "button": { 
+            "button": {
                 "description": "A clickable button."
             },
-            "reset": { 
+            "reset": {
                 "description": "A reset button."
             },
-            "submit": { 
+            "submit": {
                 "description": "A submit button."
             }
         },
@@ -847,24 +986,23 @@
     "FormEncType": {
         "description": "The encoding type for the form.",
         "cases": {
-            "application/x-www-form-urlencoded": { 
+            "application/x-www-form-urlencoded": {
                 "description": "The form data is URL encoded."
             },
-            "multipart/form-data": { 
+            "multipart/form-data": {
                 "description": "The form data is sent as a multipart form."
             },
-            "text/plain": { 
+            "text/plain": {
                 "description": "The form data is sent as plain text."
             }
-        
         }
     },
     "Loading": {
         "cases": {
-            "eager": { 
+            "eager": {
                 "description": "The browser will load the image immediately."
             },
-            "lazy": { 
+            "lazy": {
                 "description": "The browser will load the image when it is in the viewport."
             }
         },
@@ -872,10 +1010,10 @@
     },
     "CrossOrigin": {
         "cases": {
-            "anonymous": { 
+            "anonymous": {
                 "description": "The request does not include credentials."
             },
-            "use-credentials": { 
+            "use-credentials": {
                 "description": "The request includes credentials."
             }
         },
@@ -883,10 +1021,10 @@
     },
     "Toggle": {
         "cases": {
-            "on": { 
+            "on": {
                 "description": "The toggle is on."
             },
-            "off": { 
+            "off": {
                 "description": "The toggle is off."
             }
         },
@@ -894,76 +1032,75 @@
     },
     "InputType": {
         "cases": {
-            "button": { 
+            "button": {
                 "description": "A clickable button."
             },
-            "checkbox": { 
+            "checkbox": {
                 "description": "A checkbox."
             },
-            "color": { 
+            "color": {
                 "description": "A color picker."
             },
-            "date": { 
+            "date": {
                 "description": "A date picker."
             },
-            "datetime-local": { 
+            "datetime-local": {
                 "description": "A date and time picker."
             },
-            "email": { 
+            "email": {
                 "description": "An email input."
             },
-            "file": { 
+            "file": {
                 "description": "A file input."
             },
-            "hidden": { 
+            "hidden": {
                 "description": "A hidden input."
             },
-            "image": { 
+            "image": {
                 "description": "An image input."
             },
-            "month": { 
+            "month": {
                 "description": "A month picker."
             },
-            "number": { 
+            "number": {
                 "description": "A number input."
             },
-            "password": { 
+            "password": {
                 "description": "A password input."
             },
-            "radio": { 
+            "radio": {
                 "description": "A radio button."
             },
-            "range": { 
+            "range": {
                 "description": "A range input."
             },
-            "reset": { 
+            "reset": {
                 "description": "A reset button."
             },
-            "search": { 
+            "search": {
                 "description": "A search input."
             },
-            "submit": { 
+            "submit": {
                 "description": "A submit button."
             },
-            "tel": { 
+            "tel": {
                 "description": "A telephone input."
             },
-            "text": { 
+            "text": {
                 "description": "A text input."
             },
-            "time": { 
+            "time": {
                 "description": "A time picker."
             },
-            "url": { 
+            "url": {
                 "description": "A URL input."
             },
-            "week": { 
+            "week": {
                 "description": "A week picker."
             }
         },
         "description": "The type of input."
     },
-
     "PopoverTargetAction": {
         "cases": {
             "hide": {
@@ -982,13 +1119,21 @@
         "description": "The minimum value for a number.",
         "cases": {
             "number": {
-                "values": ["Int"],
-                "names": ["value"],
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The minimum value for a number."
             },
             "date": {
-                "values": ["String"],
-                "names": ["value"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The minimum date for a date input."
             }
         }
@@ -1061,18 +1206,28 @@
     },
     "AspectRatio": {
         "cases": {
-            "ratio": { 
-                "values": ["Int", "Int"],
-                "names": ["width", "height"],
+            "ratio": {
+                "values": [
+                    "Int",
+                    "Int"
+                ],
+                "names": [
+                    "width",
+                    "height"
+                ],
                 "description": "Defines the aspect ratio.",
                 "format": "{{width}} / {{height}}"
             },
-            "auto": { 
+            "auto": {
                 "description": "The default value."
             },
-            "float": { 
-                "values": ["Double"],
-                "names": ["value"],
+            "float": {
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines the aspect ratio using a float.",
                 "format": "{{value}}"
             }
@@ -1085,72 +1240,126 @@
                 "description": "No applied filter."
             },
             "blur": {
-                "values": ["Unit.Length"],
-                "names": ["value"],
+                "values": [
+                    "Unit.Length"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Applies a blur to the backdrop."
             },
             "brightness:0": {
-                "values": ["Double"],
-                "names": ["amount"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "amount"
+                ],
                 "description": "Applies a brightness filter to the backdrop."
             },
             "brightness:1": {
-                "values": ["Percent"],
-                "names": ["percent"],
+                "values": [
+                    "Percent"
+                ],
+                "names": [
+                    "percent"
+                ],
                 "description": "Applies a brightness filter to the backdrop.",
                 "format": "brightness({{percent}}%)"
             },
             "contrast": {
-                "values": ["Percent"],
-                "names": ["percent"],
+                "values": [
+                    "Percent"
+                ],
+                "names": [
+                    "percent"
+                ],
                 "description": "Applies a contrast filter to the backdrop.",
                 "format": "contrast({{percent}}%)"
             },
             "drop-shadow": {
-                "values": ["Unit.Length", "Unit.Length", "Unit.Length", "Color"],
-                "names": ["x", "y", "blur", "color"],
+                "values": [
+                    "Unit.Length",
+                    "Unit.Length",
+                    "Unit.Length",
+                    "Color"
+                ],
+                "names": [
+                    "x",
+                    "y",
+                    "blur",
+                    "color"
+                ],
                 "description": "Applies a drop shadow to the backdrop.",
                 "format": "drop-shadow({{x}} {{y}} {{blur}} {{color}})"
             },
             "grayscale": {
-                "values": ["Percent"],
-                "names": ["percent"],
+                "values": [
+                    "Percent"
+                ],
+                "names": [
+                    "percent"
+                ],
                 "description": "Applies a gray scale filter to the backdrop.",
                 "format": "grayscale({{percent}}%)"
             },
             "hue-rotate": {
-                "values": ["Unit.Angle"],
-                "names": ["degrees"],
+                "values": [
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "degrees"
+                ],
                 "description": "Applies a hue rotation filter to the backdrop.",
                 "format": "hue-rotate({{degrees}})"
             },
             "invert": {
-                "values": ["Percent"],
-                "names": ["percent"],
+                "values": [
+                    "Percent"
+                ],
+                "names": [
+                    "percent"
+                ],
                 "description": "Applies an invert filter to the backdrop.",
                 "format": "invert({{percent}}%)"
             },
             "opacity": {
-                "values": ["Percent"],
-                "names": ["percent"],
+                "values": [
+                    "Percent"
+                ],
+                "names": [
+                    "percent"
+                ],
                 "description": "Applies an opacity filter to the backdrop.",
                 "format": "opacity({{percent}}%)"
             },
             "saturate": {
-                "values": ["Percent"],
-                "names": ["percent"],
+                "values": [
+                    "Percent"
+                ],
+                "names": [
+                    "percent"
+                ],
                 "description": "Applies a saturation filter to the backdrop.",
                 "format": "saturate({{percent}}%)"
             },
             "sepia": {
-                "values": ["Percent"],
-                "names": ["percent"],
+                "values": [
+                    "Percent"
+                ],
+                "names": [
+                    "percent"
+                ],
                 "description": "Applies a sepia filter to the backdrop.",
                 "format": "sepia({{percent}}%)"
             },
             "url": {
-                "values": ["String"],
-                "names": ["url"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "url"
+                ],
                 "description": "Applies a filter to the backdrop.",
                 "format": "url({{url}})"
             }
@@ -1248,24 +1457,38 @@
             }
         },
         "description": "The box model for the element."
-    }, 
+    },
     "Position": {
         "cases": {
             "x": {
-                "values": ["Unit.PositionX"],
-                "names": ["value"],
+                "values": [
+                    "Unit.PositionX"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The element is positioned at a specific length.",
                 "format": "{{value}}"
             },
             "y": {
-                "values": ["Unit.PositionY"],
-                "names": ["value"],
+                "values": [
+                    "Unit.PositionY"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The element is positioned at a specific length.",
                 "format": "{{value}}"
             },
             "xy": {
-                "values": ["Unit.PositionX", "Unit.PositionY"],
-                "names": ["x", "y"],
+                "values": [
+                    "Unit.PositionX",
+                    "Unit.PositionY"
+                ],
+                "names": [
+                    "x",
+                    "y"
+                ],
                 "description": "The element is positioned.",
                 "format": "{{x}} {{y}}"
             }
@@ -1275,20 +1498,32 @@
     "PositionX": {
         "cases": {
             "direction": {
-                "values": ["Unit.HorrizontalRelativeDirection"],
-                "names": ["value"],
+                "values": [
+                    "Unit.HorrizontalRelativeDirection"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The element is positioned at a specific length.",
                 "format": "{{value}}"
             },
             "offset": {
-                "values": ["Unit.Length"],
-                "names": ["value"],
+                "values": [
+                    "Unit.Length"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The element is positioned at a specific length.",
                 "format": "{{value}}"
             },
             "percent": {
-                "values": ["Percent"],
-                "names": ["value"],
+                "values": [
+                    "Percent"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The element is positioned at a specific percentage.",
                 "format": "{{value}}%"
             }
@@ -1298,20 +1533,32 @@
     "PositionY": {
         "cases": {
             "direction": {
-                "values": ["Unit.VerticalRelativeDirection"],
-                "names": ["value"],
+                "values": [
+                    "Unit.VerticalRelativeDirection"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The element is positioned at a specific length.",
                 "format": "{{value}}"
             },
             "offset": {
-                "values": ["Unit.Length"],
-                "names": ["value"],
+                "values": [
+                    "Unit.Length"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The element is positioned at a specific length.",
                 "format": "{{value}}"
             },
             "percent": {
-                "values": ["Percent"],
-                "names": ["value"],
+                "values": [
+                    "Percent"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The element is positioned at a specific percentage.",
                 "format": "{{value}}%"
             }
@@ -1346,7 +1593,7 @@
         },
         "description": "The horizontal relative direction of the element."
     },
-    "CompatAuto": {   
+    "CompatAuto": {
         "cases": {
             "searchfield": {
                 "description": "The element is a search field."
@@ -1390,7 +1637,10 @@
         "description": "The compatibility of the feature."
     },
     "Appearance": {
-        "inherit": ["CompatAuto", "CompatSpecial"],
+        "inherit": [
+            "CompatAuto",
+            "CompatSpecial"
+        ],
         "cases": {
             "auto": {
                 "description": "The browser decides the appearance."
@@ -1440,8 +1690,14 @@
             },
             "both": {
                 "description": "both directions specified",
-                "values": ["Unit.InnerRepeat", "Unit.InnerRepeat"],
-                "names": ["horizontal", "vertical"],
+                "values": [
+                    "Unit.InnerRepeat",
+                    "Unit.InnerRepeat"
+                ],
+                "names": [
+                    "horizontal",
+                    "vertical"
+                ],
                 "format": "{{horizontal}} {{vertical}}"
             }
         },
@@ -1460,14 +1716,24 @@
             },
             "size:0": {
                 "description": "both directions specified",
-                "values": ["Unit.AutoLengthPercentage"],
-                "names": ["widthAndHeight"],
+                "values": [
+                    "Unit.AutoLengthPercentage"
+                ],
+                "names": [
+                    "widthAndHeight"
+                ],
                 "format": "{{both}}"
             },
-            "size:1":  {
+            "size:1": {
                 "description": "both directions specified",
-                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
-                "names": ["width", "height"],
+                "values": [
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage"
+                ],
+                "names": [
+                    "width",
+                    "height"
+                ],
                 "format": "{{width}} {{height}}"
             }
         },
@@ -1486,8 +1752,12 @@
             },
             "fit-content:1": {
                 "description": "The width is the fit content width.",
-                "values": ["Unit.LengthPercentage"],
-                "names": ["value"],
+                "values": [
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "value"
+                ],
                 "format": "fit-content({{value}})"
             },
             "auto": {
@@ -1532,21 +1802,34 @@
         "description": "The style of the line."
     },
     "AutoLineStyle": {
-        "inherit": ["LineStyle", "Auto"],
+        "inherit": [
+            "LineStyle",
+            "Auto"
+        ],
         "cases": {},
         "description": "The style of the line."
     },
     "UnidirectionalWidth": {
         "cases": {
             "both": {
-                "values": ["Unit.LineWidth"],
-                "names": ["startAndEndWidth"],
+                "values": [
+                    "Unit.LineWidth"
+                ],
+                "names": [
+                    "startAndEndWidth"
+                ],
                 "description": "The border width for all four sides.",
                 "format": "{{startAndEndWidth}}"
             },
             "each": {
-                "values": ["Unit.LineWidth", "Unit.LineWidth"],
-                "names": ["start", "end"],
+                "values": [
+                    "Unit.LineWidth",
+                    "Unit.LineWidth"
+                ],
+                "names": [
+                    "start",
+                    "end"
+                ],
                 "description": "The border width for the top, right, bottom, and left sides.",
                 "format": "{{start}} {{end}}"
             }
@@ -1567,14 +1850,28 @@
     "BorderRadius": {
         "cases": {
             "all": {
-                "values": ["Unit.LengthPercentage"],
-                "names": ["all"],
+                "values": [
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "all"
+                ],
                 "description": "The radius of the border.",
                 "format": "{{all}}"
             },
             "each": {
-                "values": ["Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.LengthPercentage"],
-                "names": ["topLeft", "topRight", "bottomRight", "bottomLeft"],
+                "values": [
+                    "Unit.LengthPercentage",
+                    "Unit.LengthPercentage",
+                    "Unit.LengthPercentage",
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "topLeft",
+                    "topRight",
+                    "bottomRight",
+                    "bottomLeft"
+                ],
                 "description": "The radius of the border.",
                 "format": "{{topLeft}} {{topRight}} {{bottomRight}} {{bottomLeft}}"
             }
@@ -1584,30 +1881,73 @@
     "BorderLineWidth": {
         "cases": {
             "with:0": {
-                "values": ["Unit.LineWidth"],
-                "names": ["allSides"],
-                "shown": [true],
+                "values": [
+                    "Unit.LineWidth"
+                ],
+                "names": [
+                    "allSides"
+                ],
+                "shown": [
+                    true
+                ],
                 "description": "The border width for all four sides.",
                 "format": "{{allSides}}"
             },
             "with:1": {
-                "values": ["Unit.LineWidth", "Unit.LineWidth"],
-                "names": ["vertical", "horizontal"],
-                "shown": [true, true],
+                "values": [
+                    "Unit.LineWidth",
+                    "Unit.LineWidth"
+                ],
+                "names": [
+                    "vertical",
+                    "horizontal"
+                ],
+                "shown": [
+                    true,
+                    true
+                ],
                 "description": "The border width for the top, right, bottom, and left sides.",
                 "format": "{{vertical}} {{horizontal}}"
             },
             "with:2": {
-                "values": ["Unit.LineWidth", "Unit.LineWidth", "Unit.LineWidth", "Unit.LineWidth"],
-                "names": ["top", "horizontal", "bottom"],
-                "shown": [true, true, true],
+                "values": [
+                    "Unit.LineWidth",
+                    "Unit.LineWidth",
+                    "Unit.LineWidth",
+                    "Unit.LineWidth"
+                ],
+                "names": [
+                    "top",
+                    "horizontal",
+                    "bottom"
+                ],
+                "shown": [
+                    true,
+                    true,
+                    true
+                ],
                 "description": "The border width for the top, right, bottom, and left sides.",
                 "format": "{{top}} {{horizontal}} {{bottom}}"
             },
             "with:3": {
-                "values": ["Unit.LineWidth", "Unit.LineWidth", "Unit.LineWidth", "Unit.LineWidth"],
-                "names": ["top", "right", "bottom", "left"],
-                "shown": [true, true, true, true],
+                "values": [
+                    "Unit.LineWidth",
+                    "Unit.LineWidth",
+                    "Unit.LineWidth",
+                    "Unit.LineWidth"
+                ],
+                "names": [
+                    "top",
+                    "right",
+                    "bottom",
+                    "left"
+                ],
+                "shown": [
+                    true,
+                    true,
+                    true,
+                    true
+                ],
                 "description": "The border width for the top, right, bottom, and left sides.",
                 "format": "{{top}} {{right}} {{bottom}} {{left}}"
             }
@@ -1615,7 +1955,9 @@
         "description": "The width of the border."
     },
     "LineWidth": {
-        "inherit": ["Length"],
+        "inherit": [
+            "Length"
+        ],
         "cases": {
             "thin": {
                 "description": "A thin line."
@@ -1630,12 +1972,17 @@
         "description": "The width of the line."
     },
     "LengthPercentage": {
-        "inherit": ["Length", "Percentage"],
+        "inherit": [
+            "Length",
+            "Percentage"
+        ],
         "cases": {},
         "description": "The radius of the border."
     },
     "LengthNumber": {
-        "inherit": ["Length"],
+        "inherit": [
+            "Length"
+        ],
         "cases": {},
         "description": "The radius of the border."
     },
@@ -1668,7 +2015,10 @@
         "description": "The repeat behavior of the image."
     },
     "SliceImage": {
-        "inherit": ["Number", "Percentage"],
+        "inherit": [
+            "Number",
+            "Percentage"
+        ],
         "cases": {
             "fill": {
                 "description": "The image is filled."
@@ -1679,14 +2029,32 @@
     "Gradient": {
         "cases": {
             "linear": {
-                "values": ["Unit.Angle"],
-                "names": ["angle"],
+                "values": [
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "angle"
+                ],
                 "description": "A linear gradient.",
                 "format": "linear-gradient({{angle}})"
             },
             "radial": {
-                "values": ["Unit.Length", "Unit.Length", "Unit.Length", "Unit.Length", "Unit.Length", "Unit.Length"],
-                "names": ["shape", "size", "position", "shape2", "size2", "position2"],
+                "values": [
+                    "Unit.Length",
+                    "Unit.Length",
+                    "Unit.Length",
+                    "Unit.Length",
+                    "Unit.Length",
+                    "Unit.Length"
+                ],
+                "names": [
+                    "shape",
+                    "size",
+                    "position",
+                    "shape2",
+                    "size2",
+                    "position2"
+                ],
                 "description": "A radial gradient.",
                 "format": "radial-gradient({{shape}} {{size}} at {{position}}, {{shape2}} {{size2}} at {{position2}})"
             }
@@ -1694,17 +2062,27 @@
         "description": "A gradient."
     },
     "Source": {
-        "inherit": ["Gradient"],
+        "inherit": [
+            "Gradient"
+        ],
         "cases": {
             "url": {
-                "values": ["String"],
-                "names": ["url"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "url"
+                ],
                 "description": "A URL image source.",
                 "format": "url({{url}})"
             },
             "src": {
-                "values": ["String"],
-                "names": ["src"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "src"
+                ],
                 "description": "A source image.",
                 "format": "src({{src}})"
             }
@@ -1712,8 +2090,12 @@
         "description": "The source of the image."
     },
     "AutoLengthPercentage": {
-        "inherit": ["Length", "Percentage", "Auto"],
-        "cases": { },
+        "inherit": [
+            "Length",
+            "Percentage",
+            "Auto"
+        ],
+        "cases": {},
         "description": "The length of the element."
     },
     "Break": {
@@ -1788,9 +2170,13 @@
             "auto": {
                 "description": "The browser decides the color."
             },
-            "color": { 
-                "values": ["Unit.Color"],
-                "names": ["color"],
+            "color": {
+                "values": [
+                    "Unit.Color"
+                ],
+                "names": [
+                    "color"
+                ],
                 "description": "The color of the element."
             }
         },
@@ -1910,7 +2296,9 @@
         "description": "The display behavior."
     },
     "AutoInt": {
-        "inherit": ["Integer"],
+        "inherit": [
+            "Integer"
+        ],
         "cases": {
             "auto": {
                 "description": "The browser decides the integer."
@@ -1933,7 +2321,10 @@
         "description": "The column fill."
     },
     "NormalLengthPercentage": {
-        "inherit": ["Length", "Percentage"],
+        "inherit": [
+            "Length",
+            "Percentage"
+        ],
         "cases": {
             "normal": {
                 "description": "The normal length."
@@ -1953,7 +2344,10 @@
         "description": "The affected elements."
     },
     "Width": {
-        "inherit": ["Length", "Percentage"],
+        "inherit": [
+            "Length",
+            "Percentage"
+        ],
         "cases": {
             "auto": {
                 "description": "The browser decides the column width."
@@ -1966,8 +2360,12 @@
             },
             "fit-content": {
                 "description": "The column width is the fit content width.",
-                "names": ["lengthPercentage"],
-                "values": ["Unit.LengthPercentage"],
+                "names": [
+                    "lengthPercentage"
+                ],
+                "values": [
+                    "Unit.LengthPercentage"
+                ],
                 "format": "fit-content({{lengthPercentage}})"
             }
         },
@@ -1976,30 +2374,73 @@
     "BorderWidth": {
         "cases": {
             "with:0": {
-                "values": ["Unit.AutoLengthPercentage"],
-                "names": ["allSides"],
-                "shown": [true],
+                "values": [
+                    "Unit.AutoLengthPercentage"
+                ],
+                "names": [
+                    "allSides"
+                ],
+                "shown": [
+                    true
+                ],
                 "description": "The border width for all four sides.",
                 "format": "{{allSides}}"
             },
             "with:1": {
-                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
-                "names": ["vertical", "horizontal"],
-                "shown": [true, true],
+                "values": [
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage"
+                ],
+                "names": [
+                    "vertical",
+                    "horizontal"
+                ],
+                "shown": [
+                    true,
+                    true
+                ],
                 "description": "The border width for the top, right, bottom, and left sides.",
                 "format": "{{vertical}} {{horizontal}}"
             },
             "with:2": {
-                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
-                "names": ["top", "horizontal", "bottom"],
-                "shown": [true, true, true],
+                "values": [
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage"
+                ],
+                "names": [
+                    "top",
+                    "horizontal",
+                    "bottom"
+                ],
+                "shown": [
+                    true,
+                    true,
+                    true
+                ],
                 "description": "The border width for the top, right, bottom, and left sides.",
                 "format": "{{top}} {{horizontal}} {{bottom}}"
             },
             "with:3": {
-                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
-                "names": ["top", "right", "bottom", "left"],
-                "shown": [true, true, true, true],
+                "values": [
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage"
+                ],
+                "names": [
+                    "top",
+                    "right",
+                    "bottom",
+                    "left"
+                ],
+                "shown": [
+                    true,
+                    true,
+                    true,
+                    true
+                ],
                 "description": "The border width for the top, right, bottom, and left sides.",
                 "format": "{{top}} {{right}} {{bottom}} {{left}}"
             }
@@ -2027,8 +2468,12 @@
             },
             "string": {
                 "description": "The container is custom name.",
-                "names": ["value"],
-                "values": ["String"],
+                "names": [
+                    "value"
+                ],
+                "values": [
+                    "String"
+                ],
                 "format": "{{value}}"
             }
         },
@@ -2046,7 +2491,9 @@
         "description": "The visibility of the element."
     },
     "FlexBasis": {
-        "inherit": ["Width"],
+        "inherit": [
+            "Width"
+        ],
         "cases": {
             "content": {
                 "description": "The flex basis is the content width."
@@ -2113,8 +2560,14 @@
             },
             "snap-block:1": {
                 "description": "The element is floated with a snap block.",
-                "names": ["length", "offset"],
-                "values": ["Unit.Length", "optional[Unit.Location]"],
+                "names": [
+                    "length",
+                    "offset"
+                ],
+                "values": [
+                    "Unit.Length",
+                    "optional[Unit.Location]"
+                ],
                 "format": "snap-block({{length}}{{?, {{!offset}}?}})"
             },
             "snap-inline:0": {
@@ -2122,8 +2575,14 @@
             },
             "snap-inline:1": {
                 "description": "The element is floated with a snap inline.",
-                "names": ["length", "offset"],
-                "values": ["Unit.Length", "optional[Unit.Location]"],
+                "names": [
+                    "length",
+                    "offset"
+                ],
+                "values": [
+                    "Unit.Length",
+                    "optional[Unit.Location]"
+                ],
                 "format": "snap-inline({{length}}{{?, {{!offset}}?}})"
             },
             "top": {
@@ -2187,33 +2646,53 @@
         "description": "The color adjustment."
     },
     "GridLine": {
-        "inherit": ["Integer"],
+        "inherit": [
+            "Integer"
+        ],
         "cases": {
             "auto": {
                 "description": "The browser decides the grid line."
             },
             "custom:0": {
                 "description": "The grid line is custom.",
-                "names": ["customIdent"],
-                "values": ["String"],
+                "names": [
+                    "customIdent"
+                ],
+                "values": [
+                    "String"
+                ],
                 "format": "{{customIdent}}"
             },
             "custom:1": {
                 "description": "The grid line is an integer.",
-                "names": ["value", "customIdent"],
-                "values": ["Int", "String"],
+                "names": [
+                    "value",
+                    "customIdent"
+                ],
+                "values": [
+                    "Int",
+                    "String"
+                ],
                 "format": "{{value}} {{customIdent}}"
             },
             "span:0": {
                 "description": "The grid line spans.",
-                "names": ["customIdent"],
-                "values": ["String"],
+                "names": [
+                    "customIdent"
+                ],
+                "values": [
+                    "String"
+                ],
                 "format": "span {{customIdent}}"
             },
             "span:1": {
                 "description": "The grid line spans.",
-                "names": ["value"],
-                "values": ["Int"],
+                "names": [
+                    "value"
+                ],
+                "values": [
+                    "Int"
+                ],
                 "format": "span {{value}}"
             }
         },
@@ -2285,7 +2764,7 @@
         },
         "description": "The normal value."
     },
-    "WritingMode": {     
+    "WritingMode": {
         "cases": {
             "horizontal-tb": {
                 "description": "The writing mode is horizontal tb."
@@ -2541,7 +3020,10 @@
         "description": "text transformation"
     },
     "TextDecorationThickness": {
-        "inherit": ["Length", "Percentage"],
+        "inherit": [
+            "Length",
+            "Percentage"
+        ],
         "cases": {
             "auto": {
                 "description": "auto."
@@ -2607,20 +3089,32 @@
         "cases": {
             "named": {
                 "description": "The element is named.",
-                "values": ["String"],
-                "names": ["name"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "name"
+                ],
                 "format": "{{name}}"
             },
             "customIdent": {
                 "description": "The element is named.",
-                "values": ["String"],
-                "names": ["ident"],
-                "format": "{{ident}}"            
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "ident"
+                ],
+                "format": "{{ident}}"
             },
             "generic": {
                 "description": "The element is named.",
-                "values": ["String"],
-                "names": ["name"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "name"
+                ],
                 "format": "generic({{name}})"
             }
         },
@@ -2662,8 +3156,12 @@
             },
             "running": {
                 "description": "The element is running.",
-                "values": ["String"],
-                "names": ["customIdent"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "customIdent"
+                ],
                 "format": "running({{customIdent}})"
             }
         },
@@ -2821,8 +3319,14 @@
         "cases": {
             "pair": {
                 "description": "The pair is custom.",
-                "values": ["String", "String"],
-                "names": ["open", "close"],
+                "values": [
+                    "String",
+                    "String"
+                ],
+                "names": [
+                    "open",
+                    "close"
+                ],
                 "format": "'{{open}}' '{{close}}'"
             }
         },
@@ -2838,8 +3342,12 @@
             },
             "with": {
                 "description": "Custom quotes.",
-                "values": ["sequence[Unit.Pair]"],
-                "names": ["pairs"],
+                "values": [
+                    "sequence[Unit.Pair]"
+                ],
+                "names": [
+                    "pairs"
+                ],
                 "format": "#SEQ "
             }
         },
@@ -2868,7 +3376,7 @@
         },
         "description": "The resize behavior."
     },
-    "CaptionSide": { 
+    "CaptionSide": {
         "cases": {
             "top": {
                 "description": "The caption is on top."
@@ -2893,20 +3401,56 @@
     "BoxShadow": {
         "cases": {
             "with:0": {
-                "values": ["Unit.Color", "Unit.Length", "Unit.Length", "Unit.Length", "Unit.Length", "optional[Unit.BoxShadowPosition]"],
-                "names": ["color", "offsetX", "offsetY", "blur", "spread", "position"],
+                "values": [
+                    "Unit.Color",
+                    "Unit.Length",
+                    "Unit.Length",
+                    "Unit.Length",
+                    "Unit.Length",
+                    "optional[Unit.BoxShadowPosition]"
+                ],
+                "names": [
+                    "color",
+                    "offsetX",
+                    "offsetY",
+                    "blur",
+                    "spread",
+                    "position"
+                ],
                 "description": "Defines the shadow effect around an element's frame.",
                 "format": "{{color}} {{offsetX}} {{offsetY}} {{blur}} {{spread}} {{position}}"
             },
             "with:1": {
-                "values": ["Unit.Color", "Unit.Length", "Unit.Length", "optional[Unit.BoxShadowPosition]"],
-                "names": ["color", "offsetX", "offsetY", "position"],
+                "values": [
+                    "Unit.Color",
+                    "Unit.Length",
+                    "Unit.Length",
+                    "optional[Unit.BoxShadowPosition]"
+                ],
+                "names": [
+                    "color",
+                    "offsetX",
+                    "offsetY",
+                    "position"
+                ],
                 "description": "Defines the shadow effect around an element's frame.",
                 "format": "{{color}} {{offsetX}} {{offsetY}} {{position}}"
             },
             "with:2": {
-                "values": ["Unit.Color", "Unit.Length", "Unit.Length", "Unit.Length", "optional[Unit.BoxShadowPosition]"],
-                "names": ["color", "offsetX", "offsetY", "blur", "position"],
+                "values": [
+                    "Unit.Color",
+                    "Unit.Length",
+                    "Unit.Length",
+                    "Unit.Length",
+                    "optional[Unit.BoxShadowPosition]"
+                ],
+                "names": [
+                    "color",
+                    "offsetX",
+                    "offsetY",
+                    "blur",
+                    "position"
+                ],
                 "description": "Defines the shadow effect around an element's frame.",
                 "format": "{{color}} {{offsetX}} {{offsetY}} {{blur}} {{position}}"
             }
@@ -2927,20 +3471,38 @@
                 "description": "The element is not translated."
             },
             "translate-x": {
-                "values": ["Unit.LengthPercentage"],
-                "names": ["x"],
+                "values": [
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "x"
+                ],
                 "description": "The translation of the element in the x-axis.",
                 "format": "{{x}}"
             },
             "translate-xy": {
-                "values": ["Unit.LengthPercentage", "Unit.LengthPercentage"],
-                "names": ["x", "y"],
+                "values": [
+                    "Unit.LengthPercentage",
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "x",
+                    "y"
+                ],
                 "description": "The translation of the element.",
                 "format": "{{x}} {{y}}"
             },
             "translate-xyz": {
-                "values": ["Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.Length"],
-                "names": ["x", "y", "z"],
+                "values": [
+                    "Unit.LengthPercentage",
+                    "Unit.LengthPercentage",
+                    "Unit.Length"
+                ],
+                "names": [
+                    "x",
+                    "y",
+                    "z"
+                ],
                 "description": "The translation of the element in the y, x and z axis.",
                 "format": "{{x}} {{y}} {{z}}"
             }
@@ -2981,8 +3543,12 @@
             },
             "character": {
                 "description": "The text emphasis style is custom.",
-                "values": ["Character"],
-                "names": ["value"],
+                "values": [
+                    "Character"
+                ],
+                "names": [
+                    "value"
+                ],
                 "format": "'{{value}}'"
             }
         },
@@ -3011,9 +3577,21 @@
                 "description": "The element is not indented."
             },
             "with": {
-                "values": ["Unit.LengthPercentage", "optional[Bool]", "optional[Bool]"],
-                "names": ["length", "@hanging", "@each-line"],
-                "shown": [false, true, true],
+                "values": [
+                    "Unit.LengthPercentage",
+                    "optional[Bool]",
+                    "optional[Bool]"
+                ],
+                "names": [
+                    "length",
+                    "@hanging",
+                    "@each-line"
+                ],
+                "shown": [
+                    false,
+                    true,
+                    true
+                ],
                 "description": "The indentation of the element.",
                 "format": "{{length}} {{hanging}} {{eachLine}}"
             }
@@ -3046,8 +3624,12 @@
     "BackgroundImage": {
         "cases": {
             "image": {
-                "values": ["Unit.Image"],
-                "names": ["image"],
+                "values": [
+                    "Unit.Image"
+                ],
+                "names": [
+                    "image"
+                ],
                 "description": "A URL image.",
                 "format": "{{image}}"
             },
@@ -3060,20 +3642,32 @@
     "Image": {
         "cases": {
             "url": {
-                "values": ["String"],
-                "names": ["url"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "url"
+                ],
                 "description": "A URL image.",
                 "format": "url({{url}})"
             },
             "src": {
-                "values": ["String"],
-                "names": ["src"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "src"
+                ],
                 "description": "A source image.",
                 "format": "src({{src}})"
             },
             "gradient": {
-                "values": ["Unit.Gradient"],
-                "names": ["gradient"],
+                "values": [
+                    "Unit.Gradient"
+                ],
+                "names": [
+                    "gradient"
+                ],
                 "description": "A gradient image.",
                 "format": "{{gradient}}"
             }
@@ -3084,29 +3678,61 @@
         "cases": {
             "rect:0": {
                 "showNames": true,
-                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
-                "names": ["top", "right", "bottom", "left"],
+                "values": [
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage"
+                ],
+                "names": [
+                    "top",
+                    "right",
+                    "bottom",
+                    "left"
+                ],
                 "description": "A rectangle shape.",
                 "format": "rect({{top}}, {{right}}, {{bottom}}, {{left}})"
             },
             "rect:1": {
                 "showNames": true,
-                "values": ["Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage", "Unit.AutoLengthPercentage"],
-                "names": ["top", "right", "bottom", "left", "cornerRadius"],
+                "values": [
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage",
+                    "Unit.AutoLengthPercentage"
+                ],
+                "names": [
+                    "top",
+                    "right",
+                    "bottom",
+                    "left",
+                    "cornerRadius"
+                ],
                 "description": "A rectangle shape.",
                 "format": "rect({{top}}, {{right}}, {{bottom}}, {{left}} round {{cornerRadius}})"
             },
             "circle:0": {
                 "showNames": true,
-                "values": ["Unit.AutoLengthPercentage"],
-                "names": ["radius"],
+                "values": [
+                    "Unit.AutoLengthPercentage"
+                ],
+                "names": [
+                    "radius"
+                ],
                 "description": "A circle shape.",
                 "format": "circle({{radius}})"
             },
             "circle:1": {
                 "showNames": true,
-                "values": ["Unit.AutoLengthPercentage", "Unit.Position"],
-                "names": ["radius", "position"],
+                "values": [
+                    "Unit.AutoLengthPercentage",
+                    "Unit.Position"
+                ],
+                "names": [
+                    "radius",
+                    "position"
+                ],
                 "description": "A circle shape.",
                 "format": "circle({{radius}} at {{position}})"
             }
@@ -3137,7 +3763,10 @@
         "description": "The geometry box."
     },
     "NumberPercentage": {
-        "inherit": ["Number", "Percentage"],
+        "inherit": [
+            "Number",
+            "Percentage"
+        ],
         "cases": {},
         "description": "The number or percentage."
     },
@@ -3147,23 +3776,50 @@
                 "description": "The element is not scaled."
             },
             "by:0": {
-                "values": ["Unit.NumberPercentage"],
-                "names": ["xy"],
-                "shown": [true],
+                "values": [
+                    "Unit.NumberPercentage"
+                ],
+                "names": [
+                    "xy"
+                ],
+                "shown": [
+                    true
+                ],
                 "description": "The scaling of the element in the x-axis.",
                 "format": "{{xy}}"
             },
             "by:1": {
-                "values": ["Unit.NumberPercentage", "Unit.NumberPercentage"],
-                "names": ["x", "y"],
-                "shown": [true, true],
+                "values": [
+                    "Unit.NumberPercentage",
+                    "Unit.NumberPercentage"
+                ],
+                "names": [
+                    "x",
+                    "y"
+                ],
+                "shown": [
+                    true,
+                    true
+                ],
                 "description": "The scaling of the element.",
                 "format": "{{x}} {{y}}"
             },
             "by:2": {
-                "values": ["Unit.NumberPercentage", "Unit.NumberPercentage", "Unit.NumberPercentage"],
-                "names": ["x", "y", "z"],
-                "shown": [true, true, true],
+                "values": [
+                    "Unit.NumberPercentage",
+                    "Unit.NumberPercentage",
+                    "Unit.NumberPercentage"
+                ],
+                "names": [
+                    "x",
+                    "y",
+                    "z"
+                ],
+                "shown": [
+                    true,
+                    true,
+                    true
+                ],
                 "description": "The scaling of the element in the y, x and z axis.",
                 "format": "{{x}} {{y}} {{z}}"
             }
@@ -3171,7 +3827,10 @@
         "description": "The scaling of the element."
     },
     "Zoom": {
-        "inherit": ["Number", "Percentage"],
+        "inherit": [
+            "Number",
+            "Percentage"
+        ],
         "cases": {
             "normal": {
                 "description": "The zooming is normal."
@@ -3237,14 +3896,22 @@
                 "description": "The element is aligned to the middle."
             },
             "percentage": {
-                "values": ["Unit.Percentage"],
-                "names": ["percentage"],
+                "values": [
+                    "Unit.Percentage"
+                ],
+                "names": [
+                    "percentage"
+                ],
                 "description": "The element is aligned to the percentage.",
                 "format": "{{percentage}}"
             },
             "length": {
-                "values": ["Unit.Length"],
-                "names": ["length"],
+                "values": [
+                    "Unit.Length"
+                ],
+                "names": [
+                    "length"
+                ],
                 "description": "The element is aligned to the length.",
                 "format": "{{length}}"
             }
@@ -3263,8 +3930,16 @@
                 "description": "The axis is z."
             },
             "vector": {
-                "values": ["Double", "Double", "Double"],
-                "names": ["x", "y", "z"],
+                "values": [
+                    "Double",
+                    "Double",
+                    "Double"
+                ],
+                "names": [
+                    "x",
+                    "y",
+                    "z"
+                ],
                 "description": "The axis.",
                 "format": "{{x}} {{y}} {{z}}"
             }
@@ -3277,15 +3952,28 @@
                 "description": "The element is not rotated."
             },
             "angle": {
-                "values": ["Unit.Angle"],
-                "names": ["angle"],
+                "values": [
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "angle"
+                ],
                 "description": "The rotation of the element.",
                 "format": "{{angle}}"
             },
             "by": {
-                "values": ["Unit.Axis", "Unit.Angle"],
-                "names": ["axis", "angle"],
-                "shown": [true, true],
+                "values": [
+                    "Unit.Axis",
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "axis",
+                    "angle"
+                ],
+                "shown": [
+                    true,
+                    true
+                ],
                 "description": "The rotation of the element.",
                 "format": "{{axis}} {{angle}}"
             }
@@ -3307,7 +3995,10 @@
         "description": "The hyphens."
     },
     "InlineSize": {
-        "inherit": ["Length", "Percentage"],
+        "inherit": [
+            "Length",
+            "Percentage"
+        ],
         "cases": {
             "auto": {
                 "description": "The inline size is auto."
@@ -3319,8 +4010,12 @@
                 "description": "The inline size is min content."
             },
             "fit-content": {
-                "values": ["Unit.LengthPercentage"],
-                "names": ["length"],
+                "values": [
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "length"
+                ],
                 "description": "The inline size is fit content.",
                 "format": "fit-content({{length}})"
             }
@@ -3333,8 +4028,12 @@
                 "description": "The hyphenate character is auto."
             },
             "string": {
-                "values": ["String"],
-                "names": ["string"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "string"
+                ],
                 "description": "The hyphenate character is a string.",
                 "format": "{{string}}"
             }
@@ -3344,9 +4043,21 @@
     "HyphenateLimitChars": {
         "cases": {
             "by": {
-                "values": ["Unit.AutoInt", "optional[Unit.AutoInt]", "optional[Unit.AutoInt]"],
-                "names": ["x", "y", "z"],
-                "shown": [true, true, true],
+                "values": [
+                    "Unit.AutoInt",
+                    "optional[Unit.AutoInt]",
+                    "optional[Unit.AutoInt]"
+                ],
+                "names": [
+                    "x",
+                    "y",
+                    "z"
+                ],
+                "shown": [
+                    true,
+                    true,
+                    true
+                ],
                 "description": "The hyphenate limit chars is a length.",
                 "format": "{{x}} {{y}} {{z}}"
             }
@@ -3365,14 +4076,17 @@
         "description": "The isolation mode."
     },
     "LetterSpacing": {
-        "inherit": ["Length", "Percentage"],
+        "inherit": [
+            "Length",
+            "Percentage"
+        ],
         "cases": {
             "normal": {
                 "description": "The letter spacing is normal."
             }
         },
         "description": "The letter spacing."
-    }, 
+    },
     "MixBlendMode": {
         "cases": {
             "normal": {
@@ -3472,22 +4186,36 @@
         "description": "The object position."
     },
     "OPLCR": {
-        "inherit": ["OPLR", "OPC"],
-        "cases": { },
+        "inherit": [
+            "OPLR",
+            "OPC"
+        ],
+        "cases": {},
         "description": "The object position."
     },
     "OPLCRLP": {
-        "inherit": ["OPLR", "OPC", "LengthPercentage"],
-        "cases": { },
+        "inherit": [
+            "OPLR",
+            "OPC",
+            "LengthPercentage"
+        ],
+        "cases": {},
         "description": "The object position."
     },
     "OPTCB": {
-        "inherit": ["OPTB", "OPC"],
+        "inherit": [
+            "OPTB",
+            "OPC"
+        ],
         "cases": {},
         "description": "The object position."
     },
     "OPTCBLP": {
-        "inherit": ["OPTB", "OPC", "LengthPercentage"],
+        "inherit": [
+            "OPTB",
+            "OPC",
+            "LengthPercentage"
+        ],
         "cases": {},
         "description": "The object position."
     },
@@ -3503,28 +4231,58 @@
         "description": "The object position."
     },
     "OPFull": {
-        "inherit": ["OPTB", "OPLR", "OPC"],
-        "cases": { },
+        "inherit": [
+            "OPTB",
+            "OPLR",
+            "OPC"
+        ],
+        "cases": {},
         "description": "The object position."
     },
     "ObjectPosition": {
-        "inherit": ["OPTB", "OPLR", "OPC"],
+        "inherit": [
+            "OPTB",
+            "OPLR",
+            "OPC"
+        ],
         "cases": {
             "with:0": {
-                "values": ["Unit.OPFull", "Unit.LengthPercentage"],
-                "names": ["location", "adjacentOffset"],
+                "values": [
+                    "Unit.OPFull",
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "location",
+                    "adjacentOffset"
+                ],
                 "description": "The object position is a adjacent offset.",
                 "format": "{{location}} {{adjacentOffset}}"
-            }, 
+            },
             "with:2": {
-                "values": ["Unit.OPLCRLP", "Unit.OPTCBLP"],
-                "names": ["horizontal", "vertical"],
+                "values": [
+                    "Unit.OPLCRLP",
+                    "Unit.OPTCBLP"
+                ],
+                "names": [
+                    "horizontal",
+                    "vertical"
+                ],
                 "description": "The object position is a length.",
                 "format": "{{horizontal}} {{vertical}}"
-            }, 
+            },
             "with:3": {
-                "values": ["Unit.OPLCRLP", "Unit.LengthPercentage", "Unit.OPTCBLP", "Unit.LengthPercentage"],
-                "names": ["horizontal", "offsetX", "vertical", "offsetY"],
+                "values": [
+                    "Unit.OPLCRLP",
+                    "Unit.LengthPercentage",
+                    "Unit.OPTCBLP",
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "horizontal",
+                    "offsetX",
+                    "vertical",
+                    "offsetY"
+                ],
                 "description": "The object position is a length.",
                 "format": "{{horizontal}} {{offsetX}} {{vertical}} {{offsetY}}"
             }
@@ -3546,9 +4304,21 @@
                 "description": "The paint order is markers."
             },
             "with": {
-                "values": ["optional[Bool]", "optional[Bool]", "optional[Bool]"],
-                "names": ["@fill", "@stroke", "@markers"],
-                "shown": [true, true, true],
+                "values": [
+                    "optional[Bool]",
+                    "optional[Bool]",
+                    "optional[Bool]"
+                ],
+                "names": [
+                    "@fill",
+                    "@stroke",
+                    "@markers"
+                ],
+                "shown": [
+                    true,
+                    true,
+                    true
+                ],
                 "description": "The paint order is custom.",
                 "format": "{{fill}} {{stroke}} {{markers}}"
             }
@@ -3590,7 +4360,6 @@
         },
         "description": "The pointer events."
     },
-
     "ContentPosition": {
         "cases": {
             "center": {
@@ -3661,7 +4430,9 @@
         "description": "The content safety."
     },
     "JustifyContent": {
-        "inherit": ["ContentPosition"],
+        "inherit": [
+            "ContentPosition"
+        ],
         "cases": {
             "space-between": {
                 "description": "The content is justified with space between."
@@ -3676,8 +4447,14 @@
                 "description": "The content is stretched."
             },
             "with": {
-                "values": ["Unit.ContentSafety", "Unit.ContentPosition"],
-                "names": ["contentSafety", "contentPosition"],
+                "values": [
+                    "Unit.ContentSafety",
+                    "Unit.ContentPosition"
+                ],
+                "names": [
+                    "contentSafety",
+                    "contentPosition"
+                ],
                 "description": "The content is justified with a length.",
                 "format": "{{contentSafety}} {{contentPosition}}"
             }
@@ -3685,7 +4462,9 @@
         "description": "The justify content."
     },
     "JustifyItems": {
-        "inherit": ["ContentPosition"],
+        "inherit": [
+            "ContentPosition"
+        ],
         "cases": {
             "normal": {
                 "description": "The items are normal."
@@ -3697,8 +4476,12 @@
                 "description": "The items are legacy."
             },
             "legacy:1": {
-                "values": ["Unit.OPLCR"],
-                "names": ["position"],
+                "values": [
+                    "Unit.OPLCR"
+                ],
+                "names": [
+                    "position"
+                ],
                 "description": "The items are legacy.",
                 "format": "legacy {{position}}"
             },
@@ -3706,15 +4489,24 @@
                 "description": "The items are stretched."
             },
             "baseline:1": {
-                "values": ["Unit.FirstOrLast"],
-                "names": ["order"],
+                "values": [
+                    "Unit.FirstOrLast"
+                ],
+                "names": [
+                    "order"
+                ],
                 "description": "The items are aligned to the baseline.",
                 "format": "{{order}} baseline"
-
             },
             "with": {
-                "values": ["Unit.ContentSafety", "Unit.ItemsPosition"],
-                "names": ["contentSafety", "contentPosition"],
+                "values": [
+                    "Unit.ContentSafety",
+                    "Unit.ItemsPosition"
+                ],
+                "names": [
+                    "contentSafety",
+                    "contentPosition"
+                ],
                 "description": "The items are justified with a length.",
                 "format": "{{contentSafety}} {{contentPosition}}"
             }
@@ -3722,7 +4514,9 @@
         "description": "The justify items."
     },
     "JustifySelf": {
-        "inherit": ["ContentPosition"],
+        "inherit": [
+            "ContentPosition"
+        ],
         "cases": {
             "auto": {
                 "description": "The self is auto."
@@ -3737,8 +4531,12 @@
                 "description": "The items are legacy."
             },
             "legacy:1": {
-                "values": ["Unit.OPLCR"],
-                "names": ["position"],
+                "values": [
+                    "Unit.OPLCR"
+                ],
+                "names": [
+                    "position"
+                ],
                 "description": "The items are legacy.",
                 "format": "legacy {{position}}"
             },
@@ -3746,15 +4544,24 @@
                 "description": "The items are stretched."
             },
             "baseline:1": {
-                "values": ["Unit.FirstOrLast"],
-                "names": ["order"],
+                "values": [
+                    "Unit.FirstOrLast"
+                ],
+                "names": [
+                    "order"
+                ],
                 "description": "The items are aligned to the baseline.",
                 "format": "{{order}} baseline"
-
             },
             "with": {
-                "values": ["Unit.ContentSafety", "Unit.ItemsPosition"],
-                "names": ["contentSafety", "contentPosition"],
+                "values": [
+                    "Unit.ContentSafety",
+                    "Unit.ItemsPosition"
+                ],
+                "names": [
+                    "contentSafety",
+                    "contentPosition"
+                ],
                 "description": "The items are justified with a length.",
                 "format": "{{contentSafety}} {{contentPosition}}"
             }
@@ -3764,8 +4571,14 @@
     "PlaceContent": {
         "cases": {
             "with": {
-                "values": ["Unit.AlignContent", "optional[Unit.JustifyContent]"],
-                "names": ["alignContent", "justifyContent"],
+                "values": [
+                    "Unit.AlignContent",
+                    "optional[Unit.JustifyContent]"
+                ],
+                "names": [
+                    "alignContent",
+                    "justifyContent"
+                ],
                 "description": "The content is placed with a length.",
                 "format": "{{alignContent}} {{justifyContent}}"
             }
@@ -3775,8 +4588,14 @@
     "PlaceItems": {
         "cases": {
             "with": {
-                "values": ["Unit.AlignItems", "optional[Unit.JustifyItems]"],
-                "names": ["alignItems", "justifyItems"],
+                "values": [
+                    "Unit.AlignItems",
+                    "optional[Unit.JustifyItems]"
+                ],
+                "names": [
+                    "alignItems",
+                    "justifyItems"
+                ],
                 "description": "The items are placed with a length.",
                 "format": "{{alignItems}} {{justifyItems}}"
             }
@@ -3786,8 +4605,14 @@
     "PlaceSelf": {
         "cases": {
             "with": {
-                "values": ["Unit.AlignSelf", "optional[Unit.JustifySelf]"],
-                "names": ["alignSelf", "justifySelf"],
+                "values": [
+                    "Unit.AlignSelf",
+                    "optional[Unit.JustifySelf]"
+                ],
+                "names": [
+                    "alignSelf",
+                    "justifySelf"
+                ],
                 "description": "The self is placed with a length.",
                 "format": "{{alignSelf}} {{justifySelf}}"
             }
@@ -3800,8 +4625,12 @@
                 "description": "The page is auto."
             },
             "string": {
-                "values": ["String"],
-                "names": ["identifier"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "identifier"
+                ],
                 "description": "The page is a name.",
                 "format": "{{identifier}}"
             }
@@ -3845,9 +4674,18 @@
     "CounterSet": {
         "cases": {
             "with": {
-                "values": ["String", "Int"],
-                "shown": [false, true],
-                "names": ["identifier", "to"],
+                "values": [
+                    "String",
+                    "Int"
+                ],
+                "shown": [
+                    false,
+                    true
+                ],
+                "names": [
+                    "identifier",
+                    "to"
+                ],
                 "description": "The counter set is a name.",
                 "format": "{{identifier}} {{to}}"
             }
@@ -3857,9 +4695,18 @@
     "CounterIncrement": {
         "cases": {
             "with": {
-                "values": ["String", "optional[Int]"],
-                "shown": [false, true],
-                "names": ["identifier", "by"],
+                "values": [
+                    "String",
+                    "optional[Int]"
+                ],
+                "shown": [
+                    false,
+                    true
+                ],
+                "names": [
+                    "identifier",
+                    "by"
+                ],
                 "description": "The counter set is a name.",
                 "format": "{{identifier}} {{by}}"
             }
@@ -3869,9 +4716,18 @@
     "CounterReset": {
         "cases": {
             "with:1": {
-                "values": ["String", "optional[Int]"],
-                "names": ["identifier", "to"],
-                "shown": [false, true],
+                "values": [
+                    "String",
+                    "optional[Int]"
+                ],
+                "names": [
+                    "identifier",
+                    "to"
+                ],
+                "shown": [
+                    false,
+                    true
+                ],
                 "description": "The counter reset is a name.",
                 "format": "{{identifier}} {{to}}"
             }
@@ -3879,8 +4735,11 @@
         "description": "The counter reset."
     },
     "NoneImage": {
-        "inherit": ["None", "Image"],
-        "cases": { },
+        "inherit": [
+            "None",
+            "Image"
+        ],
+        "cases": {},
         "description": "The none image."
     },
     "ListStylePosition": {
@@ -3897,8 +4756,12 @@
     "ListStyleType": {
         "cases": {
             "image": {
-                "values": ["Unit.Image"],
-                "names": ["image"],
+                "values": [
+                    "Unit.Image"
+                ],
+                "names": [
+                    "image"
+                ],
                 "description": "The list style type is an image.",
                 "format": "{{image}}"
             },
@@ -3906,8 +4769,12 @@
                 "description": "The list style type is none."
             },
             "string": {
-                "values": ["String"],
-                "names": ["string"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "string"
+                ],
                 "description": "The list style type is a string.",
                 "format": "{{string}}"
             }
@@ -3965,14 +4832,22 @@
                 "description": "The math depth is auto."
             },
             "integer": {
-                "values": ["Int"],
-                "names": ["integer"],
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "integer"
+                ],
                 "description": "The math depth is a string.",
                 "format": "{{integer}}"
             },
             "add": {
-                "values": ["Int"],
-                "names": ["integer"],
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "integer"
+                ],
                 "description": "The math depth is a string.",
                 "format": "add({{integer}})"
             }
@@ -4013,14 +4888,22 @@
     "OverflowClipMargin": {
         "cases": {
             "box": {
-                "values": ["Unit.VisualBox"],
-                "names": ["box"],
+                "values": [
+                    "Unit.VisualBox"
+                ],
+                "names": [
+                    "box"
+                ],
                 "description": "The overflow clip margin is a box.",
                 "format": "{{box}}"
             },
             "length": {
-                "values": ["Unit.Length"],
-                "names": ["length"],
+                "values": [
+                    "Unit.Length"
+                ],
+                "names": [
+                    "length"
+                ],
                 "description": "The overflow clip margin is a length.",
                 "format": "{{length}}"
             }
@@ -4180,14 +5063,22 @@
     "Time": {
         "cases": {
             "s": {
-                "values": ["Double"],
-                "names": ["value"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a time in seconds.",
                 "format": "{{value}}s"
             },
             "ms": {
-                "values": ["Int"],
-                "names": ["value"],
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Defines a time in milliseconds.",
                 "format": "{{value}}ms"
             }
@@ -4197,7 +5088,7 @@
     "TimingFunction": {
         "cases": {
             "ease": {
-                "description": "Default easing — slow start, fast middle, slow end."
+                "description": "Default easing \u2014 slow start, fast middle, slow end."
             },
             "ease-in": {
                 "description": "Slow start."
@@ -4218,20 +5109,40 @@
                 "description": "Equivalent to steps(1, jump-end)."
             },
             "cubic-bezier": {
-                "values": ["Double", "Double", "Double", "Double"],
-                "names": ["x1", "y1", "x2", "y2"],
+                "values": [
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double"
+                ],
+                "names": [
+                    "x1",
+                    "y1",
+                    "x2",
+                    "y2"
+                ],
                 "description": "Custom cubic bezier curve.",
                 "format": "cubic-bezier({{x1}}, {{y1}}, {{x2}}, {{y2}})"
             },
             "steps:0": {
-                "values": ["Int"],
-                "names": ["count"],
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "count"
+                ],
                 "description": "Steps function with count only.",
                 "format": "steps({{count}})"
             },
             "steps:1": {
-                "values": ["Int", "Unit.StepPosition"],
-                "names": ["count", "position"],
+                "values": [
+                    "Int",
+                    "Unit.StepPosition"
+                ],
+                "names": [
+                    "count",
+                    "position"
+                ],
                 "description": "Steps function with count and position.",
                 "format": "steps({{count}}, {{position}})"
             }
@@ -4247,8 +5158,12 @@
                 "description": "All properties will transition."
             },
             "custom": {
-                "values": ["String"],
-                "names": ["property"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "property"
+                ],
                 "description": "A specific CSS property to transition.",
                 "format": "{{property}}"
             }
@@ -4258,9 +5173,18 @@
     "XYValue": {
         "cases": {
             "with": {
-                "values": ["Int", "Int"],
-                "names": ["x", "y"],
-                "shown": [true, true],
+                "values": [
+                    "Int",
+                    "Int"
+                ],
+                "names": [
+                    "x",
+                    "y"
+                ],
+                "shown": [
+                    true,
+                    true
+                ],
                 "description": "The x and y value.",
                 "format": "{{x}} {{y}}"
             }
@@ -4282,8 +5206,12 @@
                 "description": "One weight lighter than the parent."
             },
             "weight": {
-                "values": ["Int"],
-                "names": ["value"],
+                "values": [
+                    "Int"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "A numeric font weight (1-1000).",
                 "format": "{{value}}"
             }
@@ -4302,8 +5230,12 @@
                 "description": "Oblique font style."
             },
             "obliqueAngle": {
-                "values": ["Unit.Angle"],
-                "names": ["angle"],
+                "values": [
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "angle"
+                ],
                 "description": "Oblique font style with a specific angle.",
                 "format": "oblique {{angle}}"
             }
@@ -4337,7 +5269,10 @@
         "description": "The variant of the font."
     },
     "WordSpacing": {
-        "inherit": ["Length", "Percentage"],
+        "inherit": [
+            "Length",
+            "Percentage"
+        ],
         "cases": {
             "normal": {
                 "description": "The word spacing is normal."
@@ -4351,8 +5286,12 @@
                 "description": "No OpenType feature overrides."
             },
             "feature": {
-                "values": ["String"],
-                "names": ["settings"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "settings"
+                ],
                 "description": "A comma-separated list of OpenType feature tag value pairs.",
                 "format": "{{settings}}"
             }
@@ -4365,8 +5304,12 @@
                 "description": "No font size adjustment."
             },
             "number": {
-                "values": ["Double"],
-                "names": ["value"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The aspect ratio to use for fallback fonts.",
                 "format": "{{value}}"
             }
@@ -4379,8 +5322,12 @@
                 "description": "No variation settings overrides."
             },
             "settings": {
-                "values": ["String"],
-                "names": ["settings"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "settings"
+                ],
                 "description": "A comma-separated list of variation axis tag value pairs.",
                 "format": "{{settings}}"
             }
@@ -4393,8 +5340,12 @@
                 "description": "Use the default language for the font."
             },
             "language": {
-                "values": ["String"],
-                "names": ["language"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "language"
+                ],
                 "description": "An OpenType language system tag string.",
                 "format": "{{language}}"
             }
@@ -4428,7 +5379,10 @@
         "description": "How auto-placed items flow into the grid."
     },
     "GridTrackSize": {
-        "inherit": ["Length", "Percentage"],
+        "inherit": [
+            "Length",
+            "Percentage"
+        ],
         "cases": {
             "auto": {
                 "description": "The track is sized automatically."
@@ -4440,32 +5394,58 @@
                 "description": "The track is sized to the maximum content."
             },
             "fr": {
-                "values": ["Double"],
-                "names": ["value"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "A fractional unit of remaining space.",
                 "format": "{{value}}fr"
             },
             "minmax": {
-                "values": ["Unit.GridTrackMin", "Unit.GridTrackMax"],
-                "names": ["min", "max"],
+                "values": [
+                    "Unit.GridTrackMin",
+                    "Unit.GridTrackMax"
+                ],
+                "names": [
+                    "min",
+                    "max"
+                ],
                 "description": "A size range between min and max.",
                 "format": "minmax({{min}}, {{max}})"
             },
             "fit-content": {
-                "values": ["Unit.LengthPercentage"],
-                "names": ["value"],
+                "values": [
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "Clamps to fit-content formula.",
                 "format": "fit-content({{value}})"
             },
             "repeat:0": {
-                "values": ["Int", "Unit.GridTrackList"],
-                "names": ["count", "tracks"],
+                "values": [
+                    "Int",
+                    "Unit.GridTrackList"
+                ],
+                "names": [
+                    "count",
+                    "tracks"
+                ],
                 "description": "Repeats a track pattern a fixed number of times.",
                 "format": "repeat({{count}}, {{tracks}})"
             },
             "repeat:1": {
-                "values": ["Unit.AutoRepeat", "Unit.GridTrackList"],
-                "names": ["auto", "tracks"],
+                "values": [
+                    "Unit.AutoRepeat",
+                    "Unit.GridTrackList"
+                ],
+                "names": [
+                    "auto",
+                    "tracks"
+                ],
                 "description": "Repeats a track pattern with auto-fill or auto-fit.",
                 "format": "repeat({{auto}}, {{tracks}})"
             }
@@ -4473,7 +5453,10 @@
         "description": "The sizing of a grid track."
     },
     "GridTrackMin": {
-        "inherit": ["Length", "Percentage"],
+        "inherit": [
+            "Length",
+            "Percentage"
+        ],
         "cases": {
             "auto": {
                 "description": "Automatic minimum."
@@ -4485,8 +5468,12 @@
                 "description": "The maximum content size."
             },
             "fr": {
-                "values": ["Double"],
-                "names": ["value"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "A fractional unit.",
                 "format": "{{value}}fr"
             }
@@ -4494,7 +5481,10 @@
         "description": "The minimum bound of a grid track."
     },
     "GridTrackMax": {
-        "inherit": ["Length", "Percentage"],
+        "inherit": [
+            "Length",
+            "Percentage"
+        ],
         "cases": {
             "auto": {
                 "description": "Automatic maximum."
@@ -4506,8 +5496,12 @@
                 "description": "The maximum content size."
             },
             "fr": {
-                "values": ["Double"],
-                "names": ["value"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "A fractional unit.",
                 "format": "{{value}}fr"
             }
@@ -4517,8 +5511,12 @@
     "GridTrackList": {
         "cases": {
             "tracks": {
-                "values": ["sequence[Unit.GridTrackSize]"],
-                "names": ["sizes"],
+                "values": [
+                    "sequence[Unit.GridTrackSize]"
+                ],
+                "names": [
+                    "sizes"
+                ],
                 "description": "A list of track sizes.",
                 "format": "#SEQ "
             }
@@ -4542,8 +5540,12 @@
                 "description": "No named grid areas."
             },
             "areas": {
-                "values": ["sequence[String]"],
-                "names": ["rows"],
+                "values": [
+                    "sequence[String]"
+                ],
+                "names": [
+                    "rows"
+                ],
                 "description": "Named grid areas as quoted row strings.",
                 "format": "#SEQ "
             }
@@ -4590,8 +5592,12 @@
                 "description": "The animation repeats indefinitely."
             },
             "count": {
-                "values": ["Double"],
-                "names": ["value"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "value"
+                ],
                 "description": "The animation repeats a specific number of times.",
                 "format": "{{value}}"
             }
@@ -4604,8 +5610,12 @@
                 "description": "No animation."
             },
             "custom": {
-                "values": ["String"],
-                "names": ["name"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "name"
+                ],
                 "description": "A named keyframes animation.",
                 "format": "{{name}}"
             }
@@ -4629,146 +5639,302 @@
                 "description": "No transform."
             },
             "translate:0": {
-                "values": ["Unit.LengthPercentage"],
-                "names": ["x"],
+                "values": [
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "x"
+                ],
                 "description": "Translate in the x-axis.",
                 "format": "translate({{x}})"
             },
             "translate:1": {
-                "values": ["Unit.LengthPercentage", "Unit.LengthPercentage"],
-                "names": ["x", "y"],
+                "values": [
+                    "Unit.LengthPercentage",
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "x",
+                    "y"
+                ],
                 "description": "Translate in x and y axes.",
                 "format": "translate({{x}}, {{y}})"
             },
             "translateX": {
-                "values": ["Unit.LengthPercentage"],
-                "names": ["x"],
+                "values": [
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "x"
+                ],
                 "description": "Translate in the x-axis.",
                 "format": "translateX({{x}})"
             },
             "translateY": {
-                "values": ["Unit.LengthPercentage"],
-                "names": ["y"],
+                "values": [
+                    "Unit.LengthPercentage"
+                ],
+                "names": [
+                    "y"
+                ],
                 "description": "Translate in the y-axis.",
                 "format": "translateY({{y}})"
             },
             "translateZ": {
-                "values": ["Unit.Length"],
-                "names": ["z"],
+                "values": [
+                    "Unit.Length"
+                ],
+                "names": [
+                    "z"
+                ],
                 "description": "Translate in the z-axis.",
                 "format": "translateZ({{z}})"
             },
             "translate3d": {
-                "values": ["Unit.LengthPercentage", "Unit.LengthPercentage", "Unit.Length"],
-                "names": ["x", "y", "z"],
+                "values": [
+                    "Unit.LengthPercentage",
+                    "Unit.LengthPercentage",
+                    "Unit.Length"
+                ],
+                "names": [
+                    "x",
+                    "y",
+                    "z"
+                ],
                 "description": "Translate in all three axes.",
                 "format": "translate3d({{x}}, {{y}}, {{z}})"
             },
             "scale:0": {
-                "values": ["Double"],
-                "names": ["xy"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "xy"
+                ],
                 "description": "Scale uniformly.",
                 "format": "scale({{xy}})"
             },
             "scale:1": {
-                "values": ["Double", "Double"],
-                "names": ["x", "y"],
+                "values": [
+                    "Double",
+                    "Double"
+                ],
+                "names": [
+                    "x",
+                    "y"
+                ],
                 "description": "Scale in x and y axes.",
                 "format": "scale({{x}}, {{y}})"
             },
             "scaleX": {
-                "values": ["Double"],
-                "names": ["x"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "x"
+                ],
                 "description": "Scale in the x-axis.",
                 "format": "scaleX({{x}})"
             },
             "scaleY": {
-                "values": ["Double"],
-                "names": ["y"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "y"
+                ],
                 "description": "Scale in the y-axis.",
                 "format": "scaleY({{y}})"
             },
             "scaleZ": {
-                "values": ["Double"],
-                "names": ["z"],
+                "values": [
+                    "Double"
+                ],
+                "names": [
+                    "z"
+                ],
                 "description": "Scale in the z-axis.",
                 "format": "scaleZ({{z}})"
             },
             "scale3d": {
-                "values": ["Double", "Double", "Double"],
-                "names": ["x", "y", "z"],
+                "values": [
+                    "Double",
+                    "Double",
+                    "Double"
+                ],
+                "names": [
+                    "x",
+                    "y",
+                    "z"
+                ],
                 "description": "Scale in all three axes.",
                 "format": "scale3d({{x}}, {{y}}, {{z}})"
             },
             "rotate:0": {
-                "values": ["Unit.Angle"],
-                "names": ["angle"],
+                "values": [
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "angle"
+                ],
                 "description": "Rotate by an angle.",
                 "format": "rotate({{angle}})"
             },
             "rotateX": {
-                "values": ["Unit.Angle"],
-                "names": ["angle"],
+                "values": [
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "angle"
+                ],
                 "description": "Rotate around the x-axis.",
                 "format": "rotateX({{angle}})"
             },
             "rotateY": {
-                "values": ["Unit.Angle"],
-                "names": ["angle"],
+                "values": [
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "angle"
+                ],
                 "description": "Rotate around the y-axis.",
                 "format": "rotateY({{angle}})"
             },
             "rotateZ": {
-                "values": ["Unit.Angle"],
-                "names": ["angle"],
+                "values": [
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "angle"
+                ],
                 "description": "Rotate around the z-axis.",
                 "format": "rotateZ({{angle}})"
             },
             "rotate3d": {
-                "values": ["Double", "Double", "Double", "Unit.Angle"],
-                "names": ["x", "y", "z", "angle"],
+                "values": [
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "x",
+                    "y",
+                    "z",
+                    "angle"
+                ],
                 "description": "Rotate around a vector axis.",
                 "format": "rotate3d({{x}}, {{y}}, {{z}}, {{angle}})"
             },
             "skew:0": {
-                "values": ["Unit.Angle"],
-                "names": ["x"],
+                "values": [
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "x"
+                ],
                 "description": "Skew in the x-axis.",
                 "format": "skew({{x}})"
             },
             "skew:1": {
-                "values": ["Unit.Angle", "Unit.Angle"],
-                "names": ["x", "y"],
+                "values": [
+                    "Unit.Angle",
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "x",
+                    "y"
+                ],
                 "description": "Skew in x and y axes.",
                 "format": "skew({{x}}, {{y}})"
             },
             "skewX": {
-                "values": ["Unit.Angle"],
-                "names": ["x"],
+                "values": [
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "x"
+                ],
                 "description": "Skew in the x-axis.",
                 "format": "skewX({{x}})"
             },
             "skewY": {
-                "values": ["Unit.Angle"],
-                "names": ["y"],
+                "values": [
+                    "Unit.Angle"
+                ],
+                "names": [
+                    "y"
+                ],
                 "description": "Skew in the y-axis.",
                 "format": "skewY({{y}})"
             },
             "matrix": {
-                "values": ["Double", "Double", "Double", "Double", "Double", "Double"],
-                "names": ["a", "b", "c", "d", "tx", "ty"],
+                "values": [
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double"
+                ],
+                "names": [
+                    "a",
+                    "b",
+                    "c",
+                    "d",
+                    "tx",
+                    "ty"
+                ],
                 "description": "2D transformation matrix.",
                 "format": "matrix({{a}}, {{b}}, {{c}}, {{d}}, {{tx}}, {{ty}})"
             },
             "matrix3d": {
-                "values": ["Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double", "Double"],
-                "names": ["a1", "b1", "c1", "d1", "a2", "b2", "c2", "d2", "a3", "b3", "c3", "d3", "a4", "b4", "c4", "d4"],
+                "values": [
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double",
+                    "Double"
+                ],
+                "names": [
+                    "a1",
+                    "b1",
+                    "c1",
+                    "d1",
+                    "a2",
+                    "b2",
+                    "c2",
+                    "d2",
+                    "a3",
+                    "b3",
+                    "c3",
+                    "d3",
+                    "a4",
+                    "b4",
+                    "c4",
+                    "d4"
+                ],
                 "description": "3D transformation matrix.",
                 "format": "matrix3d({{a1}}, {{b1}}, {{c1}}, {{d1}}, {{a2}}, {{b2}}, {{c2}}, {{d2}}, {{a3}}, {{b3}}, {{c3}}, {{d3}}, {{a4}}, {{b4}}, {{c4}}, {{d4}})"
             },
             "perspective": {
-                "values": ["Unit.Length"],
-                "names": ["depth"],
+                "values": [
+                    "Unit.Length"
+                ],
+                "names": [
+                    "depth"
+                ],
                 "description": "Applies perspective transform.",
                 "format": "perspective({{depth}})"
             }
@@ -4798,8 +5964,12 @@
     "Url": {
         "cases": {
             "url": {
-                "values": ["String"],
-                "names": ["url"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "url"
+                ],
                 "description": "A URL reference.",
                 "format": "url({{url}})"
             }
@@ -4807,7 +5977,10 @@
         "description": "A URL reference value."
     },
     "NoneUrl": {
-        "inherit": ["None", "Url"],
+        "inherit": [
+            "None",
+            "Url"
+        ],
         "cases": {},
         "description": "No URL or a URL reference."
     },
@@ -4888,26 +6061,42 @@
                 "description": "Removes a close quote but does not insert anything."
             },
             "text": {
-                "values": ["String"],
-                "names": ["text"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "text"
+                ],
                 "description": "Sets the content to a text value.",
                 "format": "{{text}}"
             },
             "attr": {
-                "values": ["String"],
-                "names": ["attribute"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "attribute"
+                ],
                 "description": "Returns the value of an attribute.",
                 "format": "attr({{attribute}})"
             },
             "url": {
-                "values": ["String"],
-                "names": ["url"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "url"
+                ],
                 "description": "Sets the content to a URL.",
                 "format": "url({{url}})"
             },
             "counter": {
-                "values": ["String"],
-                "names": ["name"],
+                "values": [
+                    "String"
+                ],
+                "names": [
+                    "name"
+                ],
                 "description": "Sets the content to a counter value.",
                 "format": "counter({{name}})"
             }
@@ -4916,33 +6105,322 @@
     },
     "Fraction": {
         "cases": {
-            "_1_2":   { "description": "One half (50%)",               "format": "50%" },
-            "_1_3":   { "description": "One third (33.333333%)",       "format": "33.333333%" },
-            "_2_3":   { "description": "Two thirds (66.666667%)",      "format": "66.666667%" },
-            "_1_4":   { "description": "One quarter (25%)",            "format": "25%" },
-            "_2_4":   { "description": "Two quarters (50%)",           "format": "50%" },
-            "_3_4":   { "description": "Three quarters (75%)",         "format": "75%" },
-            "_1_5":   { "description": "One fifth (20%)",              "format": "20%" },
-            "_2_5":   { "description": "Two fifths (40%)",             "format": "40%" },
-            "_3_5":   { "description": "Three fifths (60%)",           "format": "60%" },
-            "_4_5":   { "description": "Four fifths (80%)",            "format": "80%" },
-            "_1_6":   { "description": "One sixth (16.666667%)",       "format": "16.666667%" },
-            "_2_6":   { "description": "Two sixths (33.333333%)",      "format": "33.333333%" },
-            "_3_6":   { "description": "Three sixths (50%)",           "format": "50%" },
-            "_4_6":   { "description": "Four sixths (66.666667%)",     "format": "66.666667%" },
-            "_5_6":   { "description": "Five sixths (83.333333%)",     "format": "83.333333%" },
-            "_1_12":  { "description": "One twelfth (8.333333%)",      "format": "8.333333%" },
-            "_2_12":  { "description": "Two twelfths (16.666667%)",    "format": "16.666667%" },
-            "_3_12":  { "description": "Three twelfths (25%)",         "format": "25%" },
-            "_4_12":  { "description": "Four twelfths (33.333333%)",   "format": "33.333333%" },
-            "_5_12":  { "description": "Five twelfths (41.666667%)",   "format": "41.666667%" },
-            "_6_12":  { "description": "Six twelfths (50%)",           "format": "50%" },
-            "_7_12":  { "description": "Seven twelfths (58.333333%)",  "format": "58.333333%" },
-            "_8_12":  { "description": "Eight twelfths (66.666667%)",  "format": "66.666667%" },
-            "_9_12":  { "description": "Nine twelfths (75%)",          "format": "75%" },
-            "_10_12": { "description": "Ten twelfths (83.333333%)",    "format": "83.333333%" },
-            "_11_12": { "description": "Eleven twelfths (91.666667%)", "format": "91.666667%" }
+            "_1_2": {
+                "description": "One half (50%)",
+                "format": "50%"
+            },
+            "_1_3": {
+                "description": "One third (33.333333%)",
+                "format": "33.333333%"
+            },
+            "_2_3": {
+                "description": "Two thirds (66.666667%)",
+                "format": "66.666667%"
+            },
+            "_1_4": {
+                "description": "One quarter (25%)",
+                "format": "25%"
+            },
+            "_2_4": {
+                "description": "Two quarters (50%)",
+                "format": "50%"
+            },
+            "_3_4": {
+                "description": "Three quarters (75%)",
+                "format": "75%"
+            },
+            "_1_5": {
+                "description": "One fifth (20%)",
+                "format": "20%"
+            },
+            "_2_5": {
+                "description": "Two fifths (40%)",
+                "format": "40%"
+            },
+            "_3_5": {
+                "description": "Three fifths (60%)",
+                "format": "60%"
+            },
+            "_4_5": {
+                "description": "Four fifths (80%)",
+                "format": "80%"
+            },
+            "_1_6": {
+                "description": "One sixth (16.666667%)",
+                "format": "16.666667%"
+            },
+            "_2_6": {
+                "description": "Two sixths (33.333333%)",
+                "format": "33.333333%"
+            },
+            "_3_6": {
+                "description": "Three sixths (50%)",
+                "format": "50%"
+            },
+            "_4_6": {
+                "description": "Four sixths (66.666667%)",
+                "format": "66.666667%"
+            },
+            "_5_6": {
+                "description": "Five sixths (83.333333%)",
+                "format": "83.333333%"
+            },
+            "_1_12": {
+                "description": "One twelfth (8.333333%)",
+                "format": "8.333333%"
+            },
+            "_2_12": {
+                "description": "Two twelfths (16.666667%)",
+                "format": "16.666667%"
+            },
+            "_3_12": {
+                "description": "Three twelfths (25%)",
+                "format": "25%"
+            },
+            "_4_12": {
+                "description": "Four twelfths (33.333333%)",
+                "format": "33.333333%"
+            },
+            "_5_12": {
+                "description": "Five twelfths (41.666667%)",
+                "format": "41.666667%"
+            },
+            "_6_12": {
+                "description": "Six twelfths (50%)",
+                "format": "50%"
+            },
+            "_7_12": {
+                "description": "Seven twelfths (58.333333%)",
+                "format": "58.333333%"
+            },
+            "_8_12": {
+                "description": "Eight twelfths (66.666667%)",
+                "format": "66.666667%"
+            },
+            "_9_12": {
+                "description": "Nine twelfths (75%)",
+                "format": "75%"
+            },
+            "_10_12": {
+                "description": "Ten twelfths (83.333333%)",
+                "format": "83.333333%"
+            },
+            "_11_12": {
+                "description": "Eleven twelfths (91.666667%)",
+                "format": "91.666667%"
+            }
         },
         "description": "A fractional CSS value."
+    },
+    "ScrollSnapType": {
+        "description": "Values for scroll-snap-type.",
+        "cases": [
+            {
+                "name": "none",
+                "value": "none"
+            },
+            {
+                "name": "x",
+                "value": "x"
+            },
+            {
+                "name": "y",
+                "value": "y"
+            },
+            {
+                "name": "block",
+                "value": "block"
+            },
+            {
+                "name": "inline",
+                "value": "inline"
+            },
+            {
+                "name": "both",
+                "value": "both"
+            }
+        ]
+    },
+    "ScrollSnapStrictness": {
+        "description": "Strictness values for scroll-snap-type.",
+        "cases": [
+            {
+                "name": "mandatory",
+                "value": "mandatory"
+            },
+            {
+                "name": "proximity",
+                "value": "proximity"
+            }
+        ]
+    },
+    "ScrollSnapAlign": {
+        "description": "Values for scroll-snap-align.",
+        "cases": [
+            {
+                "name": "none",
+                "value": "none"
+            },
+            {
+                "name": "start",
+                "value": "start"
+            },
+            {
+                "name": "end",
+                "value": "end"
+            },
+            {
+                "name": "center",
+                "value": "center"
+            }
+        ]
+    },
+    "ScrollSnapStop": {
+        "description": "Values for scroll-snap-stop.",
+        "cases": [
+            {
+                "name": "normal",
+                "value": "normal"
+            },
+            {
+                "name": "always",
+                "value": "always"
+            }
+        ]
+    },
+    "ScrollBehavior": {
+        "description": "Values for scroll-behavior.",
+        "cases": [
+            {
+                "name": "auto",
+                "value": "auto"
+            },
+            {
+                "name": "smooth",
+                "value": "smooth"
+            }
+        ]
+    },
+    "WillChange": {
+        "description": "Values for will-change.",
+        "cases": [
+            {
+                "name": "auto",
+                "value": "auto"
+            },
+            {
+                "name": "scrollPosition",
+                "value": "scroll-position"
+            },
+            {
+                "name": "contents",
+                "value": "contents"
+            },
+            {
+                "name": "transform",
+                "value": "transform"
+            },
+            {
+                "name": "opacity",
+                "value": "opacity"
+            }
+        ]
+    },
+    "ContentVisibility": {
+        "description": "Values for content-visibility.",
+        "cases": [
+            {
+                "name": "visible",
+                "value": "visible"
+            },
+            {
+                "name": "hidden",
+                "value": "hidden"
+            },
+            {
+                "name": "auto",
+                "value": "auto"
+            }
+        ]
+    },
+    "MaskRepeat": {
+        "description": "Values for mask-repeat.",
+        "cases": [
+            {
+                "name": "repeatX",
+                "value": "repeat-x"
+            },
+            {
+                "name": "repeatY",
+                "value": "repeat-y"
+            },
+            {
+                "name": "repeat",
+                "value": "repeat"
+            },
+            {
+                "name": "space",
+                "value": "space"
+            },
+            {
+                "name": "round",
+                "value": "round"
+            },
+            {
+                "name": "noRepeat",
+                "value": "no-repeat"
+            }
+        ]
+    },
+    "MaskType": {
+        "description": "Values for mask-type.",
+        "cases": [
+            {
+                "name": "luminance",
+                "value": "luminance"
+            },
+            {
+                "name": "alpha",
+                "value": "alpha"
+            }
+        ]
+    },
+    "MaskMode": {
+        "description": "Values for mask-mode.",
+        "cases": [
+            {
+                "name": "alpha",
+                "value": "alpha"
+            },
+            {
+                "name": "luminance",
+                "value": "luminance"
+            },
+            {
+                "name": "matchSource",
+                "value": "match-source"
+            }
+        ]
+    },
+    "MaskComposite": {
+        "description": "Values for mask-composite.",
+        "cases": [
+            {
+                "name": "add",
+                "value": "add"
+            },
+            {
+                "name": "subtract",
+                "value": "subtract"
+            },
+            {
+                "name": "intersect",
+                "value": "intersect"
+            },
+            {
+                "name": "exclude",
+                "value": "exclude"
+            }
+        ]
     }
 }

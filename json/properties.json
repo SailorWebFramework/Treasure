@@ -4362,5 +4362,377 @@
             "fraction"
         ],
         "format": "{{fraction}}"
+    },
+    "scroll-snap-type": {
+        "description": "Sets the scroll snap type.",
+        "types": [
+            "Unit.ScrollSnapType",
+            "optional[Unit.ScrollSnapStrictness]"
+        ],
+        "names": [
+            "axis",
+            "strictness"
+        ],
+        "format": "{{axis}} {{strictness}}"
+    },
+    "scroll-snap-align": {
+        "description": "Sets the scroll snap alignment.",
+        "types": [
+            "Unit.ScrollSnapAlign"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-snap-stop": {
+        "description": "Sets the scroll snap stop behavior.",
+        "types": [
+            "Unit.ScrollSnapStop"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-behavior": {
+        "description": "Sets whether scrolling is instant or smoothly animated.",
+        "types": [
+            "Unit.ScrollBehavior"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-margin": {
+        "description": "Sets the scroll-margin property.",
+        "types": [
+            "Unit.Length"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-margin-top": {
+        "description": "Sets the scroll-margin-top property.",
+        "types": [
+            "Unit.Length"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-margin-bottom": {
+        "description": "Sets the scroll-margin-bottom property.",
+        "types": [
+            "Unit.Length"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-margin-left": {
+        "description": "Sets the scroll-margin-left property.",
+        "types": [
+            "Unit.Length"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-margin-right": {
+        "description": "Sets the scroll-margin-right property.",
+        "types": [
+            "Unit.Length"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-margin-block": {
+        "description": "Sets the scroll-margin-block property.",
+        "types": [
+            "Unit.Length"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-margin-block-start": {
+        "description": "Sets the scroll-margin-block-start property.",
+        "types": [
+            "Unit.Length"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-margin-block-end": {
+        "description": "Sets the scroll-margin-block-end property.",
+        "types": [
+            "Unit.Length"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-margin-inline": {
+        "description": "Sets the scroll-margin-inline property.",
+        "types": [
+            "Unit.Length"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-margin-inline-start": {
+        "description": "Sets the scroll-margin-inline-start property.",
+        "types": [
+            "Unit.Length"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-margin-inline-end": {
+        "description": "Sets the scroll-margin-inline-end property.",
+        "types": [
+            "Unit.Length"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-padding": {
+        "description": "Sets the scroll-padding property.",
+        "types": [
+            "Unit.LengthPercentage"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-padding-top": {
+        "description": "Sets the scroll-padding-top property.",
+        "types": [
+            "Unit.LengthPercentage"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-padding-bottom": {
+        "description": "Sets the scroll-padding-bottom property.",
+        "types": [
+            "Unit.LengthPercentage"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-padding-left": {
+        "description": "Sets the scroll-padding-left property.",
+        "types": [
+            "Unit.LengthPercentage"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-padding-right": {
+        "description": "Sets the scroll-padding-right property.",
+        "types": [
+            "Unit.LengthPercentage"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-padding-block": {
+        "description": "Sets the scroll-padding-block property.",
+        "types": [
+            "Unit.LengthPercentage"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-padding-block-start": {
+        "description": "Sets the scroll-padding-block-start property.",
+        "types": [
+            "Unit.LengthPercentage"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-padding-block-end": {
+        "description": "Sets the scroll-padding-block-end property.",
+        "types": [
+            "Unit.LengthPercentage"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-padding-inline": {
+        "description": "Sets the scroll-padding-inline property.",
+        "types": [
+            "Unit.LengthPercentage"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-padding-inline-start": {
+        "description": "Sets the scroll-padding-inline-start property.",
+        "types": [
+            "Unit.LengthPercentage"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "scroll-padding-inline-end": {
+        "description": "Sets the scroll-padding-inline-end property.",
+        "types": [
+            "Unit.LengthPercentage"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "will-change": {
+        "description": "Hints to the browser about which properties are expected to change.",
+        "types": [
+            "Unit.WillChange"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "content-visibility": {
+        "description": "Controls whether an element renders its contents.",
+        "types": [
+            "Unit.ContentVisibility"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "mask-image": {
+        "description": "Sets the mask image.",
+        "types": [
+            "Unit.Source"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "mask-size": {
+        "description": "Sets the size of the mask image.",
+        "types": [
+            "Unit.BackgroundSize"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "mask-repeat": {
+        "description": "Sets how the mask image is repeated.",
+        "types": [
+            "Unit.MaskRepeat"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "mask-position": {
+        "description": "Sets the position of the mask image.",
+        "types": [
+            "Unit.BackgroundPosition"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "mask-type": {
+        "description": "Sets whether the mask is treated as luminance or alpha.",
+        "types": [
+            "Unit.MaskType"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "mask-mode": {
+        "description": "Sets the mask mode.",
+        "types": [
+            "Unit.MaskMode"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "mask-composite": {
+        "description": "Sets the compositing operation for the mask.",
+        "types": [
+            "Unit.MaskComposite"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "mask-origin": {
+        "description": "Sets the mask positioning area.",
+        "types": [
+            "Unit.BackgroundOrigin"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
+    },
+    "mask-clip": {
+        "description": "Sets the mask painting area.",
+        "types": [
+            "Unit.BackgroundClip"
+        ],
+        "names": [
+            "value"
+        ],
+        "format": "{{value}}"
     }
 }

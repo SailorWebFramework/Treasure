@@ -1192,6 +1192,7 @@
             "optional[Unit.RepeatImage]",
             "optional[Unit.SliceImage]",
             "optional[Unit.Source]",
+            "optional[Unit.AutoLengthPercentage]",
             "optional[Unit.AutoLengthPercentage]"
         ],
         "names": [

@@ -150,15 +150,6 @@ def test_SEQ_count_vs_sequence_types(properties):
 # 3. Format placeholder names match names[]
 # ---------------------------------------------------------------------------
 
-@pytest.mark.xfail(
-    reason=(
-        "Known data bugs: border-* grouped properties use qualified placeholder "
-        "names (e.g. {{blockEndColor}}) that don't match their short local names "
-        "array entries (e.g. ['color']); clip-path:0 uses {{shape}} but names=['none']. "
-        "Tracked in GitHub issues."
-    ),
-    strict=False,
-)
 def test_property_format_placeholders_match_names(properties):
     """Every {{name}} placeholder in a property format string must appear in names[].
 
@@ -186,11 +177,11 @@ def test_property_format_placeholders_match_names(properties):
 
 @pytest.mark.xfail(
     reason=(
-        "Known unit data bugs: Integer.int uses {{number}} but names=['int']; "
-        "BackgroundSize.size:0 uses {{both}} but names=['widthAndHeight']; "
-        "Indent.with and PaintOrder.with use format names without '@' prefix "
-        "that don't match the @-prefixed entries in names[]. "
-        "Tracked in GitHub issues."
+        "Indent.with and PaintOrder.with use format placeholder names without '@' prefix "
+        "(e.g. {{hanging}}) that don't match the @-prefixed entries in names[] "
+        "(e.g. '@hanging').  These are intentional: put_formatted() strips '@' via "
+        "formatName() before matching, so the generated Swift is correct.  The test "
+        "does not yet apply the same normalisation, so these cases appear as mismatches."
     ),
     strict=False,
 )

@@ -620,7 +620,7 @@
             "names": [
                 "color"
             ],
-            "format": "{{blockEndColor}}"
+            "format": "{{color}}"
         },
         "style": {
             "description": "Sets the border block end style property.",
@@ -714,7 +714,7 @@
             "names": [
                 "color"
             ],
-            "format": "{{blockColor}}"
+            "format": "{{color}}"
         },
         "style": {
             "description": "Sets the border block style property.",
@@ -724,7 +724,7 @@
             "names": [
                 "style"
             ],
-            "format": "{{blockStyle}}"
+            "format": "{{style}}"
         },
         "width": {
             "description": "Sets the border block width property.",
@@ -761,7 +761,7 @@
             "names": [
                 "color"
             ],
-            "format": "{{bottomColor}}"
+            "format": "{{color}}"
         },
         "style": {
             "description": "Sets the border bottom style property.",
@@ -771,7 +771,7 @@
             "names": [
                 "style"
             ],
-            "format": "{{bottomStyle}}"
+            "format": "{{style}}"
         },
         "width": {
             "description": "Sets the border bottom width property.",
@@ -781,7 +781,7 @@
             "names": [
                 "width"
             ],
-            "format": "{{bottomWidth}}"
+            "format": "{{width}}"
         },
         "left-radius": {
             "description": "Sets the border bottom left radius property.",
@@ -791,7 +791,7 @@
             "names": [
                 "leftRadius"
             ],
-            "format": "{{radius}}"
+            "format": "{{leftRadius}}"
         },
         "right-radius": {
             "description": "Sets the border bottom right radius property.",
@@ -801,7 +801,7 @@
             "names": [
                 "rightRadius"
             ],
-            "format": "{{radius}}"
+            "format": "{{rightRadius}}"
         }
     },
     "border-end-*": {
@@ -813,7 +813,7 @@
             "names": [
                 "endRadius"
             ],
-            "format": "{{radius}}"
+            "format": "{{endRadius}}"
         },
         "start-radius": {
             "description": "Sets the border end start radius property.",
@@ -823,7 +823,7 @@
             "names": [
                 "startRadius"
             ],
-            "format": "{{radius}}"
+            "format": "{{startRadius}}"
         }
     },
     "border-inline": {
@@ -850,7 +850,7 @@
             "names": [
                 "color"
             ],
-            "format": "{{inlineColor}}"
+            "format": "{{color}}"
         },
         "style": {
             "description": "Sets the border inline style property.",
@@ -860,7 +860,7 @@
             "names": [
                 "style"
             ],
-            "format": "{{inlineStyle}}"
+            "format": "{{style}}"
         },
         "width": {
             "description": "Sets the border inline width property.",
@@ -870,7 +870,7 @@
             "names": [
                 "width"
             ],
-            "format": "{{inlineWidth}}"
+            "format": "{{width}}"
         }
     },
     "border-inline-start": {
@@ -897,7 +897,7 @@
             "names": [
                 "color"
             ],
-            "format": "{{inlineStartColor}}"
+            "format": "{{color}}"
         },
         "style": {
             "description": "Sets the border inline start style property.",
@@ -907,7 +907,7 @@
             "names": [
                 "style"
             ],
-            "format": "{{inlineStartStyle}}"
+            "format": "{{style}}"
         },
         "width": {
             "description": "Sets the border inline start width property.",
@@ -917,7 +917,7 @@
             "names": [
                 "width"
             ],
-            "format": "{{inlineStartWidth}}"
+            "format": "{{width}}"
         }
     },
     "border-inline-end": {
@@ -944,7 +944,7 @@
             "names": [
                 "color"
             ],
-            "format": "{{inlineEndColor}}"
+            "format": "{{color}}"
         },
         "style": {
             "description": "Sets the border inline end style property.",
@@ -954,7 +954,7 @@
             "names": [
                 "style"
             ],
-            "format": "{{inlineEndStyle}}"
+            "format": "{{style}}"
         },
         "width": {
             "description": "Sets the border inline end width property.",
@@ -964,7 +964,7 @@
             "names": [
                 "width"
             ],
-            "format": "{{inlineEndWidth}}"
+            "format": "{{width}}"
         }
     },
     "border-left": {
@@ -991,7 +991,7 @@
             "names": [
                 "color"
             ],
-            "format": "{{leftColor}}"
+            "format": "{{color}}"
         },
         "style": {
             "description": "Sets the border left style property.",
@@ -1001,7 +1001,7 @@
             "names": [
                 "style"
             ],
-            "format": "{{leftStyle}}"
+            "format": "{{style}}"
         },
         "width": {
             "description": "Sets the border left width property.",
@@ -1011,7 +1011,7 @@
             "names": [
                 "width"
             ],
-            "format": "{{leftWidth}}"
+            "format": "{{width}}"
         }
     },
     "border-right": {
@@ -1038,7 +1038,7 @@
             "names": [
                 "color"
             ],
-            "format": "{{rightColor}}"
+            "format": "{{color}}"
         },
         "style": {
             "description": "Sets the border right style property.",
@@ -1048,7 +1048,7 @@
             "names": [
                 "style"
             ],
-            "format": "{{rightStyle}}"
+            "format": "{{style}}"
         },
         "width": {
             "description": "Sets the border right width property.",
@@ -1058,7 +1058,7 @@
             "names": [
                 "width"
             ],
-            "format": "{{rightWidth}}"
+            "format": "{{width}}"
         }
     },
     "border-start-*": {
@@ -1070,7 +1070,7 @@
             "names": [
                 "endRadius"
             ],
-            "format": "{{radius}}"
+            "format": "{{endRadius}}"
         },
         "start-radius": {
             "description": "Sets the border start start radius property.",
@@ -1080,7 +1080,7 @@
             "names": [
                 "startRadius"
             ],
-            "format": "{{radius}}"
+            "format": "{{startRadius}}"
         }
     },
     "border-top": {
@@ -1107,7 +1107,7 @@
             "names": [
                 "color"
             ],
-            "format": "{{topColor}}"
+            "format": "{{color}}"
         },
         "style": {
             "description": "Sets the border top style property.",
@@ -1117,7 +1117,7 @@
             "names": [
                 "style"
             ],
-            "format": "{{topStyle}}"
+            "format": "{{style}}"
         },
         "width": {
             "description": "Sets the border top width property.",
@@ -1127,7 +1127,7 @@
             "names": [
                 "width"
             ],
-            "format": "{{topWidth}}"
+            "format": "{{width}}"
         },
         "left-radius": {
             "description": "Sets the border top left radius property.",
@@ -1137,7 +1137,7 @@
             "names": [
                 "leftRadius"
             ],
-            "format": "{{radius}}"
+            "format": "{{leftRadius}}"
         },
         "right-radius": {
             "description": "Sets the border top right radius property.",
@@ -1147,7 +1147,7 @@
             "names": [
                 "rightRadius"
             ],
-            "format": "{{radius}}"
+            "format": "{{rightRadius}}"
         }
     },
     "border-image:0": {
@@ -1223,7 +1223,7 @@
             "names": [
                 "repeat"
             ],
-            "format": "{{imageRepeat}}"
+            "format": "{{repeat}}"
         },
         "slice": {
             "description": "Sets the border image slice property.",
@@ -1243,7 +1243,7 @@
             "names": [
                 "source"
             ],
-            "format": "{{image}}"
+            "format": "{{source}}"
         },
         "width": {
             "description": "Sets the border image width property.",
@@ -1280,7 +1280,7 @@
             "names": [
                 "collapse"
             ],
-            "format": "{{value}}"
+            "format": "{{collapse}}"
         },
         "color": {
             "description": "Sets the border color property.",
@@ -1373,7 +1373,7 @@
         "names": [
             "none"
         ],
-        "format": "{{shape}}"
+        "format": "{{none}}"
     },
     "clip-path:1": {
         "shorthand": true,

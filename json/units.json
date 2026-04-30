@@ -1391,6 +1391,95 @@
         },
         "description": "The attachment of the background."
     },
+    "BackgroundClip": {
+        "description": "The background clip area.",
+        "cases": {
+            "border-box": {
+                "description": "The border box is included."
+            },
+            "padding-box": {
+                "description": "The padding box is included."
+            },
+            "content-box": {
+                "description": "The content box is included."
+            },
+            "fill-box": {
+                "description": "The fill box is included."
+            },
+            "stroke-box": {
+                "description": "The stroke box is included."
+            },
+            "view-box": {
+                "description": "The view box is included."
+            },
+            "no-clip": {
+                "description": "No clipping is applied."
+            }
+        }
+    },
+    "BackgroundOrigin": {
+        "description": "The background origin area.",
+        "cases": {
+            "border-box": {
+                "description": "The border box is the origin."
+            },
+            "padding-box": {
+                "description": "The padding box is the origin."
+            },
+            "content-box": {
+                "description": "The content box is the origin."
+            },
+            "fill-box": {
+                "description": "The fill box is the origin."
+            },
+            "stroke-box": {
+                "description": "The stroke box is the origin."
+            },
+            "view-box": {
+                "description": "The view box is the origin."
+            }
+        }
+    },
+    "BackgroundPosition": {
+        "description": "The background position.",
+        "cases": {
+            "left": {
+                "description": "Aligned to the left."
+            },
+            "right": {
+                "description": "Aligned to the right."
+            },
+            "top": {
+                "description": "Aligned to the top."
+            },
+            "bottom": {
+                "description": "Aligned to the bottom."
+            },
+            "center": {
+                "description": "Centered."
+            },
+            "x": {
+                "description": "The horizontal position.",
+                "values": [
+                    "Unit.PositionX"
+                ],
+                "names": [
+                    "value"
+                ],
+                "format": "{{value}}"
+            },
+            "y": {
+                "description": "The vertical position.",
+                "values": [
+                    "Unit.PositionY"
+                ],
+                "names": [
+                    "value"
+                ],
+                "format": "{{value}}"
+            }
+        }
+    },
     "BlendMode": {
         "cases": {
             "normal": {

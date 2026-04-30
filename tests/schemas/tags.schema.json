@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "tags.json",
+  "description": "Schema for Treasure/json/tags.json — HTML element definitions.",
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/definitions/Tag"
+  },
+  "definitions": {
+    "Tag": {
+      "type": "object",
+      "required": ["description", "inits"],
+      "properties": {
+        "description": { "type": "string" },
+        "alias": { "type": "string" },
+        "type": { "type": "string" },
+        "inits": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Init" }
+        },
+        "attributes": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Attribute"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Init": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["text", "body", "empty", "required", "required-with-body", "required-with-text"]
+        },
+        "args": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "params": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "type"],
+            "properties": {
+              "name": { "type": "string" },
+              "type": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Attribute": {
+      "type": "object",
+      "required": ["description", "type"],
+      "properties": {
+        "description": { "type": "string" },
+        "type": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

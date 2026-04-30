@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "properties.json",
+  "description": "Schema for Treasure/json/properties.json — CSS property definitions.",
+  "type": "object",
+  "additionalProperties": {
+    "oneOf": [
+      { "$ref": "#/definitions/SimpleProperty" },
+      { "$ref": "#/definitions/GroupProperty" }
+    ]
+  },
+  "definitions": {
+    "SimpleProperty": {
+      "type": "object",
+      "required": ["description", "types", "names", "format"],
+      "properties": {
+        "description": { "type": "string" },
+        "types": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "names": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "format": { "type": "string" },
+        "shorthand": { "type": "boolean" },
+        "alias": { "type": "string" },
+        "shown": { "type": "array", "items": { "type": "boolean" } }
+      },
+      "additionalProperties": false
+    },
+    "GroupProperty": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/definitions/SimpleProperty"
+      }
+    }
+  }
+}

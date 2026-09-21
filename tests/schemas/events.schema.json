@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "events.json",
+  "description": "Schema for Treasure/json/events.json — DOM event definitions.",
+  "type": "object",
+  "required": ["version", "global"],
+  "properties": {
+    "version": { "type": "string", "minLength": 1 },
+    "global": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/definitions/EventDef" }
+    },
+    "targeted": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/definitions/TargetedGroup" }
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "EventDef": {
+      "type": "object",
+      "required": ["description", "category", "js_event", "interface", "bubbles", "cancelable"],
+      "properties": {
+        "description": { "type": "string" },
+        "category": { "type": "string", "minLength": 1 },
+        "js_event": { "type": "string", "minLength": 1 },
+        "interface": { "type": "string", "minLength": 1 },
+        "bubbles": { "type": "boolean" },
+        "cancelable": { "type": "boolean" },
+        "data": {}
+      },
+      "additionalProperties": false
+    },
+    "TargetedGroup": {
+      "type": "object",
+      "required": ["tags", "events"],
+      "properties": {
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "events": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/EventDef" }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

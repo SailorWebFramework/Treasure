@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "global-attributes.json",
+  "description": "Schema for Treasure/json/global-attributes.json — HTML global attribute definitions.",
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/definitions/GlobalAttribute"
+  },
+  "definitions": {
+    "GlobalAttribute": {
+      "type": "object",
+      "required": ["description", "type"],
+      "properties": {
+        "description": { "type": "string" },
+        "type": { "type": "string", "minLength": 1 },
+        "alias": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

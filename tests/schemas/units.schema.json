@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "units.json",
+  "description": "Schema for Treasure/json/units.json — defines CSS unit enum types.",
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/definitions/UnitType"
+  },
+  "definitions": {
+    "UnitType": {
+      "type": "object",
+      "required": ["description"],
+      "properties": {
+        "description": { "type": "string" },
+        "cases": {
+          "oneOf": [
+            { "$ref": "#/definitions/CasesDict" },
+            { "$ref": "#/definitions/CasesList" }
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "CasesDict": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/Case"
+      }
+    },
+    "CasesList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "value"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "value": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "Case": {
+      "type": "object",
+      "required": ["description"],
+      "properties": {
+        "description": { "type": "string" },
+        "values": { "type": "array", "items": { "type": "string" } },
+        "names": { "type": "array", "items": { "type": "string" } },
+        "format": { "type": "string" },
+        "shown": { "type": "array", "items": { "type": "boolean" } }
+      },
+      "additionalProperties": true
+    }
+  }
+}
